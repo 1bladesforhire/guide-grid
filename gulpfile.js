@@ -3,14 +3,16 @@ var gulp = require('gulp'),
     cssmin = require('gulp-cssmin'),
     plumber = require('gulp-plumber'),
     autoprefixer = require('gulp-autoprefixer'),
-    rename = require('gulp-rename');
+    rename = require('gulp-rename'),
+    sourcemaps = require('gulp-sourcemaps');
 
 gulp.task('watch', function() {
-    gulp.watch('styles/*.less', ['less']);
+    gulp.watch('less/*.less', ['less']);
 });
 
 gulp.task('less', function() {
     gulp.src('less/main.less')
+        .pipe(sourcemaps.init())
         .pipe(plumber())
         .pipe(less())
         .pipe(autoprefixer({
