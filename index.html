@@ -1,33 +1,55 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+    <html class="no-js" lang="en" dir="ltr">
+        <head>
+            <title>Styleguide</title>
+            <meta charset="utf-8">
+            <meta http-equiv="x-ua-compatible" content="ie=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <meta name="description" content="Microsoft Styleguide">
+            <meta name="keywords" content="Style Guide Site">
+            <meta name="author" content="Microsoft Corporation">
 
-<head>
+            <!-- Stylesheet requirements -->
 
-</head>
+            <link rel="stylesheet" href="style/main.min.css">
 
-<body>
+        </head>
+        <body>
+            <!-- Accessibility requirement -->
+            <a class="m-skip-to-main" href="#mainContent" tabindex="0">Skip to main content</a>
+             
+            <!-- Navigation -->
+            <header role="presentation" id="headerArea">
+                <nav role="nav" role="navigation">
+                    <ul>
+                        <li><a href="#section-1">Welcome</a></li>
+                        <li><a href="#section-2">Who we are</a></li>
+                        <li><a href="#section-3">How we tell our story</a></li>
+                        <li><a href="#section-4">Brand expression</a></li>
+                        <li><a href="#section-5">How we look</a></li>
+                        <li><a href="#section-6">Building out a communication</a></li>
+                    </ul>
+                </nav>
+            </header> 
+            <section id="mainArea" role="main" tabindex="-1">
+
+            <!-- Main page content should be wrapped with semantically meaningful html elements (e.g.: article, main) whenever possible. A div element can be used as long as it also contains a role="main" for Accessibility. -->
+            <main id="mainContent" data-grid="container">
+                <!-- Modules should be stacked with a sibling relationship in order to programmatically adjust their position, margins, and padding. -->
+
+            </main>
 
 
-    <nav role="nav" role="navigation">
-        <ul>
-            <li><a href="#section-1">Welcome</a></li>
-            <li><a href="#section-2">Who we are</a></li>
-            <li><a href="#section-3">How we tell our story</a></li>
-            <li><a href="#section-4">Brand expression</a></li>
-            <li><a href="#section-5">How we look</a></li>
-            <li><a href="#section-6">Building out a communication</a></li>
-        </ul>
-    </nav>
+            <!-- JavaScript requirements -->
+            <!-- Include before </body>. Use the script file based on preference (UMD, AMD, CommonJS, Auto, etc.) -->
+            <script async="async"
+                src="main.js"></script>
+            <noscript></noscript>
 
-    <section class="main">
-            
-        <h1>H1 looks like this here</h1>
-        <h2>H2 looks like this</h2>
-        <h3>H3 looks like this</h3>
-        <h4>This is H4 for section titles</h4>
-        
-        <div class="item content-3"><p>They're not ones to leave a good idea alone. They have the ambition to turn ideas into actions, accomplish more, or change their lives (or the world). They wear many hats, play many roles. They're the doers—the people who start things, big and small. Move the world forward. And inspire others to do the same. </p></div>
-    </section>
-    <link rel="stylesheet" type="text/css" href="styles/main.min.css">
+            <!-- JavaScript dependencies -->
+            <!-- ... -->
 
-</html>
+            <!-- JavaScript additions -->
+            <!-- ... -->
+        </body>
+    </html>
