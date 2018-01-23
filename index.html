@@ -11,7 +11,7 @@
 
             <!-- Stylesheet requirements -->
 
-            <link rel="stylesheet" href="style/main.min.css">
+            <link rel="stylesheet" href="styles/main.min.css">
 
         </head>
         <body>
@@ -19,12 +19,45 @@
             <a class="m-skip-to-main" href="#mainContent" tabindex="0">Skip to main content</a>
              
             <!-- Navigation -->
-            <header role="presentation" id="headerArea">
-                <nav role="nav" role="navigation">
-                    <ul>
-                        <li><a href="#section-1">Welcome</a></li>
+            <header role="banner" id="headerArea">
+                <nav role="nav" role="navigation" tabindex="1" class="menu">
+                    <button aria-expanded="false" aria-controls="menu-list">
+                        <span class="open">☰</span>
+                        <span class="close">×</span>
+                        Menu
+                    </button>
+                    <ul id="menu-list">
+                        <li><a href="#section-1">Welcome</a>
+                            <ul class="sub-nav__item">
+                                <li class="sub-nav__item">
+                                   <a href="#section-1-a">What's new</a> 
+                                </li>
+                                <li class="sub-nav__item">
+                                    <a href="#section-1-b">We are evolving</a>
+                                </li>
+                            </ul>
+                        </li>
                         <li><a href="#section-2">Who we are</a></li>
-                        <li><a href="#section-3">How we tell our story</a></li>
+                        <li><a href="#section-3">How we tell our story</a>
+                            <ul class="sub-nav">
+                                <li class="sub-nav__item">
+                                    <a href="#section-2-a">Our voice</a>
+                                </li>
+                                <li class="sub-nav__item">
+                                    <a href="#section-2-b">
+                                        Editorial system
+                                    </a>
+                                </li>
+                                <li class="sub-nav__item">
+                                    <a href="#section-2-c">
+                                        Editorial style
+                                    </a>
+                                </li>
+                                <li class="sub-nav__item">
+                                    <a href="#section-2-d">Editorial approach</a>
+                                </li>
+                            </ul>    
+                        </li>
                         <li><a href="#section-4">Brand expression</a></li>
                         <li><a href="#section-5">How we look</a></li>
                         <li><a href="#section-6">Building out a communication</a></li>
@@ -36,7 +69,124 @@
             <!-- Main page content should be wrapped with semantically meaningful html elements (e.g.: article, main) whenever possible. A div element can be used as long as it also contains a role="main" for Accessibility. -->
             <main id="mainContent" data-grid="container">
                 <!-- Modules should be stacked with a sibling relationship in order to programmatically adjust their position, margins, and padding. -->
-
+                <section id="section-1">
+                    <div class="intro">
+                        <h1>Microsoft Store</h1>
+                        <h1>marketing guidelines</h1>
+                        <h5>An evolving document for agencies, internal partners, marketers in Microsoft, and other partner organizations</h5>
+                        <picture>
+                            <img src="" alt="" srcset="">
+                        </picture>
+                        <h6>Welcome to Microsoft Store</h6>
+                        <p>For years, separate stores on Windows, Xbox, online, and in physical retail were confusing our visitors and fans. Now we've unified them under one brand and one name: Microsoft Store. We're on a path to a better and simpler experience.</p>
+                        <p>These new guidelines cover the refreshed brand, expression, and scenarios for Microsoft Store. Understanding and implementing these guidelines helps us build a consistent, effective, and lasting brand as we evolve to serve our customers in a new way.</p> 
+                        <p>Have questions? <a href="contact" alt="contact us">Contact us</a> and we'll be happy to help. </p>
+                    </div>
+                </section>
+                <section id="section-1-a">
+                    <span class="badge purple">What's New</span>
+                    <h4>Top five things to know</h4>
+                    <div class="half">
+                        <span class="numeral">1</span>
+                        <h6>Our name</h6>
+                        <p>We're aligning our retail experience under One Microsoft. No more Windows Store, Xbox Store, and permutations like Store, Games Store, and Music Store. Our name is Microsoft Store and our brand is Microsoft. </p>
+                    </div>
+                    <div class="half">
+                        <span class="numeral">2</span>
+                        <h6>Our Microsoft Logo</h6>
+                        <p>In your communications, lead with the Microsoft logo and Microsoft Store in type. Use the new Microsoft Store shopping bag icon for wayfinding.</p>
+                    </div>
+                     <div class="half">
+                        <span class="numeral">3</span>
+                        <h6>Storytelling framework</h6>
+                        <p>The Microsoft Store storytelling framework dives deep into what empowerment means, and how to deliver it</p>
+                     </div>
+                     <div class="half">
+                        <span class="numeral">4</span>
+                        <h6>Editorial approach</h6>
+                        <p>Like a magazine, Microsoft Store should be about curating content and providing warm and relaxed experiences that have customers coming back for more.</p>
+                    </div>
+                    <div class="half">
+                        <span class="numeral">5</span>
+                        <h6>More to come</h6>
+                        <p>We're just beginning the evolution of Microsoft Store. While these guidelines are high-level, look for regular updates that cover various elements in greater depth.</p>
+                    </div>
+                </section>
+                <section id="section-1-b">
+                        <span class="badge purple">We are evolving</span>
+                        <h4>The sign of things to come</h4>
+                        <p>
+                                People today expect more from brands than simply good products. Consumers are looking for experiences, belonging, meaning, ideas, and inspiration. Yes, products are a part of this. But it's so much more. That's why we're evolving the Microsoft Store experience. 
+                        </p>
+                        <div class="cross-through">
+                            <span>Selling</span>
+                            <h6>Empoweringt</h6>
+                            <p>We're not just here to sell stuff. We're here to help people figure out what, how, and when they can achieve whatever they want. Sometimes it involves a purchase, sometimes it doesn't. Either way we're here for the long term. That's why the relationships we build matter—and why they're based on empowering our customers. Empowering is about them, not us.</p>
+                        </div>
+                        <div class="cross-through">
+                            <span>Impersonal</span>
+                            <h6>Editorial</h6>
+                            <p>To be relevant, we need to be personal. That means conversing with people on their terms, listening to them, and figuring out what we can do to help. That means we understand what our customers are passionate about, how they talk, what they love, and how to build a more intimate connection with them. Like a magazine, Microsoft Store is about curating engaging editorial content that has customers coming back for more. </p>
+                        </div>
+                        <div class="cross-through">
+                            <span>Things</span>
+                            <h6>Experiences</h6>
+                            <p>To create empowering relationships with our customers, we need to curate experiences that enhance their lives (and their Instagram and Snapchat feeds) rather than simply highlight material things. Be it hands-on explorations of new reality, engaging workshops, or breathtaking stories—our experiences help customers enhance their lives and achieve more.</p>
+                        </div>
+                </section>
+                <section id="section-2">
+                    <h4>Who we are</h4>
+                </section>
+                <section id="section-2-c">
+                    <span class="badge blue">We are evolving</span>
+                    <h4>Our mission is to empower every person and every organizatoin on the planet to achieve more</h4>
+                    <p>In 1975, Bill Gates and Paul Allen had a huge vision—a computer on every desk and in every home. At the heart of that vision was our mission of empowerment, the motivation to make technology accessible to everyone and help people from all walks of life create, prosper, and achieve.</p>
+                    <picture>
+                        <img src="assets/who-we-are.jpg" alt="empowering people" srcset="">
+                    </picture>
+                    <div class="overlay left">
+                        <p>What do you do when you want a job in one of the toughest fields to break into? </p>
+                        <p>Step one is to not give up. </p>
+                        <p>Step two is to take countless photographs, spend hours, days, weeks editing video, and promoting your YouTube and Instagram accounts without a pause. </p>
+                        <p>Saying no to anxiety and the doubts of others, Edsta found his voice and an audience.</p>
+                        <p>Surface Pro is helping him break through</p>
+                    </div>  
+                </section>
+                <section id="section-2-b">
+                    <span class="badge blue">Our tribe</span>
+                    <h4>We strive to reach people who share a mindset--people of action</h4>
+                    <p>They're not ones to leave a good idea alone. They have the ambition to turn ideas into actions, accomplish more, or change their lives (or the world). They wear many hats, play many roles. They're the doers—the people who start things, big and small. Move the world forward. And inspire others to do the same. </p>
+                    <picture>
+                            <img src="assets/tanesha.jpg" alt="empowering people" srcset="">
+                        </picture>
+                        <div class="overlay rightv">
+                            <p>For Kenesha Sneed, starting Tactile Matter, a business creating ceramics, was about finding the balance between heart and head. </p>
+                            <p>She needed to prove to herself that she could do it. That she could beat the odds, and do so in a way that maintained her integrity as an artist. A balance and a struggle we are all familiar with.</p>
+                       </div>  
+                </section>
+                <section id="section-2-c">
+                    <span class="badge blue">Our audience</span>
+                    <h4>we want to win the hearts and minds of Gamers, Creators, Learners, and Businesses</h4>
+                    <p>To empower everyone, you need to start small and grow from there. Gamers, Creators, Learners, Businesses, and among them— female and Hispanic customers— are the groups of people of action we are looking to attract.</p>
+                    <p> Diverse and different, they are passionate, influential, millennially-minded and are open to new experiences. They are looking for new stories, new communities, and new things they can achieve.</p>
+                <div class="quarter">
+                    <h6>Gamers</h6>
+                    <p>They love games. They play, stream, engage. They know game creators by heart, tattoo favorite characters on their ankles, cosplay at gaming conferences, and simply love everything gaming. </p>
+                </div>
+                <div class="quarter">
+                    <h6>Creators</h6>
+                    <p>Obsessed with making things— from writing blogs to creating new technology and things. They follow great designers, artists, and role models and are not afraid to post a nice-looking selfie, curate a trendy Instagram feed, or be obsessed about doughnuts. Because why not be obsessed with them? Doughnuts are totally awesome. </p>
+                </div>
+                <div class="quarter">
+                    <h6>Learners</h6>
+                    <p>From young to old—they are in a mindset of learning new things. At times curious, at times procrastinating, they might miss a class or two (because partying is also living), but they ultimately want to do something meaningful, learn new things, evolve themselves, and follow their hearts. Teachers and students, learners and educators—they are on the lookout for new ideas, new concepts, and new things. </p>
+                </div>
+                <div class="quarter">
+                    <h6>Business</h6>
+                    <p>The name says it all. Driven by a desire to create and grow business. On the lookout for new ideas, methods, and opportunities. Not afraid of experiments and failures. These are the people who create electric cars in their garages, disrupt banking with new apps, test out rockets in the open fields, and simply dream of creating the next best thing.</p>
+                </div>
+                
+                </section>
             </main>
 
 
