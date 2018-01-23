@@ -1,7 +1,22 @@
 body {
     background-color: @lt-gray;
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns:repeat(12, 1fr);
+    grid-gap: 20px;
     justify-content: center;
     align-items: center;
+  }
+  header{
+
+      grid-column-start: 1;
+      grid-column-end: 3;
+      nav{
+          position: fixed;
+          top:0;
+      }
+  }
+  
+  #mainArea{
+      grid-column-start: 3;
+      grid-column-end: -1;
   }

@@ -111,14 +111,34 @@ p {
   line-height: 28px;
   color: #212121;
 }
+nav a {
+  font-size: 16px;
+  line-height: 42px;
+}
+.m-skip-to-main {
+  display: none;
+}
 body {
   background-color: #dadada;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
+  grid-gap: 20px;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+}
+header {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+header nav {
+  position: fixed;
+  top: 0;
+}
+#mainArea {
+  grid-column-start: 3;
+  grid-column-end: -1;
 }
