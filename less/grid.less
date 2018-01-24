@@ -39,9 +39,25 @@ body {
             grid-template-columns: repeat(10, 1fr);
             display: grid;
             div.wrapper{
+                grid-auto-flow: row;
                 grid-column-start: 2;
                 grid-column-end: 10;
                 display: grid;
+                grid-gap: 20px;
+                grid-template-columns: repeat(9, 1fr);
+                grid-template-rows: repeat( autofill, max-content );
+                p, h6, h4, .cross-through, picture{
+                    grid-column: span 9;
+                }
+                .half{
+                    grid-column: span 5;
+                    grid-gap: 50px;
+                }
+            }
+            &#section-1{
+                h6{
+                    grid-column: span 6;
+                }
             }
         }
       }

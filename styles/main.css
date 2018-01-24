@@ -9,6 +9,10 @@ div {
   margin: 0;
   padding: 0;
 }
+h1 {
+  grid-column: span 6;
+  margin-bottom: 40px;
+}
 nav {
   background: #1d1d1d;
   height: 100%;
@@ -19,6 +23,7 @@ nav li:active {
 main > section {
   padding-top: 95px;
   padding-bottom: 95px;
+  display: grid;
 }
 #section-1 {
   background: #dadada;
@@ -41,6 +46,11 @@ main > section {
   outline-color: transparent;
   color: #000000;
   padding: 0 7px 1px 7px;
+  text-transform: uppercase;
+  letter-spacing: .075em;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .badge.blue {
   background: #00bcf2;
@@ -62,6 +72,7 @@ nav ul#menu-list {
 }
 nav ul li a {
   color: white;
+  text-decoration: none;
 }
 @font-face {
   font-family: "MWF-MDL2";
@@ -131,7 +142,7 @@ h6 {
   line-height: 38px;
 }
 p {
-  font: 24px/30px 'SegoeUI', Tahoma, Geneva, Verdana, sans-serif;
+  font: 15px/20px 'SegoeUI', Tahoma, Geneva, Verdana, sans-serif;
   color: #212121;
 }
 .section_title {
@@ -194,7 +205,26 @@ header nav {
   display: grid;
 }
 #mainArea main section div.wrapper {
+  grid-auto-flow: row;
   grid-column-start: 2;
   grid-column-end: 10;
   display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: repeat(autofill, -webkit-max-content);
+  grid-template-rows: repeat(autofill, max-content);
+}
+#mainArea main section div.wrapper p,
+#mainArea main section div.wrapper h6,
+#mainArea main section div.wrapper h4,
+#mainArea main section div.wrapper .cross-through,
+#mainArea main section div.wrapper picture {
+  grid-column: span 9;
+}
+#mainArea main section div.wrapper .half {
+  grid-column: span 5;
+  grid-gap: 50px;
+}
+#mainArea main section#section-1 h6 {
+  grid-column: span 6;
 }

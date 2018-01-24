@@ -4,7 +4,11 @@ h1,h2,h3,h4,h5,h6,p,div{
     padding:0;
 }
 
-
+h1{
+   
+    grid-column: span 6;
+    margin-bottom: 40px;
+}
 
 nav{
    background: @nav-dk;
@@ -16,6 +20,7 @@ nav{
 main > section{
     padding-top: 95px;
     padding-bottom: 95px;
+    display: grid;  
 }
 #section-1{
     background: @lt-gray;
@@ -26,7 +31,9 @@ main > section{
         background: @lt-gray;
     }
 }
+#section-1{
 
+}
 #section-2{
     &-a{
         background: @mid-gray;
@@ -52,6 +59,11 @@ main > section{
     outline-color: transparent;
     color: #000000;
     padding: 0 7px 1px 7px;
+    text-transform: uppercase;
+    letter-spacing: .075em;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
     &.blue{
         background: @blue;
     }
