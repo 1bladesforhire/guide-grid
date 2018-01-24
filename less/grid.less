@@ -1,22 +1,47 @@
+html{
+    box-sizing: border-box;
+}
+
+*, *:before, *:after{
+    box-sizing: inherit;
+}
 body {
     background-color: @lt-gray;
     display: grid;
-    grid-template-columns:repeat(12, 1fr);
-    grid-gap: 20px;
-    justify-content: center;
-    align-items: center;
+    grid-template-columns: 250px 1fr;
+    margin: 0;
   }
   header{
-
+      display: grid;
       grid-column-start: 1;
-      grid-column-end: 3;
+      grid-column-end: 2;
       nav{
           position: fixed;
           top:0;
+          justify-self: stretch;
+          padding: 20px;
+          display: grid;
+       
       }
   }
   
   #mainArea{
-      grid-column-start: 3;
-      grid-column-end: -1;
+      grid-column-start: 2;
+      grid-column-end: 3;
+      display: grid;
+      grid-template-columns: repeat(10, 1fr);
+
+      main{
+        display: grid;
+        grid-column-start: 1;
+        grid-column-end: 11;
+        section{
+            div{
+                grid-column-start: 2;
+                grid-column-end: 10;
+                display: grid;
+            }
+        }
+      }
+      
   }

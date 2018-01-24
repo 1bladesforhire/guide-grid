@@ -1,17 +1,18 @@
-body {
-    background-color: @lt-gray;
-    display: grid;
-    justify-content: center;
-    align-items: center;
-  }
-  nav{
-      background: @nav-lt;
-      color: #ffffff;
-      &.active{
-          background: @nav-dk;
-      }
-  }
+// resets
+h1,h2,h3,h4,h5,h6,p,div{
+    margin: 0;
+    padding:0;
+}
 
+
+
+nav{
+   background: @nav-dk;
+   height: 100%;
+   li:active{
+       background: @nav-lt;
+   }
+}
 #section-1{
     background: @lt-gray;
     &-a{
@@ -19,5 +20,32 @@ body {
     }
     &-b{
         background: @lt-gray;
+    }
+}
+
+#section-2{
+    &-a{
+
+    }
+    &-b{
+
+    }
+    &-c{
+
+    }
+    &-d{
+
+    }
+}
+
+.badge{
+    &.blue{
+        background: @blue;
+    }
+    &.purple{
+        background: @purple;
+    }
+    &.yellow{
+        background: @yellow;
     }
 }

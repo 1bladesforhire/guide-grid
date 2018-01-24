@@ -1,19 +1,20 @@
-body {
-  background-color: #dadada;
-  display: grid;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+div {
+  margin: 0;
+  padding: 0;
 }
 nav {
-  background: #252525;
-  color: #ffffff;
-}
-nav.active {
   background: #1d1d1d;
+  height: 100%;
+}
+nav li:active {
+  background: #252525;
 }
 #section-1 {
   background: #dadada;
@@ -24,11 +25,23 @@ nav.active {
 #section-1-b {
   background: #dadada;
 }
+.badge.blue {
+  background: #00bcf2;
+}
+.badge.purple {
+  background: #b4a0ff;
+}
+.badge.yellow {
+  background: #bad80a;
+}
 nav {
-  background: blue;
+  background: #1d1d1d;
 }
 nav ul {
   list-style-type: none;
+}
+nav ul#menu-list {
+  padding-left: 0;
 }
 nav ul li a {
   color: white;
@@ -67,7 +80,7 @@ body {
 }
 h1 {
   font-size: 80px;
-  line-height: 0;
+  line-height: 80px;
   font-weight: 700;
   color: #333333;
 }
@@ -95,6 +108,11 @@ h5 {
   line-height: 30px;
   color: #313131;
 }
+h6 {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 38px;
+}
 p {
   font: 24px/30px 'SegoeUI', Tahoma, Geneva, Verdana, sans-serif;
   color: #212121;
@@ -118,27 +136,47 @@ nav a {
 .m-skip-to-main {
   display: none;
 }
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
 body {
   background-color: #dadada;
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-gap: 20px;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  grid-template-columns: 250px 1fr;
+  margin: 0;
 }
 header {
+  display: grid;
   grid-column-start: 1;
-  grid-column-end: 3;
+  grid-column-end: 2;
 }
 header nav {
   position: fixed;
   top: 0;
+  justify-self: stretch;
+  padding: 20px;
+  display: grid;
 }
 #mainArea {
-  grid-column-start: 3;
-  grid-column-end: -1;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+}
+#mainArea main {
+  display: grid;
+  grid-column-start: 1;
+  grid-column-end: 11;
+}
+#mainArea main section div {
+  grid-column-start: 2;
+  grid-column-end: 10;
+  display: grid;
 }
