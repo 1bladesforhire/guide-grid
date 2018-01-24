@@ -16,6 +16,10 @@ nav {
 nav li:active {
   background: #252525;
 }
+main > section {
+  padding-top: 95px;
+  padding-bottom: 95px;
+}
 #section-1 {
   background: #dadada;
 }
@@ -24,6 +28,19 @@ nav li:active {
 }
 #section-1-b {
   background: #dadada;
+}
+#section-2-a {
+  background: #cac9c9;
+}
+.badge {
+  justify-self: self-start;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+  height: 18px;
+  outline-color: transparent;
+  color: #000000;
+  padding: 0 7px 1px 7px;
 }
 .badge.blue {
   background: #00bcf2;
@@ -168,14 +185,15 @@ header nav {
   grid-column-start: 2;
   grid-column-end: 3;
   display: grid;
-  grid-template-columns: repeat(10, 1fr);
 }
 #mainArea main {
   display: grid;
-  grid-column-start: 1;
-  grid-column-end: 11;
 }
-#mainArea main section div {
+#mainArea main section {
+  grid-template-columns: repeat(10, 1fr);
+  display: grid;
+}
+#mainArea main section div.wrapper {
   grid-column-start: 2;
   grid-column-end: 10;
   display: grid;

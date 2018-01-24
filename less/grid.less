@@ -29,14 +29,16 @@ body {
       grid-column-start: 2;
       grid-column-end: 3;
       display: grid;
-      grid-template-columns: repeat(10, 1fr);
+     
 
       main{
         display: grid;
-        grid-column-start: 1;
-        grid-column-end: 11;
+        
+
         section{
-            div{
+            grid-template-columns: repeat(10, 1fr);
+            display: grid;
+            div.wrapper{
                 grid-column-start: 2;
                 grid-column-end: 10;
                 display: grid;

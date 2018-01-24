@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "run-script-os",
+    "start": "concurrent \"run-script-os\" \"gulp\" ",
     "start:win32": "browser-sync start --server --files '**/*.css, **/*.html, **/*.js, !node_modules/**/*' --directory --port 7788 --browser \"C:\\Program Files\\Firefox Developer Edition\\firefox.exe\"",
     "//": "Hello! If you are having trouble running this command. Try changing Firefox Developer Edition to FirefoxDeveloperEdition",
     "start:darwin:linux": "browser-sync start --server --files '**/*.css, **/*.html, **/*.js, !node_modules/**/*' --directory --port 7777 --browser 'Firefox Developer Edition'"
@@ -16,9 +16,11 @@
     "run-script-os": "^1.0.2"
   },
   "dependencies": {
+    "concurrently": "^3.5.1",
     "gulp-autoprefixer": "^4.1.0",
     "gulp-cssmin": "^0.2.0",
     "gulp-less": "^3.4.0",
-    "gulp-plumber": "^1.2.0"
+    "gulp-plumber": "^1.2.0",
+    "gulp-sourcemaps": "^1.12.1"
   }
 }
