@@ -30,12 +30,13 @@ main > section{
         background: @lt-gray;
     }
 }
-#section-1{
 
-}
 #section-2{
     &-a{
         background: @mid-gray;
+        h3{
+            margin-bottom: 30px;
+        }
 
     }
     &-b{
@@ -51,6 +52,7 @@ main > section{
 
 .badge{
     justify-self: self-start;
+    grid-column: ~" 1 / -1 ";
     font-size: 13px;
     line-height: 18px;
     font-weight: 400;
@@ -71,5 +73,46 @@ main > section{
     }
     &.yellow{
         background: @yellow;
+    }
+    &.orange{
+        background: @orange;
+    }
+}
+
+.overlay{
+    display: grid;
+    grid-column: span 8;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 20px;
+    .left, .right{
+        background: rgba(0, 0, 0, .4);
+        padding: 30px 20px;
+    }
+    .left{
+        width: 250px;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        z-index: 10;
+        margin-top: 15px;
+        margin-bottom: 50px;
+    }
+    .right{
+        width: 250px;
+        grid-column-end: 7;
+        grid-row-start: 1;
+        z-index: 10;
+        margin-top: 15px;
+        margin-bottom: 50px;
+    }
+    p {
+        color: #ffffff;
+        padding-bottom: 20px;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .img-wrapper{
+        grid-column-start: 1;
+        grid-column-end: -1;
+        grid-row-start: 1;
     }
 }

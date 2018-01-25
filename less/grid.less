@@ -29,14 +29,15 @@ body {
       grid-column-start: 2;
       grid-column-end: 3;
       display: grid;
-     
+      grid-template-rows: minmax(50px, 1fr);
 
       main{
         display: grid;
-        
-
+    
         section{
-            grid-template-columns: repeat(10, 1fr);
+            grid-template-columns: 95px repeat(7, 1fr) 75px;
+            grid-auto-flow: row;
+            grid-auto-rows: auto;
             display: grid;
             div.wrapper{
                 grid-auto-flow: row;
@@ -46,18 +47,42 @@ body {
                 grid-gap: 20px;
                 grid-template-columns: repeat(9, 1fr);
                 grid-template-rows: repeat( autofill, max-content );
-                p, h6, h4, .cross-through, picture{
+                h6, h4, .cross-through, picture{
                     grid-column: span 9;
                 }
+                p{
+                    grid-column: span 7;
+                }
                 .half{
-                    grid-column: span 5;
-                    grid-gap: 50px;
+                    grid-column: span 4;
+                    display: grid;
+                    grid-auto-rows: auto, auto;
+                    grid-template-columns: 40px 1fr;
+                    .numeral{
+                        display: inline-block;
+                    }
+                    h6,p{
+                        grid-column-start: 2;
+                        grid-column-end: 10;
+                    }
+                }
+                .overlay{
+                    display: grid;
+                    grid-column: span 8;
                 }
             }
             &#section-1{
-                h6{
+                h1, h6{
+                    grid-column: span 5;
+                }
+            }
+            &#section-2-a{
+                h4{
                     grid-column: span 6;
                 }
+            }
+            h3{
+                grid-column: span 9;
             }
         }
       }
