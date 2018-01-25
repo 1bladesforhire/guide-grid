@@ -220,6 +220,15 @@ p {
   line-height: 28px;
   color: #212121;
 }
+.thirds .title {
+  font-size: 20px;
+  line-height: 30px;
+}
+.thirds .desc {
+  font-size: 22px;
+  line-height: 28px;
+  letter-spacing: .025em;
+}
 nav a {
   font-size: 16px;
   line-height: 42px;
