@@ -47,9 +47,13 @@ h1 {
 
 h2 {
     font-size: 52px;
-    line-height: 80px;
-    color: @badge-gray;
+    line-height: 52px;
+    color: @text-lt-gray;
     font-weight: 500;
+    &.super{
+        font-weight: 900;
+        color: @badge-gray;
+    }
 }
 
 h3 {
@@ -84,7 +88,16 @@ p {
     line-height: 20px;
     color: @body-text-black;
     letter-spacing: .025em;
-    
+    &.title{
+        font-size: 22px;
+        line-height: 28px;
+        font-weight: 400;
+    }
+    &.ms-store{
+        font-size: 24px;
+        line-height: 42px;
+        font-weight: 600;
+    }
 }
 .section_title{
     font-size: 28px;
