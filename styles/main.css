@@ -98,8 +98,8 @@ main > section {
 .overlay p {
   color: #ffffff;
   padding-bottom: 20px;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 15px;
+  line-height: 20px;
 }
 .overlay .img-wrapper {
   grid-column-start: 1;
@@ -207,6 +207,7 @@ p {
   font-size: 15px;
   line-height: 20px;
   color: #212121;
+  letter-spacing: .025em;
 }
 .section_title {
   font-size: 28px;
