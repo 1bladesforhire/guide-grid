@@ -79,9 +79,17 @@ main > section {
   background: rgba(0, 0, 0, 0.4);
   padding: 30px 20px;
 }
+.overlay .left p,
+.overlay .right p {
+  color: #ffffff;
+  padding-bottom: 20px;
+  font-size: 15px;
+  line-height: 20px;
+}
 .overlay .left {
   width: 250px;
   grid-column-end: 3;
+  grid-column-start: auto;
   grid-row-start: 1;
   z-index: 10;
   margin-top: 15px;
@@ -89,25 +97,20 @@ main > section {
 }
 .overlay .right {
   width: 250px;
-  grid-column-end: 7;
-  grid-row-start: 1;
+  grid-column-end: 6;
+  grid-row-start: auto;
   z-index: 10;
   margin-top: 15px;
   margin-bottom: 50px;
 }
-.overlay p {
-  color: #ffffff;
-  padding-bottom: 20px;
-  font-size: 15px;
-  line-height: 20px;
-}
 .overlay .img-wrapper {
   grid-column-start: 1;
-  grid-column-end: -1;
+  grid-column-end: 8;
   grid-row-start: 1;
 }
 nav {
   background: #1d1d1d;
+  overflow-y: scroll;
 }
 nav ul {
   list-style-type: none;
@@ -223,6 +226,10 @@ p.ms-store {
   line-height: 42px;
   font-weight: 600;
 }
+p.large {
+  font-size: 18px;
+  line-height: 24px;
+}
 .section_title {
   font-size: 28px;
   line-height: 28px;
@@ -250,6 +257,9 @@ nav a {
 }
 .m-skip-to-main {
   display: none;
+}
+a {
+  color: #076dcc;
 }
 html {
   -webkit-box-sizing: border-box;
@@ -294,6 +304,10 @@ header nav {
   grid-auto-rows: auto;
   display: grid;
 }
+#mainArea main section.small {
+  padding-top: 0;
+  padding-bottom: 0;
+}
 #mainArea main section div.wrapper {
   grid-auto-flow: row;
   grid-column-start: 2;
@@ -305,7 +319,7 @@ header nav {
   grid-template-rows: repeat(autofill, max-content);
 }
 #mainArea main section div.wrapper h6,
-#mainArea main section div.wrapper h4,
+#mainArea main section div.wrapper h2,
 #mainArea main section div.wrapper .cross-through,
 #mainArea main section div.wrapper picture {
   grid-column: span 9;
@@ -316,7 +330,6 @@ header nav {
 #mainArea main section div.wrapper .half {
   grid-column: span 4;
   display: grid;
-  grid-auto-rows: auto, auto;
   grid-template-columns: 40px 1fr;
 }
 #mainArea main section div.wrapper .half .numeral {
@@ -327,17 +340,37 @@ header nav {
   grid-column-start: 2;
   grid-column-end: 10;
 }
-#mainArea main section div.wrapper .overlay {
-  display: grid;
-  grid-column: span 8;
+#mainArea main section div.wrapper .half p {
+  padding-right: 50px;
 }
 #mainArea main section#section-1 h1,
 #mainArea main section#section-1 h6 {
   grid-column: span 5;
 }
-#mainArea main section#section-2-1 h4 {
-  grid-column: span 6;
-}
 #mainArea main section h3 {
   grid-column: span 9;
+}
+#mainArea main section#section-4-1 h5 {
+  grid-column: span 8;
+}
+hr {
+  border-top: 1px solid #bfbfbf;
+  margin-top: 90px;
+  margin-bottom: 60px;
+  grid-column-start: 2;
+  grid-column-end: 8;
+  width: 100%;
+}
+.thirds {
+  grid-column: span 3;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+div {
+  grid-column: span 10;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+div h4 {
+  grid-column: span 5;
 }

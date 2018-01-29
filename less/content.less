@@ -87,10 +87,17 @@ main > section{
     .left, .right{
         background: rgba(0, 0, 0, .4);
         padding: 30px 20px;
+        p {
+            color: #ffffff;
+            padding-bottom: 20px;
+            font-size: 15px;
+            line-height: 20px;
+        }
     }
     .left{
         width: 250px;
         grid-column-end: 3;
+        grid-column-start: auto;
         grid-row-start: 1;
         z-index: 10;
         margin-top: 15px;
@@ -98,21 +105,16 @@ main > section{
     }
     .right{
         width: 250px;
-        grid-column-end: 7;
-        grid-row-start: 1;
+        grid-column-end: 6;
+        grid-row-start: auto;
         z-index: 10;
         margin-top: 15px;
         margin-bottom: 50px;
     }
-    p {
-        color: #ffffff;
-        padding-bottom: 20px;
-        font-size: 15px;
-        line-height: 20px;
-    }
+    
     .img-wrapper{
         grid-column-start: 1;
-        grid-column-end: -1;
+        grid-column-end: 8;
         grid-row-start: 1;
     }
 }
