@@ -101,9 +101,12 @@ hr{
     width: 100%; 
 }
 .thirds{
-    grid-column: span 3;
+    grid-column: span 2;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    .title, .desc{
+        grid-column: span 3;
+    }
     p {
         grid-column: span 2;
     
@@ -114,7 +117,7 @@ hr{
     }
 }
 
-
+.direction
 //base grid styles
 div{
     h4{

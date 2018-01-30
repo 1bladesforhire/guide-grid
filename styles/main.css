@@ -225,6 +225,23 @@ main > section {
   grid-column-end: 8;
   grid-row-start: 1;
 }
+.three_cs {
+  grid-column: span 2;
+  justify-self: right;
+  text-align: right;
+}
+.three_cs p {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 28px;
+  color: black;
+}
+.three_cs_content {
+  grid-column: span 5;
+}
+.tall {
+  padding-top: 20px;
+}
 nav {
   background: #1d1d1d;
   overflow-y: scroll;
@@ -368,6 +385,14 @@ p.large {
   line-height: 28px;
   letter-spacing: .025em;
 }
+.thirds .drawer {
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.thirds .drawer:after {
+  content: "\B2352";
+}
 nav a {
   font-size: 16px;
   line-height: 42px;
@@ -387,14 +412,19 @@ a {
 }
 .cta {
   background: #212121;
+  grid-column: span 2;
+  padding: 15px 10px;
+}
+.cta a {
   color: white;
   text-decoration: none;
   text-transform: uppercase;
 }
-.cta:after {
+.cta a:after {
   content: "\EB8E";
+  padding-left: 20px;
 }
-.cta:hover {
+.cta a:hover {
   text-decoration: underline;
 }
 html {
@@ -493,9 +523,13 @@ hr {
   width: 100%;
 }
 .thirds {
-  grid-column: span 3;
+  grid-column: span 2;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+}
+.thirds .title,
+.thirds .desc {
+  grid-column: span 3;
 }
 .thirds p {
   grid-column: span 2;
@@ -504,7 +538,7 @@ hr {
   padding-top: 10px;
   padding-bottom: 10px;
 }
-div h4 {
+.direction div h4 {
   grid-column: span 5;
 }
 .row {

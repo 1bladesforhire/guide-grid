@@ -124,6 +124,15 @@ p {
         font-size: 22px;
         line-height: 28px;
         letter-spacing: .025em;
+        
+    }
+    .drawer {
+        display: block;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        &:after{
+            content: "\B2352";
+        }
     }
 }
 nav a{
@@ -145,14 +154,19 @@ a{
 }
 .cta{
     background: @body-text-black;
-    color: white;
-    text-decoration: none;
-    text-transform: uppercase;
-    &:after{
-        content: "\EB8E"
-    }    
-    &:hover{
-        text-decoration: underline;
+    grid-column: span 2;
+    padding: 15px 10px;
+    a{
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+        &:after{
+            content: "\EB8E";
+            padding-left: 20px;
+        }    
+        &:hover{
+            text-decoration: underline;
+        }
     }
 }
 
