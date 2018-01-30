@@ -117,13 +117,24 @@ hr{
     }
 }
 
-.direction
-//base grid styles
-div{
-    h4{
-        grid-column: span 5;
+.direction{
+    grid-column: span 10;
+    .users{
+        grid-column: span 3;
+        grid-column-start: 1;
+        padding-bottom: 10px;
+    }
+    .needs {
+        grid-column: span 3;
+        padding-bottom: 10px;
     }
 }
+//base grid styles
+
+h4{
+    grid-column: span 5;
+}
+
 .row{
     grid-column: span 10;
     display: grid;

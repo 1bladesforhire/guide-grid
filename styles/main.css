@@ -538,7 +538,19 @@ hr {
   padding-top: 10px;
   padding-bottom: 10px;
 }
-.direction div h4 {
+.direction {
+  grid-column: span 10;
+}
+.direction .users {
+  grid-column: span 3;
+  grid-column-start: 1;
+  padding-bottom: 10px;
+}
+.direction .needs {
+  grid-column: span 3;
+  padding-bottom: 10px;
+}
+h4 {
   grid-column: span 5;
 }
 .row {
