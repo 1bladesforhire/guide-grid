@@ -34,6 +34,12 @@ main > section {
 #section-1-2 {
   background: #dadada;
 }
+#section-1-2 h5 {
+  grid-column: span 6;
+}
+#section-1-2 div > p {
+  grid-column: span 4;
+}
 #section-2 {
   background: #cacaca;
 }
@@ -186,11 +192,13 @@ main > section {
 .overlay .right {
   background: rgba(0, 0, 0, 0.4);
   padding: 30px 20px;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  grid-row-gap: 20px;
 }
 .overlay .left p,
 .overlay .right p {
   color: #ffffff;
-  padding-bottom: 20px;
   font-size: 15px;
   line-height: 20px;
 }
@@ -364,11 +372,30 @@ nav a {
   font-size: 16px;
   line-height: 42px;
 }
+.cross-through {
+  font-size: 32px;
+  font-weight: 100;
+  background-image: url('assets/arrow.svg');
+  background-size: contain;
+  background-position: 0 0;
+}
 .m-skip-to-main {
   display: none;
 }
 a {
   color: #076dcc;
+}
+.cta {
+  background: #212121;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.cta:after {
+  content: "\EB8E";
+}
+.cta:hover {
+  text-decoration: underline;
 }
 html {
   -webkit-box-sizing: border-box;
@@ -428,12 +455,8 @@ header nav {
 }
 #mainArea main section div.wrapper h6,
 #mainArea main section div.wrapper h2,
-#mainArea main section div.wrapper .cross-through,
 #mainArea main section div.wrapper picture {
   grid-column: span 9;
-}
-#mainArea main section div.wrapper p {
-  grid-column: span 7;
 }
 #mainArea main section div.wrapper .half {
   grid-column: span 4;
@@ -481,11 +504,18 @@ hr {
   padding-top: 10px;
   padding-bottom: 10px;
 }
-div {
+div h4 {
+  grid-column: span 5;
+}
+.row {
   grid-column: span 10;
   display: grid;
-  grid-template-columns: repeat(7, 1fr);
+  grid-template-columns: repeat(8, 1fr);
+  grid-column-gap: 20px;
 }
-div h4 {
+p {
+  grid-column: span 7;
+}
+h5 {
   grid-column: span 5;
 }

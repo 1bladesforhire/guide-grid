@@ -27,7 +27,14 @@ main > section{
     background: @dk-gray;
     }
     &-2{
+        h5{
+            grid-column: span 6;
+        }
         background: @lt-gray;
+        div > p{
+
+            grid-column: span 4;
+        }
     }
 }
 
@@ -186,9 +193,10 @@ main > section{
     .left, .right{
         background: rgba(0, 0, 0, .4);
         padding: 30px 20px;
+        align-content: flex-start;
+        grid-row-gap: 20px;
         p {
             color: #ffffff;
-            padding-bottom: 20px;
             font-size: 15px;
             line-height: 20px;
         }

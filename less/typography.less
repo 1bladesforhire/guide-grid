@@ -130,10 +130,29 @@ nav a{
     font-size: 16px;
     line-height: 42px;
 }
+.cross-through{
+    font-size: 32px;
+    font-weight: 100;
+    background-image: url('assets/arrow.svg');
+    background-size: contain;
+    background-position: 0 0;
+}
 .m-skip-to-main{
     display: none;
 }
 a{
     color: @ms-blue;
+}
+.cta{
+    background: @body-text-black;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    &:after{
+        content: "\EB8E"
+    }    
+    &:hover{
+        text-decoration: underline;
+    }
 }
 

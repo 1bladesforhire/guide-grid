@@ -51,12 +51,10 @@ header{
                 grid-template-columns: repeat(9, 1fr);
                 grid-template-rows: repeat( autofill, max-content );
                 
-                h6, h2, .cross-through, picture{
+                h6, h2, picture{
                     grid-column: span 9;
                 }
-                p{
-                    grid-column: span 7;
-                }
+
                 .half{
                     grid-column: span 4;
                     display: grid;
@@ -115,11 +113,23 @@ hr{
         }
     }
 }
+
+
+//base grid styles
 div{
-    grid-column: span 10;
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
     h4{
         grid-column: span 5;
     }
+}
+.row{
+    grid-column: span 10;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-column-gap: 20px;
+}
+p{
+    grid-column: span 7;
+}
+h5{
+    grid-column: span 5;
 }
