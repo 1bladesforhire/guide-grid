@@ -23,33 +23,129 @@ main > section{
 }
 #section-1{
     background: @lt-gray;
-    &-a{
-    background: @mid-gray;
+    &-1{
+    background: @dk-gray;
     }
-    &-b{
+    &-2{
         background: @lt-gray;
     }
 }
 
 #section-2{
-    &-a{
-        background: @mid-gray;
+    background: @dk-gray;
+    &-1{
+        background: @dk-gray;
         h3{
             margin-bottom: 30px;
         }
-
     }
-    &-b{
-
+    &-2{
+        background: @drkr-gray;
     }
-    &-c{
-
+    &-3{
+        background: @ltr-gray;
     }
-    &-d{
-
+    &-4{
+        background: @mid-gray;
+    }
+    &-5{
+        background: @dkmid-gray;
+    }
+    &-6{
+        background: @ltmid-gray;
+    }
+    &-7{
+        background: @dk-white;
+    }
+}
+#section-3{
+    background: @dk-gray;
+    &-1 {
+        background: @dk-gray;
+    }
+    &-2 {
+        background: @other-gray;
+    }
+    &-3 {
+        background: @ltr-gray;
+    }
+    &-4 {
+        background: @other-lt-gray;
     }
 }
 
+#section-4{
+    background: @other-dk-white;
+    &-1{
+        background: @other-dk-white;
+    }
+    &-2{
+        background: @another-gray;
+    }
+    &-3{
+        background: @ltlt-white;
+    }
+    &-4{
+        background: @dk-gray;
+    }
+    &-5{
+        background: @other-gray;
+    }
+    &-6{
+        background: @ltr-gray;
+    }
+    &-7{
+        background: @other-lt-gray;
+    }
+    &-8{
+        background: @mid-white;
+    }
+    &-9{
+        background: @dkdk-gray;
+    }
+}
+#section-5{
+    background: @dk-gray;
+    &-1{
+        background:@dk-gray;
+    }
+    &-2{
+        background: @other-gray;
+    }
+    &-3{
+        background: @drkr-white;
+    }
+    &-4{
+        background: @ltlt-gray;
+    }
+    &-5{
+        background: @other-gray;
+    }
+    &-6{
+        background: @midmid-gray;
+    }
+    &-7{
+        background: @other-dk-white;
+    }
+    &-8{
+        background: @other-gray;
+    }
+    &-9{
+        background: @other-dk-white;
+    }
+    &-10{
+        background: @other-gray;
+    }
+    &-11{
+        background: @midmid-gray;
+    }
+    &-12{
+        background: @ltlt-white;
+    }
+    &-13{
+        background: @other-dk-white;
+    }
+}
 .badge{
     justify-self: self-start;
     grid-column: ~" 1 / -1 ";
@@ -76,6 +172,9 @@ main > section{
     }
     &.orange{
         background: @orange;
+    }
+    &.green{
+
     }
 }
 
@@ -106,7 +205,8 @@ main > section{
     .right{
         width: 250px;
         grid-column-end: 6;
-        grid-row-start: auto;
+        grid-column-start: auto;
+        grid-row-start: 1;
         z-index: 10;
         margin-top: 15px;
         margin-bottom: 50px;
