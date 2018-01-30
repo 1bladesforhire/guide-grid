@@ -69,7 +69,7 @@ header{
                         grid-column-end: 10;
                     }
                     p{
-                        padding-right: 50px;
+                        padding-right: 100px;
                     }
 
                 }
@@ -98,14 +98,22 @@ hr{
     border-top: 1px solid @hr-gray;
     margin-top: 90px;
     margin-bottom: 60px;
-    grid-column-start: 2;
-    grid-column-end: 8;
+    grid-column-start: 1;
+    grid-column-end: 7;
     width: 100%; 
 }
 .thirds{
     grid-column: span 3;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    p {
+        grid-column: span 2;
+    
+        .title{
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+    }
 }
 div{
     grid-column: span 10;
