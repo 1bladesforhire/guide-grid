@@ -162,8 +162,8 @@ main > section {
   grid-column:  1 / -1 ;
   font-size: 13px;
   line-height: 18px;
-  font-weight: 400;
   height: 18px;
+  font-weight: 400;
   outline-color: transparent;
   color: #000000;
   padding: 0 7px 1px 7px;
@@ -184,6 +184,9 @@ main > section {
 }
 .badge.orange {
   background: #FF8C00;
+}
+.badge.green {
+  background: #00b294;
 }
 .overlay {
   display: grid;
@@ -244,6 +247,7 @@ main > section {
 }
 .tall {
   padding-top: 20px;
+  font-family: 'SegoeUISemiLight';
 }
 nav {
   background: #1d1d1d;
@@ -338,6 +342,9 @@ h5 {
   font-size: 24px;
   line-height: 30px;
   color: #313131;
+}
+h5.heavy {
+  font-family: 'SegoeUISemiLight';
 }
 h6 {
   font-weight: 400;
@@ -534,10 +541,12 @@ hr {
 .thirds .desc {
   grid-column: span 3;
 }
-.thirds p {
+.thirds p,
+.thirds .content {
   grid-column: span 2;
 }
-.thirds p .title {
+.thirds p .title,
+.thirds .content .title {
   padding-top: 10px;
   padding-bottom: 10px;
 }
