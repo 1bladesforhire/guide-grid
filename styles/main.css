@@ -67,6 +67,9 @@ main > section {
 #section-2-7 {
   background: #f3f3f3;
 }
+#section-2-8 {
+  background: #ececec;
+}
 #section-3 {
   background: #cacaca;
 }
@@ -549,6 +552,38 @@ hr {
 .direction .needs {
   grid-column: span 3;
   padding-bottom: 10px;
+}
+.table-three .titles {
+  color: #212121;
+  font-weight: 600;
+}
+.table-three .channel {
+  grid-column: span 1;
+  font-weight: 600;
+}
+.table-three .role {
+  grid-column: span 2;
+  margin-bottom: 20px;
+}
+.table-three .message {
+  grid-column: span 2;
+}
+.tt-row {
+  grid-column: span 10;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(8, 1fr);
+}
+.tt-row:before {
+  content: "";
+  width: 650%;
+  border: none;
+  background: #e2e2e2;
+  bottom: 0px;
+  height: 1px;
+  margin: 10px;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
 }
 h4 {
   grid-column: span 5;

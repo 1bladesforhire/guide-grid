@@ -117,6 +117,7 @@ hr{
     }
 }
 
+//Audience
 .direction{
     grid-column: span 10;
     .users{
@@ -127,6 +128,42 @@ hr{
     .needs {
         grid-column: span 3;
         padding-bottom: 10px;
+    }
+}
+
+//channels
+.table-three{
+    .titles{
+        color: @body-text-black;
+        font-weight: 600;
+    }
+    .channel{
+        grid-column: span 1;
+        font-weight: 600;
+    }
+    .role{
+        grid-column: span 2;
+        margin-bottom: 20px;
+    }
+    .message{
+        grid-column: span 2;
+    }
+}
+.tt-row {
+    grid-column: span 10;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(8, 1fr);
+    &:before {
+        content: "";
+        width: 650%;
+        border: none;
+        background: @ltmid-gray;
+        //position: absolute;
+        bottom: 0px;
+        height: 1px;
+        margin: 10px;
+        align-self: flex-end;
     }
 }
 //base grid styles
