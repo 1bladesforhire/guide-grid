@@ -51,9 +51,7 @@ header{
                 grid-template-columns: repeat(9, 1fr);
                 grid-template-rows: repeat( autofill, max-content );
                 
-                h6, h2, picture{
-                    grid-column: span 9;
-                }
+               
 
                 .half{
                     grid-column: span 4;
@@ -131,6 +129,24 @@ hr{
     }
 }
 
+//Empowering
+.tt-row {
+    grid-column: span 10;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(8, 1fr);
+    &:before {
+        content: "";
+        width: 650%;
+        border: none;
+        background: @ltmid-gray;
+        bottom: 0px;
+        height: 1px;
+        margin: 10px;
+        align-self: flex-end;
+    }
+}
+
 //channels
 .table-three{
     .titles{
@@ -149,22 +165,17 @@ hr{
         grid-column: span 2;
     }
 }
-.tt-row {
-    grid-column: span 10;
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: repeat(8, 1fr);
-    &:before {
-        content: "";
-        width: 650%;
-        border: none;
-        background: @ltmid-gray;
-        bottom: 0px;
-        height: 1px;
-        margin: 10px;
-        align-self: flex-end;
+
+//editorial sections
+.mag{
+    
+    h2{
+        grid-column-start: 2;
+        grid-column-end: -1;
+        color: @body-text-black;
     }
 }
+
 //base grid styles
 
 h4{
@@ -182,4 +193,7 @@ p{
 }
 h5{
     grid-column: span 5;
+}
+h6, h2, picture{
+    grid-column: span 9;
 }

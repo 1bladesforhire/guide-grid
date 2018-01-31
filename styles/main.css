@@ -325,6 +325,9 @@ h2.super {
   font-weight: 900;
   color: #333333;
 }
+h2.light {
+  font-weight: 100;
+}
 h3 {
   font-weight: 100;
   font-size: 80px;
@@ -333,9 +336,9 @@ h3 {
 }
 h4 {
   font-size: 52px;
-  font-weight: 600;
   line-height: 60px;
   color: #212121;
+  font-family: 'SegoeUISemiBold';
 }
 h5 {
   font-weight: 100;
@@ -364,6 +367,7 @@ p.title {
   font-size: 22px;
   line-height: 28px;
   font-weight: 400;
+  font-family: 'SegoeUISemiBold';
 }
 p.ms-store {
   font-size: 24px;
@@ -389,6 +393,7 @@ p.large {
 .thirds .title {
   font-size: 20px;
   line-height: 30px;
+  font-family: 'SegoeUISemiBold';
 }
 .thirds .desc {
   font-size: 22px;
@@ -401,7 +406,8 @@ p.large {
   padding-bottom: 10px;
 }
 .thirds .drawer:after {
-  content: "\B2352";
+  content: "\E70D";
+  font-family: "MWF-MDL2";
 }
 nav a {
   font-size: 16px;
@@ -431,8 +437,9 @@ a {
   text-transform: uppercase;
 }
 .cta a:after {
-  content: "\EB8E";
+  content: "\E76C";
   padding-left: 20px;
+  font-family: "MWF-MDL2";
 }
 .cta a:hover {
   text-decoration: underline;
@@ -492,11 +499,6 @@ header nav {
   grid-template-columns: repeat(9, 1fr);
   grid-template-rows: repeat(autofill, -webkit-max-content);
   grid-template-rows: repeat(autofill, max-content);
-}
-#mainArea main section div.wrapper h6,
-#mainArea main section div.wrapper h2,
-#mainArea main section div.wrapper picture {
-  grid-column: span 9;
 }
 #mainArea main section div.wrapper .half {
   grid-column: span 4;
@@ -562,21 +564,6 @@ hr {
   grid-column: span 3;
   padding-bottom: 10px;
 }
-.table-three .titles {
-  color: #212121;
-  font-weight: 600;
-}
-.table-three .channel {
-  grid-column: span 1;
-  font-weight: 600;
-}
-.table-three .role {
-  grid-column: span 2;
-  margin-bottom: 20px;
-}
-.table-three .message {
-  grid-column: span 2;
-}
 .tt-row {
   grid-column: span 10;
   display: grid;
@@ -594,6 +581,26 @@ hr {
   -ms-flex-item-align: end;
   align-self: flex-end;
 }
+.table-three .titles {
+  color: #212121;
+  font-weight: 600;
+}
+.table-three .channel {
+  grid-column: span 1;
+  font-weight: 600;
+}
+.table-three .role {
+  grid-column: span 2;
+  margin-bottom: 20px;
+}
+.table-three .message {
+  grid-column: span 2;
+}
+.mag h2 {
+  grid-column-start: 2;
+  grid-column-end: -1;
+  color: #212121;
+}
 h4 {
   grid-column: span 5;
 }
@@ -608,4 +615,9 @@ p {
 }
 h5 {
   grid-column: span 5;
+}
+h6,
+h2,
+picture {
+  grid-column: span 9;
 }
