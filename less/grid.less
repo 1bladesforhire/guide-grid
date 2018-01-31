@@ -137,10 +137,9 @@ hr{
     grid-template-columns: repeat(8, 1fr);
     &:before {
         content: "";
-        width: 650%;
+        width: 550%;
         border: none;
         background: @ltmid-gray;
-        bottom: 0px;
         height: 1px;
         margin: 10px;
         align-self: flex-end;
@@ -231,7 +230,22 @@ hr{
     }
 }
 
-
+#section-3-4{
+    .dos, .donts, .explanation{
+        grid-column: span 2;
+        .title{
+            font-family: 'SegoeUISemiBold';
+            text-decoration: none;
+            font-size: 22px;
+        }
+    }
+    .dos .title{
+        color: @text-green;
+    }
+    .donts .title{
+        color: @text-red;
+    }
+}
 //base grid styles
 
 h4{

@@ -572,10 +572,9 @@ hr {
 }
 .tt-row:before {
   content: "";
-  width: 650%;
+  width: 550%;
   border: none;
   background: #e2e2e2;
-  bottom: 0px;
   height: 1px;
   margin: 10px;
   -ms-flex-item-align: end;
@@ -647,6 +646,24 @@ hr {
   text-decoration: line-through;
 }
 #section-3-3 .donts .title {
+  color: #a80000;
+}
+#section-3-4 .dos,
+#section-3-4 .donts,
+#section-3-4 .explanation {
+  grid-column: span 2;
+}
+#section-3-4 .dos .title,
+#section-3-4 .donts .title,
+#section-3-4 .explanation .title {
+  font-family: 'SegoeUISemiBold';
+  text-decoration: none;
+  font-size: 22px;
+}
+#section-3-4 .dos .title {
+  color: #107c10;
+}
+#section-3-4 .donts .title {
   color: #a80000;
 }
 h4 {
