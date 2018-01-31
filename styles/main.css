@@ -596,10 +596,45 @@ hr {
 .table-three .message {
   grid-column: span 2;
 }
-.mag h2 {
+.mag {
   grid-column-start: 2;
-  grid-column-end: -1;
+  grid-column-end: 7;
+}
+.mag h2 {
   color: #212121;
+}
+.mag .thirds .desc,
+.mag .thirds .title {
+  grid-column: span 1;
+  margin-top: 10px;
+}
+.mag .thirds .title {
+  font-size: 22px;
+  color: #373737;
+}
+.mag .thirds .desc {
+  font-size: 18px;
+  font-family: 'SegoeUISemiLight';
+}
+#section-3-3 .thirds .title {
+  font-size: 28px;
+  font-family: 'SegoeUISemiBold';
+  letter-spacing: .025em;
+  padding-bottom: 10px;
+}
+#section-3-3 .thirds .desc {
+  font-size: 15px;
+  line-height: 20px;
+  padding-right: 100px;
+  margin-bottom: 90px;
+}
+#section-3-3 .dos .title,
+#section-3-3 .donts .title {
+  font-family: 'SegoeUISemiBold';
+  text-decoration: none;
+}
+#section-3-3 .donts p {
+  text-decoration: line-through;
 }
 h4 {
   grid-column: span 5;
