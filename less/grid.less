@@ -203,17 +203,31 @@ hr{
             font-size: 15px;
             line-height: 20px;
             padding-right: 100px;
-            margin-bottom: 90px;
+            margin-bottom: 50px;
         }
     }
     .dos, .donts{
+        grid-column: span 2;
         .title{
             font-family: 'SegoeUISemiBold';
             text-decoration: none;
         }
     }
-    .donts p{
+    .dos{
+        .title{
+            color: @text-green;
+        }
+        p {
+            padding-right: 50px;
+        }
+    }
+    .donts {
+        p{
         text-decoration: line-through;
+        }
+        .title{
+            color: @text-red;
+        }
     }
 }
 

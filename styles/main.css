@@ -626,15 +626,28 @@ hr {
   font-size: 15px;
   line-height: 20px;
   padding-right: 100px;
-  margin-bottom: 90px;
+  margin-bottom: 50px;
+}
+#section-3-3 .dos,
+#section-3-3 .donts {
+  grid-column: span 2;
 }
 #section-3-3 .dos .title,
 #section-3-3 .donts .title {
   font-family: 'SegoeUISemiBold';
   text-decoration: none;
 }
+#section-3-3 .dos .title {
+  color: #107c10;
+}
+#section-3-3 .dos p {
+  padding-right: 50px;
+}
 #section-3-3 .donts p {
   text-decoration: line-through;
+}
+#section-3-3 .donts .title {
+  color: #a80000;
 }
 h4 {
   grid-column: span 5;
