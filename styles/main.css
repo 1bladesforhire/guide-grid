@@ -325,8 +325,17 @@ h2.super {
   font-weight: 900;
   color: #333333;
 }
+h2.super.tall {
+  font-size: 80px;
+  line-height: 80px;
+}
 h2.light {
   font-weight: 100;
+}
+h2.heavy {
+  font-family: 'SegoeUISemiBold';
+  font-weight: 600;
+  color: #212121;
 }
 h3 {
   font-weight: 100;
@@ -524,11 +533,17 @@ header nav {
   grid-column: span 9;
 }
 #mainArea main section#section-4-1 h5 {
-  grid-column: span 8;
+  grid-column: span 5;
+}
+#mainArea main section#section-4-1 .half {
+  grid-column: span 3;
+}
+#mainArea main section#section-4-1 .title {
+  padding-bottom: 30px;
 }
 hr {
   border-top: 1px solid #bfbfbf;
-  margin-top: 90px;
+  margin-top: 80px;
   margin-bottom: 60px;
   grid-column-start: 1;
   grid-column-end: 7;
@@ -629,24 +644,12 @@ hr {
 }
 #section-3-3 .dos,
 #section-3-3 .donts {
-  grid-column: span 2;
+  grid-column: span 3;
 }
 #section-3-3 .dos .title,
 #section-3-3 .donts .title {
   font-family: 'SegoeUISemiBold';
   text-decoration: none;
-}
-#section-3-3 .dos .title {
-  color: #107c10;
-}
-#section-3-3 .dos p {
-  padding-right: 50px;
-}
-#section-3-3 .donts p {
-  text-decoration: line-through;
-}
-#section-3-3 .donts .title {
-  color: #a80000;
 }
 #section-3-4 .dos,
 #section-3-4 .donts,
@@ -658,13 +661,37 @@ hr {
 #section-3-4 .explanation .title {
   font-family: 'SegoeUISemiBold';
   text-decoration: none;
+}
+#section-3-4 .explanation .title {
+  font-size: 15px;
+  color: #373737;
+  font-weight: 600;
+  letter-spacing: .025em;
+}
+#section-3-4 .dos .title,
+#section-3-4 .donts .title {
   font-size: 22px;
 }
-#section-3-4 .dos .title {
+.dos .title {
   color: #107c10;
 }
-#section-3-4 .donts .title {
+.dos p {
+  padding-right: 50px;
+}
+.donts p {
+  text-decoration: line-through;
+}
+.donts .title {
   color: #a80000;
+}
+#section-4-2 .thirds h5 {
+  padding-bottom: 10px;
+}
+#section-4-2 .donts {
+  grid-column: span 3;
+}
+#section-4-2 .donts p {
+  padding-bottom: 10px;
 }
 h4 {
   grid-column: span 5;
