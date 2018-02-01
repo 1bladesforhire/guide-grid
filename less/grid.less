@@ -51,25 +51,6 @@ header{
                 grid-template-columns: repeat(9, 1fr);
                 grid-template-rows: repeat( autofill, max-content );
                 
-               
-
-                .half{
-                    grid-column: span 4;
-                    display: grid;
-                    grid-template-columns: 40px 1fr;
-                    .numeral{
-                        display: inline-block;
-                    }
-                    h6,p{
-                        grid-column-start: 2;
-                        grid-column-end: 10;
-                    }
-                    p{
-                        padding-right: 100px;
-                    }
-
-                }
-
             }
             &#section-1{
                 h1, h6{
@@ -104,6 +85,24 @@ hr{
     grid-column-end: 7;
     width: 100%; 
 }
+
+.half{
+    grid-column: span 4;
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    .numeral{
+        display: inline-block;
+    }
+    h6,p{
+        grid-column-start: 2;
+        grid-column-end: 10;
+    }
+    p{
+        padding-right: 100px;
+    }
+
+}
+
 .thirds{
     grid-column: span 2;
     display: grid;
@@ -161,6 +160,7 @@ hr{
     .channel{
         grid-column: span 1;
         font-weight: 600;
+        grid-column-start: 1;
     }
     .role{
         grid-column: span 2;
@@ -261,12 +261,47 @@ hr{
     }
 }
 #section-4-2{
-    .thirds h5{
-        padding-bottom: 10px;
+    .thirds{
+        h5,p{
+            padding-bottom: 10px;
+        }
     }
     .donts{
         grid-column: span 3;
         p{
+            padding-bottom: 10px;
+        }
+    }
+    .dos, .donts {
+        .title, p{
+        font-size: 15px;
+        }
+    }
+}
+
+.left, .middle, .right{
+    grid-column: span 2;
+    color: @nav-lt;
+    font-size: 24px;
+}
+.left{
+    text-align: right;
+    margin-right: -4em;
+}
+.right{
+    text-align: left;
+    margin-left: -4em;
+}
+.middle{
+    font-weight: 600;
+    font-family: 'SegoeUISemiBold';
+    text-align: center;
+}
+#section-4-3{
+    .half{
+        grid-column: span 3;
+        p{
+            grid-column-start: 1;
             padding-bottom: 10px;
         }
     }

@@ -509,22 +509,6 @@ header nav {
   grid-template-rows: repeat(autofill, -webkit-max-content);
   grid-template-rows: repeat(autofill, max-content);
 }
-#mainArea main section div.wrapper .half {
-  grid-column: span 4;
-  display: grid;
-  grid-template-columns: 40px 1fr;
-}
-#mainArea main section div.wrapper .half .numeral {
-  display: inline-block;
-}
-#mainArea main section div.wrapper .half h6,
-#mainArea main section div.wrapper .half p {
-  grid-column-start: 2;
-  grid-column-end: 10;
-}
-#mainArea main section div.wrapper .half p {
-  padding-right: 100px;
-}
 #mainArea main section#section-1 h1,
 #mainArea main section#section-1 h6 {
   grid-column: span 5;
@@ -548,6 +532,22 @@ hr {
   grid-column-start: 1;
   grid-column-end: 7;
   width: 100%;
+}
+.half {
+  grid-column: span 4;
+  display: grid;
+  grid-template-columns: 40px 1fr;
+}
+.half .numeral {
+  display: inline-block;
+}
+.half h6,
+.half p {
+  grid-column-start: 2;
+  grid-column-end: 10;
+}
+.half p {
+  padding-right: 100px;
 }
 .thirds {
   grid-column: span 2;
@@ -602,6 +602,7 @@ hr {
 .table-three .channel {
   grid-column: span 1;
   font-weight: 600;
+  grid-column-start: 1;
 }
 .table-three .role {
   grid-column: span 2;
@@ -684,13 +685,47 @@ hr {
 .donts .title {
   color: #a80000;
 }
-#section-4-2 .thirds h5 {
+#section-4-2 .thirds h5,
+#section-4-2 .thirds p {
   padding-bottom: 10px;
 }
 #section-4-2 .donts {
   grid-column: span 3;
 }
 #section-4-2 .donts p {
+  padding-bottom: 10px;
+}
+#section-4-2 .dos .title,
+#section-4-2 .donts .title,
+#section-4-2 .dos p,
+#section-4-2 .donts p {
+  font-size: 15px;
+}
+.left,
+.middle,
+.right {
+  grid-column: span 2;
+  color: #252525;
+  font-size: 24px;
+}
+.left {
+  text-align: right;
+  margin-right: -4em;
+}
+.right {
+  text-align: left;
+  margin-left: -4em;
+}
+.middle {
+  font-weight: 600;
+  font-family: 'SegoeUISemiBold';
+  text-align: center;
+}
+#section-4-3 .half {
+  grid-column: span 3;
+}
+#section-4-3 .half p {
+  grid-column-start: 1;
   padding-bottom: 10px;
 }
 h4 {
