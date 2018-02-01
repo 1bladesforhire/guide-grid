@@ -684,6 +684,7 @@ hr {
 }
 .donts .title {
   color: #a80000;
+  text-decoration: none;
 }
 #section-4-2 .thirds h5,
 #section-4-2 .thirds p {
