@@ -747,10 +747,28 @@ hr {
   grid-template-columns: repeat(2, 1fr);
   grid-column-gap: 20px;
 }
-#section-5-3 .thirds {
+#section-5-3 .half p {
+  margin: 10px 0;
+}
+#section-5-3 .subs {
   grid-column: span 3;
   grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 20px;
+  display: grid;
+}
+#section-5-3 p {
+  margin-bottom: 10px;
+}
+.table-row {
+  display: grid;
+  grid-column: span 6;
+  grid-template-columns: 1fr 1fr 1.5fr 1.5fr;
+}
+.table-row.gray {
+  background: #dedede;
+}
+.table-row > div {
+  display: grid;
 }
 .dos .title {
   color: #107c10;

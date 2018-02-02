@@ -302,14 +302,35 @@ hr{
 
        } 
     }
-    .thirds{
+    .subs{
         grid-column: span 3;
         grid-template-columns: repeat(3, 1fr);
         grid-column-gap: 20px;
+        display: grid;
     }
     p{
         margin-bottom: 10px;
     }
+}
+
+#section-5-4{
+
+}
+
+
+.table-row{
+    display: grid;
+    grid-column: span 6;
+    grid-template-columns:1fr 1fr 1.5fr 1.5fr;
+    &.gray{
+        background: @ltr-gray;
+    }
+    & > div{
+        display: grid;
+    }
+}
+
+
 .dos{
     .title{
         color: @text-green;
