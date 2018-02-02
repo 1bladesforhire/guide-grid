@@ -245,6 +245,12 @@ main > section {
 .three_cs_content {
   grid-column: span 5;
 }
+.swatch {
+  padding: 20px 10px 5px;
+  display: grid;
+  font-size: 18px;
+  color: black;
+}
 .tall {
   padding-top: 20px;
   font-family: 'SegoeUISemiLight';
@@ -388,6 +394,9 @@ p.large {
   font-size: 18px;
   line-height: 24px;
 }
+p.upper {
+  text-transform: uppercase;
+}
 .section_title {
   font-size: 28px;
   line-height: 28px;
@@ -461,6 +470,9 @@ a {
 }
 .red {
   color: #a80000;
+}
+.white {
+  color: white;
 }
 html {
   -webkit-box-sizing: border-box;
@@ -703,26 +715,43 @@ hr {
 }
 #section-4-8 .half,
 #section-4-9 .half,
+#section-5-3 .half,
 #section-4-8 img,
-#section-4-9 img {
+#section-4-9 img,
+#section-5-3 img {
   grid-column: span 3;
   grid-template-columns: repeat(2, 1fr);
   grid-column-gap: 20px;
 }
 #section-4-8 .half p,
 #section-4-9 .half p,
+#section-5-3 .half p,
 #section-4-8 img p,
-#section-4-9 img p {
+#section-4-9 img p,
+#section-5-3 img p {
   padding-right: 0;
   margin-top: 10px;
 }
 #section-4-8 .half .half,
 #section-4-9 .half .half,
+#section-5-3 .half .half,
 #section-4-8 img .half,
-#section-4-9 img .half {
+#section-4-9 img .half,
+#section-5-3 img .half {
   grid-column: span 1;
   grid-template-columns: 1fr;
   justify-items: stretch;
+}
+#section-4-8 .half .half .swatch,
+#section-4-9 .half .half .swatch,
+#section-5-3 .half .half .swatch,
+#section-4-8 img .half .swatch,
+#section-4-9 img .half .swatch,
+#section-5-3 img .half .swatch {
+  grid-column: span 8;
+}
+#section-5-3 .thirds {
+  grid-column-gap: 20px;
 }
 .dos .title {
   color: #107c10;
@@ -783,4 +812,10 @@ picture {
 }
 .full:hover {
   text-decoration: underline;
+}
+.single {
+  grid-column: span 1;
+}
+.single p {
+  margin-top: 10px;
 }

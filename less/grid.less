@@ -271,7 +271,7 @@ hr{
     }
 }
 
-#section-4-8, #section-4-9{
+#section-4-8, #section-4-9, #section-5-3{
     .half, img{
         grid-column: span 3;
         grid-template-columns: repeat(2, 1fr);
@@ -284,10 +284,19 @@ hr{
             grid-column: span 1;
             grid-template-columns: 1fr;
             justify-items: stretch;
+            .swatch{
+                grid-column: span 8;
+            }
         }
     }
 }
 
+
+#section-5-3{
+    .thirds{
+        grid-column-gap: 20px;
+    }
+}
 
 .dos{
     .title{
@@ -356,5 +365,12 @@ h6, h2, picture{
     text-decoration: none;
     &:hover{
         text-decoration: underline;
+    }
+}
+
+.single{
+    grid-column: span 1;
+    p{
+        margin-top: 10px;
     }
 }
