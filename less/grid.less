@@ -271,7 +271,7 @@ hr{
     }
 }
 
-#section-4-8, #section-4-9, #section-5-3{
+#section-4-8, #section-4-9{
     .half, img{
         grid-column: span 3;
         grid-template-columns: repeat(2, 1fr);
@@ -293,11 +293,23 @@ hr{
 
 
 #section-5-3{
+    .half{
+        grid-column: span 4;
+        grid-template-columns: repeat(2,1fr);
+        grid-column-gap: 20px;
+        p{
+           margin: 10px 0;
+
+       } 
+    }
     .thirds{
+        grid-column: span 3;
+        grid-template-columns: repeat(3, 1fr);
         grid-column-gap: 20px;
     }
-}
-
+    p{
+        margin-bottom: 10px;
+    }
 .dos{
     .title{
         color: @text-green;

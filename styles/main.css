@@ -715,42 +715,41 @@ hr {
 }
 #section-4-8 .half,
 #section-4-9 .half,
-#section-5-3 .half,
 #section-4-8 img,
-#section-4-9 img,
-#section-5-3 img {
+#section-4-9 img {
   grid-column: span 3;
   grid-template-columns: repeat(2, 1fr);
   grid-column-gap: 20px;
 }
 #section-4-8 .half p,
 #section-4-9 .half p,
-#section-5-3 .half p,
 #section-4-8 img p,
-#section-4-9 img p,
-#section-5-3 img p {
+#section-4-9 img p {
   padding-right: 0;
   margin-top: 10px;
 }
 #section-4-8 .half .half,
 #section-4-9 .half .half,
-#section-5-3 .half .half,
 #section-4-8 img .half,
-#section-4-9 img .half,
-#section-5-3 img .half {
+#section-4-9 img .half {
   grid-column: span 1;
   grid-template-columns: 1fr;
   justify-items: stretch;
 }
 #section-4-8 .half .half .swatch,
 #section-4-9 .half .half .swatch,
-#section-5-3 .half .half .swatch,
 #section-4-8 img .half .swatch,
-#section-4-9 img .half .swatch,
-#section-5-3 img .half .swatch {
+#section-4-9 img .half .swatch {
   grid-column: span 8;
 }
+#section-5-3 .half {
+  grid-column: span 4;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 20px;
+}
 #section-5-3 .thirds {
+  grid-column: span 3;
+  grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 20px;
 }
 .dos .title {
