@@ -313,17 +313,21 @@ hr{
     }
 }
 
-#section-5-4{
-
+#section-5-6{
+    .title, img{
+        margin-bottom: 20px;
+    }
 }
 
 
 .table-row{
     display: grid;
     grid-column: span 6;
-    grid-template-columns:1fr 1fr 1.5fr 1.5fr;
+    grid-template-columns:1fr 1.5fr 1.75fr 1.75fr;
+    grid-gap: 20px;
     &.gray{
         background: @ltr-gray;
+        padding: 10px 2px;
     }
     & > div{
         display: grid;
@@ -332,7 +336,7 @@ hr{
 
 
 .dos{
-    .title{
+    .title, &.title{
         color: @text-green;
     }
     p {
@@ -344,7 +348,7 @@ hr{
     p{
     text-decoration: line-through;
     }
-    .title{
+    .title, &.title{
         color: @text-red;
         text-decoration: none;
     }
@@ -383,6 +387,12 @@ h4{
     grid-template-columns: repeat(8, 1fr);
     grid-column-gap: 20px;
 }
+.full-row{
+    display: grid;
+    grid-template-columns:repeat(10,1fr);
+    grid-column: span 6;
+    align-items: center;
+}
 p{
     grid-column: span 7;
 }
@@ -400,10 +410,28 @@ h6, h2, picture{
         text-decoration: underline;
     }
 }
-
+.fat-thirds{
+    grid-column: span 2;
+    grid-template-columns: 1fr;
+    img{
+        width: 100%;
+    }
+    p{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
 .single{
     grid-column: span 1;
     p{
         margin-top: 10px;
     }
+}
+
+.v-center{
+    align-items: center;
+}
+.underline{
+    border-bottom: 1px solid @lt-gray;
+    padding-bottom: 20px;
 }
