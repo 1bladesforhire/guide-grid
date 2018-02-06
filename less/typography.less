@@ -255,18 +255,21 @@ a{
     padding: 15px 10px;
     a{
         color: white;
-        text-decoration: none;
+        text-decoration: none !important;
         text-transform: uppercase;
         &:after{
             content: "\E76C";	
-            padding-left: 20px;
+            margin-left: 5px;
+            margin-top: 3px;
             font-family: "MWF-MDL2";
-            &:hover{
-                text-decoration: none;
-            }
+            display: inline-block;
+            vertical-align: top;
         }    
         &:hover{
-            text-decoration: underline;
+            text-decoration: underline !important;
+            &:after{
+                text-decoration: none !important;
+            }
         }
     }
 }

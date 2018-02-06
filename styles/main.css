@@ -548,19 +548,22 @@ a {
 }
 .cta a {
   color: white;
-  text-decoration: none;
+  text-decoration: none !important;
   text-transform: uppercase;
 }
 .cta a:after {
   content: "\E76C";
-  padding-left: 20px;
+  margin-left: 5px;
+  margin-top: 3px;
   font-family: "MWF-MDL2";
-}
-.cta a:after:hover {
-  text-decoration: none;
+  display: inline-block;
+  vertical-align: top;
 }
 .cta a:hover {
-  text-decoration: underline;
+  text-decoration: underline !important;
+}
+.cta a:hover:after {
+  text-decoration: none !important;
 }
 .red {
   color: #a80000;
@@ -629,6 +632,7 @@ header {
 }
 #mainArea main section h3 {
   grid-column: span 9;
+  padding-bottom: 10px;
 }
 #mainArea main section#section-4-1 h5 {
   grid-column: span 5;
