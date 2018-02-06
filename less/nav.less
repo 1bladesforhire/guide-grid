@@ -1,25 +1,38 @@
 nav{
     background: @nav-dk;
     overflow-y: scroll;
+    height: 100%;
+    a{
+        text-decoration: none  !important;
+    }
     ul{
         list-style-type: none;
         &#menu-list{
             padding-left:0;
         }
-        li a{
-            color: white;
-            text-decoration: none;
-            &.purple:hover{
-                color: @purple;
+        li {
+            .active{
+                background: @nav-lt;
             }
-            &.blue:hover{
-                color: @blue;
-            }
-            &.yellow:hover, &.yellow:active{
-                color: @yellow;
-            }
-            &.orange:hover, &.orange:active{
-                color: @orange;
+            a{
+                color: white;
+                text-decoration: none;
+
+                &.purple:hover{
+                    color: @purple;
+                }
+                &.blue:hover{
+                    color: @blue;
+                }
+                &.yellow:hover, &.yellow:active{
+                    color: @yellow;
+                }
+                &.orange:hover, &.orange:active{
+                    color: @orange;
+                }
+                &.green:hover, &.green:active{
+                    color: @green;
+                }
             }
         }
     }

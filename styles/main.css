@@ -13,17 +13,13 @@ h1 {
   grid-column: span 7;
   margin-bottom: 20px;
 }
-nav {
-  background: #1d1d1d;
-  height: 100%;
-}
-nav li:active {
-  background: #252525;
-}
 main > section {
   padding-top: 95px;
   padding-bottom: 95px;
   display: grid;
+}
+img {
+  max-width: 100%;
 }
 #section-1 {
   background: #dadada;
@@ -258,12 +254,19 @@ main > section {
 nav {
   background: #1d1d1d;
   overflow-y: scroll;
+  height: 100%;
+}
+nav a {
+  text-decoration: none  !important;
 }
 nav ul {
   list-style-type: none;
 }
 nav ul#menu-list {
   padding-left: 0;
+}
+nav ul li .active {
+  background: #252525;
 }
 nav ul li a {
   color: white;
@@ -282,6 +285,10 @@ nav ul li a.yellow:active {
 nav ul li a.orange:hover,
 nav ul li a.orange:active {
   color: #FF8C00;
+}
+nav ul li a.green:hover,
+nav ul li a.green:active {
+  color: #00b294;
 }
 @font-face {
   font-family: "MWF-MDL2";
@@ -439,6 +446,7 @@ p.upper {
 nav a {
   font-size: 16px;
   line-height: 42px;
+  text-decoration: none;
 }
 .cross-through {
   font-size: 32px;
@@ -491,7 +499,7 @@ a {
 }
 .cta {
   background: #212121;
-  grid-column: span 2;
+  grid-column: span 3;
   padding: 15px 10px;
 }
 .cta a {
@@ -503,6 +511,9 @@ a {
   content: "\E76C";
   padding-left: 20px;
   font-family: "MWF-MDL2";
+}
+.cta a:after:hover {
+  text-decoration: none;
 }
 .cta a:hover {
   text-decoration: underline;
@@ -568,6 +579,7 @@ header nav {
   grid-template-columns: repeat(9, 1fr);
   grid-template-rows: repeat(autofill, -webkit-max-content);
   grid-template-rows: repeat(autofill, max-content);
+  max-width: 1150px;
 }
 #mainArea main section#section-1 h1,
 #mainArea main section#section-1 h6 {
@@ -598,6 +610,10 @@ hr {
   grid-column-end: 7;
   width: 100%;
 }
+.one-half {
+  grid-column: span 4;
+  display: grid;
+}
 .half {
   grid-column: span 4;
   display: grid;
@@ -612,7 +628,6 @@ hr {
 .thirds {
   grid-column: span 2;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
 }
 .thirds .title,
 .thirds .desc {

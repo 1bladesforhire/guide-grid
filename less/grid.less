@@ -50,6 +50,7 @@ header{
                 grid-gap: 20px;
                 grid-template-columns: repeat(9, 1fr);
                 grid-template-rows: repeat( autofill, max-content );
+                max-width: 1150px;
                 
             }
             &#section-1{
@@ -91,6 +92,10 @@ hr{
     grid-column-end: 7;
     width: 100%; 
 }
+.one-half{
+    grid-column: span 4;
+    display: grid;
+}
 
 .half{
     grid-column: span 4;
@@ -109,7 +114,7 @@ hr{
 .thirds{
     grid-column: span 2;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    // grid-template-columns: repeat(3, 1fr);
     .title, .desc{
         grid-column: span 3;
     }
@@ -386,6 +391,7 @@ h4{
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-column-gap: 20px;
+    
 }
 .full-row{
     display: grid;
