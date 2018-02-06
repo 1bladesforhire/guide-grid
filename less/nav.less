@@ -21,6 +21,8 @@ nav{
         &.sub-nav{
             padding-left: 20px;
             display: none;
+            height: 0;
+            animation: 3s ease-in-out;
         }
         li {
             padding-left: 20px;
@@ -29,9 +31,24 @@ nav{
                 width: 100%;
                 .sub-nav{
                     display: block;
+                    height: auto;
+                    animation: 3s ease-in-out;
                 }
-                &.purple{
+
+                .purple{
                     color: @purple;
+                }
+                .blue {
+                    color: @blue;
+                }
+                .yellow {
+                    color: @yellow;
+                }
+                .orange {
+                    color: @orange;
+                }
+                .green {
+                    color: @green;
                 }
             }
             a{

@@ -274,6 +274,9 @@ nav ul#menu-list {
 nav ul.sub-nav {
   padding-left: 20px;
   display: none;
+  height: 0;
+  -webkit-animation: 3s ease-in-out;
+  animation: 3s ease-in-out;
 }
 nav ul li {
   padding-left: 20px;
@@ -284,9 +287,24 @@ nav ul li.active {
 }
 nav ul li.active .sub-nav {
   display: block;
+  height: auto;
+  -webkit-animation: 3s ease-in-out;
+  animation: 3s ease-in-out;
 }
-nav ul li.active.purple {
+nav ul li.active .purple {
   color: #b4a0ff;
+}
+nav ul li.active .blue {
+  color: #00bcf2;
+}
+nav ul li.active .yellow {
+  color: #bad80a;
+}
+nav ul li.active .orange {
+  color: #FF8C00;
+}
+nav ul li.active .green {
+  color: #00b294;
 }
 nav ul li a {
   color: white;
