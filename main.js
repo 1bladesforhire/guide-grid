@@ -1,19 +1,19 @@
 $(document).ready(function(){
   $('nav a').on('click', function(){
-    $activeLink = $(this).closest('a');
-    
+    var activeLink = $(this).closest('a');
+    console.log(activeLink);
     $('nav a').removeClass('active');
-    $activeLink.addClass('active');
+    activeLink.addClass('active');
     //check which level and add active to the top li
-    if($activeLink.parent().hasClass('sub-nav__item')){
-      $topLi = $activeLink.parent().parent().parent();
+    if(activeLink.parent().hasClass('sub-nav__item')){
+      var topLi = activeLink.parent().parent().parent();
       
     } else {
-      $topLi = $activeLink.parent();
+      var topLi = activeLink.parent();
 
     }
     $('nav li').removeClass('active');
-      $topLi.addClass('active');
+      topLi.addClass('active');
   });
 });
 
@@ -23,7 +23,7 @@ $(document).on('click', 'a[href^="#"]', function (event) {
 
   $('html, body').animate({
       scrollTop: $($.attr(this, 'href')).offset().top
-  }, 2000);
+  }, 1000);
   
 });
 
@@ -33,24 +33,46 @@ $(window).on('load', function(){
   var locationName = location.href.split("#");
 
   //set active link and scroll to location if not homepage
-  if(locationName.length>1){
+  if(locationName.length > 1){
     var fileName = locationName.slice(-1);
     var startingActive = $('a[href*="'+fileName+'"]');
-    console.log(locationName.length);
-
-    //set active link for the 
+    
+    //set active link for the menu
     $('nav a').removeClass('active');
+    $('nav li').removeClass('active');
+
     startingActive.addClass('active');
     if(startingActive.parent().hasClass('sub-nav__item')){
-      $topLi = startingActive.parent().parent().parent();
+       startingActive.parent().parent().parent().addClass('active');
     } else {
-      $topLi = startingActive.parent();
+      startingActive.parent().addClass('active');
     }
-    $('nav li').removeClass('active');
-    $topLi.addClass('active');
 
     $('html, body').animate({
-      scrollTop: $($.attr(this, 'href')).offset().top
-    }, 2000);
+      scrollTop: $("#"+fileName).offset().top
+    }, 2000).delay(1000);
   }
+});
+
+//scroll navigation tie in 
+$(window).scroll(function() {
+  var windscroll = $(window).scrollTop();
+  if (windscroll >= 100) {
+      $('nav').addClass('fixed');
+      $('section').each(function(i) {
+       
+          if ($(this).position().top <= windscroll - 20) {
+              $('nav a.active').removeClass('active');
+              $('nav li.active').removeClass('active');
+              $('nav a').eq(i).addClass('active');
+              if($('nav a').eq(i).parent().hasClass('sub-nav__item')){
+                $('nav a').eq(i).parent().parent().parent().addClass('active');
+              }else{
+                $('nav a').eq(i).parent().addClass('active');
+              }
+          }
+      });
+
+  } 
+
 });
