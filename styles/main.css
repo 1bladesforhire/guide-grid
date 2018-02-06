@@ -252,25 +252,44 @@ img {
   font-family: 'SegoeUISemiLight';
 }
 nav {
-  background: #1d1d1d;
+  background: #252525;
   overflow-y: scroll;
   height: 100%;
+  position: fixed;
+  top: 0;
+  justify-self: stretch;
+  display: grid;
 }
 nav a {
   text-decoration: none  !important;
+  padding-right: 20px;
 }
 nav ul {
   list-style-type: none;
+  margin-top: 0;
 }
 nav ul#menu-list {
   padding-left: 0;
 }
-nav ul li .active {
-  background: #252525;
+nav ul.sub-nav {
+  padding-left: 20px;
+  display: none;
+}
+nav ul li {
+  padding-left: 20px;
+}
+nav ul li.active {
+  background: #1d1d1d;
+  width: 100%;
+}
+nav ul li.active .sub-nav {
+  display: block;
+}
+nav ul li.active.purple {
+  color: #b4a0ff;
 }
 nav ul li a {
   color: white;
-  text-decoration: none;
 }
 nav ul li a.purple:hover {
   color: #b4a0ff;
@@ -289,6 +308,9 @@ nav ul li a.orange:active {
 nav ul li a.green:hover,
 nav ul li a.green:active {
   color: #00b294;
+}
+nav button {
+  display: none;
 }
 @font-face {
   font-family: "MWF-MDL2";
@@ -537,20 +559,13 @@ html {
 body {
   background-color: #cacaca;
   display: grid;
-  grid-template-columns: 250px 1fr;
+  grid-template-columns: 260px 1fr;
   margin: 0;
 }
 header {
   display: grid;
   grid-column-start: 1;
   grid-column-end: 2;
-}
-header nav {
-  position: fixed;
-  top: 0;
-  justify-self: stretch;
-  padding: 20px;
-  display: grid;
 }
 #mainArea {
   grid-column-start: 2;
