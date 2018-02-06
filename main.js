@@ -16,3 +16,12 @@ $(document).ready(function(){
       $topLi.addClass('active');
   });
 });
+
+//smooth out the scroll to section, not sure about this one.. too long of a page
+$(document).on('click', 'a[href^="#"]', function (event) {
+  event.preventDefault();
+
+  $('html, body').animate({
+      scrollTop: $($.attr(this, 'href')).offset().top
+  }, 2000);
+});
