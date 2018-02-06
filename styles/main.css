@@ -273,10 +273,10 @@ nav ul#menu-list {
 }
 nav ul.sub-nav {
   padding-left: 20px;
-  display: none;
-  height: 0;
-  -webkit-animation: 3s ease-in-out;
-  animation: 3s ease-in-out;
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: all 500ms ease-out;
+  transition: all 500ms ease-out;
 }
 nav ul li {
   padding-left: 20px;
@@ -287,9 +287,11 @@ nav ul li.active {
 }
 nav ul li.active .sub-nav {
   display: block;
-  height: auto;
-  -webkit-animation: 3s ease-in-out;
-  animation: 3s ease-in-out;
+  max-height: 800px;
+  -webkit-transition: max-height 1s ease-in-out;
+  transition: max-height 1s ease-in-out;
+  -webkit-transition-delay: 500ms;
+  transition-delay: 500ms;
 }
 nav ul li.active .purple {
   color: #b4a0ff;
@@ -309,23 +311,25 @@ nav ul li.active .green {
 nav ul li a {
   color: white;
 }
+nav ul li a.purple.active,
 nav ul li a.purple:hover {
-  color: #b4a0ff;
+  color: #d8ceff;
 }
+nav ul li a.blue.active,
 nav ul li a.blue:hover {
-  color: #00bcf2;
+  color: #71dfff;
 }
-nav ul li a.yellow:hover,
-nav ul li a.yellow:active {
-  color: #bad80a;
+nav ul li a.yellow.active,
+nav ul li a.yellow:hover {
+  color: #d4f129;
 }
-nav ul li a.orange:hover,
-nav ul li a.orange:active {
-  color: #FF8C00;
+nav ul li a.orange.active,
+nav ul li a.orange:hover {
+  color: #ffab45;
 }
-nav ul li a.green:hover,
-nav ul li a.green:active {
-  color: #00b294;
+nav ul li a.green.active,
+nav ul li a.green:hover {
+  color: #00ffd4;
 }
 nav button {
   display: none;

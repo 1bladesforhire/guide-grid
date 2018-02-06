@@ -20,9 +20,10 @@ nav{
         }
         &.sub-nav{
             padding-left: 20px;
-            display: none;
-            height: 0;
-            animation: 3s ease-in-out;
+            max-height: 0;
+            overflow: hidden;
+            transition: all 500ms ease-out;
+            //opacity: 0;
         }
         li {
             padding-left: 20px;
@@ -31,8 +32,9 @@ nav{
                 width: 100%;
                 .sub-nav{
                     display: block;
-                    height: auto;
-                    animation: 3s ease-in-out;
+                    max-height: 800px;
+                    transition: max-height 1s ease-in-out;  
+                    transition-delay: 500ms;
                 }
 
                 .purple{
@@ -53,20 +55,35 @@ nav{
             }
             a{
                 color: white;
-                &.purple:hover{
-                    color: @purple;
+                &.purple {
+                    
+                    &.active, &:hover{
+                        color: @purple-active;
+                    }
                 }
-                &.blue:hover{
-                    color: @blue;
+                &.blue{
+                    
+                    &.active, &:hover{
+                        color: @blue-active;
+                    }
                 }
-                &.yellow:hover, &.yellow:active{
-                    color: @yellow;
+                &.yellow{
+                   
+                    &.active, &:hover{
+                        color: @yellow-active;
+                    }
                 }
-                &.orange:hover, &.orange:active{
-                    color: @orange;
+                &.orange{
+                    
+                    &.active, &:hover{
+                        color: @orange-active;
+                    }
                 }
-                &.green:hover, &.green:active{
-                    color: @green;
+                &.green{
+                    
+                    &.active, &:hover{
+                        color: @green-active;
+                    }
                 }
             }
         }
