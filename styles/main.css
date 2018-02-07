@@ -495,9 +495,13 @@ nav a {
 .cross-through {
   font-size: 32px;
   font-weight: 100;
-  background-image: url('assets/arrow.svg');
+  background-image: url(../assets/arrow.svg);
   background-size: contain;
-  background-position: 0 0;
+  background-position: -20px 50%;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 90%;
+  grid-column: span 1;
 }
 .semibold {
   font-family: 'SegoeUISemiBold';
@@ -923,7 +927,7 @@ h4 {
   align-items: center;
 }
 p {
-  grid-column: span 7;
+  grid-column: span 6;
 }
 h5 {
   grid-column: span 5;
@@ -965,4 +969,24 @@ picture {
 .underline {
   border-bottom: 1px solid #dadada;
   padding-bottom: 20px;
+}
+.row-twelve {
+  display: grid;
+  grid-column: span 10;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 10px;
+}
+.row-twelve .fourths {
+  grid-column: span 2;
+  grid-template-columns: 1fr;
+}
+.row-twelve .fourths p {
+  padding-right: 20px;
+}
+.row-twelve .half {
+  grid-column: span 6;
+  grid-template-columns: 1fr 1fr;
+}
+.row-twelve .half h6 {
+  grid-column: span 1;
 }
