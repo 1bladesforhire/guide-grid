@@ -619,7 +619,6 @@ header {
   grid-template-columns: repeat(9, 1fr);
   grid-template-rows: repeat(autofill, -webkit-max-content);
   grid-template-rows: repeat(autofill, max-content);
-  max-width: 1150px;
 }
 #mainArea main section#section-1 h1,
 #mainArea main section#section-1 h6 {
