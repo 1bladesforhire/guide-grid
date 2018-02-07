@@ -28,7 +28,7 @@ $(document).ready(function() {
 
 $(window).scroll(function() {
   var scrollDistance = $(window).scrollTop();
-  console.log(scrollDistance);
+
   //if we have started scrolling, check where we are
   if (scrollDistance > 20){
     
