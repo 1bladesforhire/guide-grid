@@ -314,17 +314,23 @@ picture {
   grid-column: span 1;
 }
 .row-five {
+  grid-column: span 10;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 20px 40px;
+  display: grid;
+}
+.row-top-five {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-column: span 10;
   grid-row-gap: 20px;
 }
 @media all and (max-width: 1200px) {
-  .row-five .half {
+  .row-top-five .half {
     grid-column: span 6 !important;
   }
 }
-.row-five .half {
+.row-top-five .half {
   grid-column: span 5;
   grid-template-columns: 30px 1fr;
 }
@@ -678,6 +684,14 @@ img {
 #section-4-3 .half p {
   grid-column-start: 1;
   padding-bottom: 10px;
+}
+#section-4-5 .fat-thirds {
+  padding-right: 30px;
+  grid-column: span 1;
+}
+#section-4-5 .fat-thirds img {
+  width: 250px;
+  height: 250px;
 }
 #section-4-8 .half,
 #section-4-9 .half,
