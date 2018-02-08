@@ -457,10 +457,10 @@ img {
   background: #c8c8c8;
 }
 #section-5 {
-  background: #cacaca;
+  background: #d3d3d3;
 }
 #section-5-1 {
-  background: #cacaca;
+  background: #d3d3d3;
 }
 #section-5-2 {
   background: #c1c1c1;
@@ -756,6 +756,10 @@ img {
 }
 #section-5-3 p {
   margin-bottom: 10px;
+}
+#section-5-5 .thirds .title {
+  font-family: 'SegoeUISemiLight';
+  font-size: 2em;
 }
 #section-5-6 .title,
 #section-5-6 img {
