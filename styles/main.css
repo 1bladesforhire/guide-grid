@@ -149,7 +149,7 @@ hr {
 .half {
   grid-column: span 4;
   display: grid;
-  grid-template-columns: 40px 1fr;
+  grid-template-columns: 1fr 1fr;
 }
 .half .numeral {
   display: inline-block;
@@ -537,6 +537,7 @@ img {
 #section-1-1 p {
   grid-column-start: 2;
   grid-column-end: 10;
+  margin-bottom: 5px;
 }
 .direction {
   grid-column: span 10;
@@ -588,8 +589,8 @@ img {
   grid-column: span 2;
 }
 .mag {
-  grid-column-start: 2;
-  grid-column-end: 7;
+  grid-column-start: 1;
+  grid-column-end: 6;
   grid-template-columns: repeat(3, 1fr);
   display: grid;
 }
