@@ -80,10 +80,10 @@ header{
 
 hr{
     border-top: 1px solid @hr-gray;
-    margin-top: 80px;
-    margin-bottom: 60px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     grid-column-start: 1;
-    grid-column-end: 7;
+    grid-column-end: 6;
     width: 100%; 
 }
 .one-half{
@@ -126,13 +126,15 @@ hr{
 .direction{
     grid-column: span 10;
     .users{
-        grid-column: span 3;
+        grid-column: span 2;
         grid-column-start: 1;
         padding-bottom: 10px;
+        
     }
     .needs {
         grid-column: span 3;
         padding-bottom: 10px;
+        grid-column-start: 3;
     }
 }
 
@@ -455,4 +457,21 @@ h6, h2, picture{
         }
     }
 
+}
+.row-five{ 
+    @media all and (max-width: 1200px){
+
+        .half{
+            grid-column: span 6 !important;
+        }
+    }
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column: span 10;
+    grid-row-gap: 20px;
+   
+    .half{
+        grid-column: span 5;
+        grid-template-columns: 30px 1fr;
+    }
 }

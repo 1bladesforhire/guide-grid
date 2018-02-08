@@ -105,25 +105,24 @@ h3 {
 }
 
 h4{
-    font-size: 52px;
+    font-size: 3.25em;
     line-height: 60px;
     color: @body-text-black;
     font-family: 'SegoeUISemiBold';
     font-weight: 600;
 }
 h5{
-    font-weight: 100;
+    font-weight: 400;
     font-size: 24px;
     line-height: 30px;
-    color: @text-lt-gray;
-    &.heavy{
-        font-family: 'SegoeUISemiLight';
-    }
+    color: @text-lt-gray; 
+    font-family: 'SegoeUISemiLight';
+
 }
 h6{
     font-weight: 400;
-    font-size: 32px;
-    line-height: 38px;
+    font-size: 2em;
+    line-height: 1.1em;
     &.small{
         font-size: 28px;
     }
@@ -201,11 +200,11 @@ nav a{
     font-weight: 100;
     background-image: url(../assets/arrow.svg);
     background-size: contain;
-    background-position: -20px 50%;
+    background-position: -20px 60%;
     background-repeat: no-repeat;
     height: 100%;
-    width: 90%;
-    grid-column: span 1;
+    width: 103%;
+    grid-column: min-max(min-content, span 1);
 }
 
 //type section
@@ -254,11 +253,13 @@ a{
     color: @ms-blue;
 }
 .cta{
-    background: @body-text-black;
+   
     grid-column: span 3;
-    padding: 15px 10px;
+    grid-template-columns: fit-content(300px);
     a{
         color: white;
+        background: @body-text-black;
+        padding: 15px 10px;
         text-decoration: none !important;
         text-transform: uppercase;
         &:after{

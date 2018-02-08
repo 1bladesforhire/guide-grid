@@ -192,7 +192,6 @@ img{
     display: grid;
     grid-column: span 8;
     grid-template-columns: repeat(7, 1fr);
-    grid-gap: 20px;
     .left, .right{
         background: rgba(0, 0, 0, .4);
         padding: 30px 20px;
@@ -202,25 +201,29 @@ img{
             color: #ffffff;
             font-size: 15px;
             line-height: 20px;
+            margin-bottom: 10px;
         }
     }
     .left{
         width: 250px;
-        grid-column-end: 3;
-        grid-column-start: auto;
+        margin-left: 50px;
+        grid-column-end: 2;
         grid-row-start: 1;
         z-index: 10;
         margin-top: 15px;
         margin-bottom: 50px;
+        text-align: left;
     }
     .right{
         width: 250px;
-        grid-column-end: 6;
+        grid-column-end: 7;
         grid-column-start: auto;
         grid-row-start: 1;
         z-index: 10;
         margin-top: 15px;
         margin-bottom: 50px;
+        margin-right: 140px;
+        
     }
     
     .img-wrapper{
@@ -231,13 +234,13 @@ img{
 }
 
 .three_cs{
-    grid-column: span 2;
+    grid-column-start: 1;
     justify-self: right;
-    text-align: right;
+    text-align: left;
     p{
         font-weight: 600;
-        font-size: 28px;
-        line-height: 28px;
+        font-size: 15px;
+        line-height: 18px;
         color: black;
     }
     &_content{
