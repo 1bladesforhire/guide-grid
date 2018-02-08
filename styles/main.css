@@ -319,6 +319,15 @@ picture {
   grid-gap: 20px 40px;
   display: grid;
 }
+.row-five .thirds {
+  grid-column: span 1;
+}
+.row-seven {
+  grid-column: span 10;
+  grid-template-columns: repeat(7, 1fr);
+  grid-gap: 10px;
+  display: grid;
+}
 .row-top-five {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -697,9 +706,9 @@ img {
 #section-4-9 .half,
 #section-4-8 img,
 #section-4-9 img {
-  grid-column: span 3;
+  grid-column: span 4;
   grid-template-columns: repeat(2, 1fr);
-  grid-column-gap: 20px;
+  grid-column-gap: 10px;
 }
 #section-4-8 .half p,
 #section-4-9 .half p,
@@ -721,6 +730,15 @@ img {
 #section-4-8 img .half .swatch,
 #section-4-9 img .half .swatch {
   grid-column: span 8;
+}
+#section-4-8 .row-seven {
+  grid-column-gap: 40px;
+}
+#section-4-8 .half {
+  grid-column: span 2;
+}
+#section-4-8 .half p {
+  margin-top: 0;
 }
 #section-5-3 .half {
   grid-column: span 4;

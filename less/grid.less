@@ -252,8 +252,17 @@ h6, h2, picture{
     grid-template-columns: repeat(5, 1fr);
     grid-gap: 20px 40px;
     display: grid;
+    .thirds{
+        grid-column: span 1;
+    }
 }
 
+.row-seven{
+    grid-column: span 10;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 10px;
+    display: grid;
+}
 .row-top-five{ 
     @media all and (max-width: 1200px){
 
