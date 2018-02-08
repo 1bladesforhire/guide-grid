@@ -126,15 +126,17 @@ hr{
 .direction{
     grid-column: span 10;
     .users{
-        grid-column: span 2;
+        
         grid-column-start: 1;
+        grid-column-end: 3;
         padding-bottom: 10px;
         
     }
     .needs {
-        grid-column: span 3;
+       
         padding-bottom: 10px;
         grid-column-start: 3;
+        grid-column-end: 5;
     }
 }
 
@@ -179,6 +181,7 @@ hr{
 .mag{
     grid-column-start: 2;
     grid-column-end: 7;
+    grid-template-columns: 1fr 1fr;
     h2{
         
         color: @body-text-black;
