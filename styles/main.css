@@ -55,6 +55,9 @@ nav ul li.active .orange {
 nav ul li.active .green {
   color: #00b294;
 }
+nav ul li.active .pink {
+  color: #e54d4d;
+}
 nav ul li a {
   color: white;
 }
@@ -77,6 +80,10 @@ nav ul li a.orange:hover {
 nav ul li a.green.active,
 nav ul li a.green:hover {
   color: #00ffd4;
+}
+nav ul li a.pink.active,
+nav ul li a.pink:hover {
+  color: #fb7373;
 }
 nav button {
   display: none;
@@ -532,6 +539,9 @@ img {
 }
 .badge.green {
   background: #00b294;
+}
+.badge.pink {
+  background: #e54d4d;
 }
 #section-1 h1,
 #section-1 h6 {
