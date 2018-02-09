@@ -408,15 +408,15 @@ img{
             height: 250px;
         } 
     }
-    
-
             
 
 }
 
 
 
-#section-4-8, #section-4-9{
+
+
+#section-4-9{
     .half, img{
         grid-column: span 4;
         grid-template-columns: repeat(2, 1fr);
@@ -441,9 +441,12 @@ img{
         grid-column-gap: 40px;
     }
     .half{
-        grid-column: span 2;
-        p{
+        grid-template-columns: 1fr;
+        p{  
             margin-top: 0;
+        }
+        .title{
+            padding-right: 0;
         }
     }
 }
@@ -484,10 +487,49 @@ img{
 
 
 #section-5-9{
-
+    .half{
+        grid-column: span 4;
+    }
+    .donts{
+        .title{
+            padding-bottom: 35px;
+        }
+        p{
+            margin-bottom: 10px;
+        }
+    }
 }
 
+#section-5-11{
+    .title{
+        margin-bottom: 20px;
+        padding-right: 0;
+    }
+    p{
+        margin-top: 10px;
+    }
+}
 
+#section-5-12{
+    .row-seven{
+        grid-column-gap: 40px;
+    }
+    .half{
+        grid-template-columns: 1fr;
+        
+        p{
+            padding-right: 0;
+            margin-top: 10px;
+        }
+        img{
+                grid-column: span 2;
+            }
+        }
+
+    .dos p{
+        padding-right: 100px;
+    }
+}
 .overlay{
     display: grid;
     grid-column: span 8;
