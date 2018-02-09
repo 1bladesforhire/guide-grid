@@ -807,6 +807,12 @@ img {
 #section-5-12 .dos p {
   padding-right: 100px;
 }
+#section-6-1 .half .title {
+  margin-bottom: 20px;
+}
+#section-6-1 .half img {
+  grid-column: span 2;
+}
 .overlay {
   display: grid;
   grid-column: span 8;
