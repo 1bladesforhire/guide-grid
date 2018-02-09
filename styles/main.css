@@ -808,9 +808,17 @@ img {
   padding-right: 100px;
 }
 #section-6-1 .half .title {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 #section-6-1 .half img {
+  grid-column: span 2;
+  min-height: 250px;
+}
+#section-6-2 img {
+  grid-column: span 7;
+}
+#section-6-3 .half title,
+#section-6-3 .half img {
   grid-column: span 2;
 }
 .overlay {
