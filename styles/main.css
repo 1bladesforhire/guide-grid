@@ -1245,6 +1245,12 @@ a {
   #section-1-2 h5 {
     grid-column: span 9;
   }
+  #section-1-2 .row-twelve .half {
+    grid-column: span 8;
+  }
+  #section-1-2 div > p {
+    grid-column: span 7;
+  }
   .cross-through {
     font-size: 28px;
   }
