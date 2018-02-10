@@ -1,8 +1,16 @@
+/* 
+*
+*  Desktop 1084px-1400px
+*
+*
+*/
+
 @media all and (max-width: 1400px) {
 //typography
-  h1{
-
+  #section-1 h1{
+    font-size: 4.5em;
   }
+
   h2{
 
   }
@@ -11,15 +19,19 @@
 
   }
   h4{
-    font-size: 2.25em;
+    font-size: 2.5em;
     line-height: 1.1em;
-    grid-column: span 7;
+    grid-column: span 9;
+    margin-right: 20px;
   }
   h5{
-
+    grid-column: span 9;
+    margin-right: 20px;
   }
   h6{
-
+    grid-column: span 9;
+    margin-right: 20px;
+    font-size: 1.8em;
   }
 
 //grid
@@ -52,5 +64,31 @@
     }
   }
 
+  #mainArea{
+    padding-top: 0;
+    main section{
+      grid-template-columns: 65px repeat(7, 1fr) 65px;
+    }
+  }
 
+  #section-1{
+    h1, h6, p{
+      grid-column: span 9;
+      margin-right: 20px;
+    }
+    &-1{
+      p{
+        padding-right: 50px;
+      }
+    }
+    &-2{
+      h5{
+        grid-column: span 9;
+      }
+    }
+  }
+
+  .cross-through{
+    font-size: 28px;
+  }
 }
