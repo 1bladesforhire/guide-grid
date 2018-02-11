@@ -5,7 +5,7 @@ h1,h2,h3,h4,h5,h6,p,div{
 }
 
 h1{
-    grid-column: span 7;
+    grid-column: span 12;
     margin-bottom: 20px;
 }
 
@@ -14,6 +14,7 @@ main > section{
     padding-bottom: 95px;
     display: grid;  
 }
+
 
 //set items
 img{
@@ -195,8 +196,16 @@ img{
 
 //section 1
 #section-1{
-    h1, h6{
-        grid-column: span 5;
+    padding-top: 55px;
+    h1{
+        grid-column: span 6;
+    }
+    h6 {
+        grid-column: span 8;
+        color: #3b3b3b;
+    }
+    p {
+        grid-column: span 8;
     }
     &-1{
         h6,p{
@@ -204,6 +213,9 @@ img{
             grid-column-end: 10;
             margin-bottom: 5px;
         }
+    }
+    picture {
+        padding: 35px 0px;
     }
 }
 

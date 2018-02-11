@@ -6,6 +6,7 @@ nav {
   top: 0;
   justify-self: stretch;
   display: grid;
+  padding-top: 50px;
 }
 nav a {
   text-decoration: none  !important;
@@ -366,7 +367,7 @@ div {
   padding: 0;
 }
 h1 {
-  grid-column: span 7;
+  grid-column: span 12;
   margin-bottom: 20px;
 }
 main > section {
@@ -543,15 +544,27 @@ img {
 .badge.pink {
   background: #e54d4d;
 }
-#section-1 h1,
+#section-1 {
+  padding-top: 55px;
+}
+#section-1 h1 {
+  grid-column: span 6;
+}
 #section-1 h6 {
-  grid-column: span 5;
+  grid-column: span 8;
+  color: #3b3b3b;
+}
+#section-1 p {
+  grid-column: span 8;
 }
 #section-1-1 h6,
 #section-1-1 p {
   grid-column-start: 2;
   grid-column-end: 10;
   margin-bottom: 5px;
+}
+#section-1 picture {
+  padding: 35px 0px;
 }
 .direction {
   grid-column: span 10;
@@ -952,8 +965,9 @@ body {
 h1 {
   font-size: 80px;
   line-height: 80px;
-  font-weight: 300;
+  font-weight: 100;
   color: #333333;
+  margin-bottom: 5px;
 }
 h2 {
   font-size: 52px;
@@ -1000,7 +1014,7 @@ h5 {
 h6 {
   font-weight: 400;
   font-size: 2em;
-  line-height: 1.1em;
+  line-height: 1.2em;
 }
 h6.small {
   font-size: 28px;
