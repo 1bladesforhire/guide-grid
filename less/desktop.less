@@ -35,6 +35,11 @@
     font-size: 1.8em;
   }
 
+  p.title{
+    font-size: 18px;
+    line-height: 20px;
+  }
+
 //grid
   section{
     padding-top: 70px;
@@ -42,6 +47,16 @@
   .row, .row-lined{
     grid-column: span 9;
     grid-template-columns: repeat(6, 1fr);
+    margin-right: 10px;
+    .one-half{
+      grid-column: span 3;
+      margin-right: 10px;
+    }
+    .thirds{
+
+        margin-right: 10px;
+
+    }
   }
   
   .row-full{
@@ -51,13 +66,21 @@
     grid-column: span 9;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
+    .thirds{
+      margin-right: 10px;
+    }
   }
   .row-seven{
     grid-column: span 9;
     grid-template-columns: repeat(4, 1fr);
+    margin-right: 10px;
   }
   .row-twelve{
     grid-template-columns: repeat(9,1fr);
+    margin-right: 10px;
+  }
+  .table-row{
+    grid-column: span 9;
   }
 
 //content
@@ -157,6 +180,64 @@
 
   #section-4-5 .fat-thirds{
     padding-right: 10px;
+  }
+
+  #section-4-8{
+    .row-seven{
+      grid-column-gap: 10px;
+    }
+  }
+
+  #section-4-9{
+    .row-twelve{
+      grid-template-columns: repeat(10, 1fr);
+      .half{
+        grid-column: span 5;
+        p{
+          padding-right: 10px;
+          &.half{
+            grid-column: span 1;
+          }
+        }
+      }
+    }
+  }
+
+  #section-5-3{
+    .half{
+      grid-column: span 3;
+    }
+  }
+
+
+  #section-5-8{
+    p{
+      margin-right: 20px;
+    }
+  }
+
+  #section-5-9, #section-5-11, #section-5-13{
+    .row-twelve{
+      grid-template-columns: repeat(8, 1fr);
+      margin-right: 10px;
+    }
+    p.title{
+      margin-bottom: 0;
+    }
+  }
+  #section-5-13{
+    .full-row{
+      grid-column: span 9;
+    }
+    .row .fourths{
+      grid-column: span 2;
+    }
+  }
+
+  #section-6-3{
+    .thirds{
+      grid-column: span 3;
+    }
   }
   .cross-through{
     font-size: 28px;
