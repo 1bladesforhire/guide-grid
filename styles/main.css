@@ -990,8 +990,8 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 h1 {
-  font-size: 5em;
-  line-height: 1em;
+  font-size: 80px;
+  line-height: 80px;
   font-weight: 100;
   color: #333333;
   margin-bottom: 5px;
@@ -1034,8 +1034,9 @@ h4 {
 }
 h5 {
   font-weight: 400;
-  font-size: 1.5em;
-  line-height: 1.1em;
+  font-size: 24px;
+  line-height: 30px;
+  margin-bottom: 30px;
   color: #313131;
   font-family: 'SegoeUISemiLight';
 }
