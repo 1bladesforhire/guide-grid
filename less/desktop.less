@@ -25,7 +25,7 @@
     margin-right: 20px;
   }
   h5{
-    grid-column: span 9;
+    grid-column: span 8;
     margin-right: 20px;
     font-size: 1.25em;
   }
@@ -39,13 +39,18 @@
   section{
     padding-top: 70px;
   }
-  .row{
+  .row, .row-lined{
     grid-column: span 9;
     grid-template-columns: repeat(6, 1fr);
   }
   
+  .row-full{
+    grid-column: span 8;
+  }
   .row-five{
+    grid-column: span 9;
     grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
   }
   .row-seven{
     grid-column: span 9;
@@ -110,14 +115,49 @@
       }
     }
   }
-  #section-2{
-    &-4{
+  #section-2-4{
       p{
         grid-column: span 7;
       }
     }
+  #section-3-1 .thirds .content{
+    margin-right: 10px;
   }
 
+  .mag .thirds{
+    grid-column: span 2;
+  }
+  #section-3-3{
+    .dos{
+      grid-column-end: 4;
+    }
+  }
+
+  .dos p{
+    padding-right: 0;
+  }
+  #section-3-4 .thirds{
+    padding-right: 20px;
+  }
+
+  #section-4-2{
+    .thirds p{
+      padding-right: 10px;
+    }
+    p.large{
+      grid-column: span 8;
+    }
+    .left{
+      margin-right: 0;
+    }
+    .right{
+      margin-left: 0;
+    }
+  }
+
+  #section-4-5 .fat-thirds{
+    padding-right: 10px;
+  }
   .cross-through{
     font-size: 28px;
   }
