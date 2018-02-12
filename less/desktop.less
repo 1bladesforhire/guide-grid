@@ -27,6 +27,7 @@
   h5{
     grid-column: span 9;
     margin-right: 20px;
+    font-size: 1.25em;
   }
   h6{
     grid-column: span 9;
@@ -39,7 +40,19 @@
     padding-top: 70px;
   }
   .row{
-
+    grid-column: span 9;
+    grid-template-columns: repeat(6, 1fr);
+  }
+  
+  .row-five{
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .row-seven{
+    grid-column: span 9;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .row-twelve{
+    grid-template-columns: repeat(9,1fr);
   }
 
 //content
@@ -60,7 +73,8 @@
       margin-left: 10px;
     }
     .right{
-      grid-column-end: 7;
+      grid-column-end: 8;
+      margin-right: 10px;                           
     }
   }
 
@@ -68,6 +82,9 @@
     padding-top: 0;
     main section{
       grid-template-columns: 65px repeat(7, 1fr) 65px;
+      padding-top: 65px;
+      padding-bottom: 65px;
+
     }
   }
 
@@ -93,8 +110,19 @@
       }
     }
   }
+  #section-2{
+    &-4{
+      p{
+        grid-column: span 7;
+      }
+    }
+  }
 
   .cross-through{
     font-size: 28px;
   }
+  .cta{
+    grid-column: span 5;
+  }
+
 }

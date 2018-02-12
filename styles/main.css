@@ -992,8 +992,8 @@ h4 {
 }
 h5 {
   font-weight: 400;
-  font-size: 24px;
-  line-height: 30px;
+  font-size: 1.5em;
+  line-height: 1.1em;
   color: #313131;
   font-family: 'SegoeUISemiLight';
 }
@@ -1197,6 +1197,7 @@ a {
   h5 {
     grid-column: span 9;
     margin-right: 20px;
+    font-size: 1.25em;
   }
   h6 {
     grid-column: span 9;
@@ -1205,6 +1206,20 @@ a {
   }
   section {
     padding-top: 70px;
+  }
+  .row {
+    grid-column: span 9;
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .row-five {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .row-seven {
+    grid-column: span 9;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .row-twelve {
+    grid-template-columns: repeat(9, 1fr);
   }
   .overlay {
     grid-column: span 9;
@@ -1225,13 +1240,16 @@ a {
     margin-left: 10px;
   }
   .overlay .right {
-    grid-column-end: 7;
+    grid-column-end: 8;
+    margin-right: 10px;
   }
   #mainArea {
     padding-top: 0;
   }
   #mainArea main section {
     grid-template-columns: 65px repeat(7, 1fr) 65px;
+    padding-top: 65px;
+    padding-bottom: 65px;
   }
   #section-1 h1,
   #section-1 h6,
@@ -1251,7 +1269,13 @@ a {
   #section-1-2 div > p {
     grid-column: span 7;
   }
+  #section-2-4 p {
+    grid-column: span 7;
+  }
   .cross-through {
     font-size: 28px;
+  }
+  .cta {
+    grid-column: span 5;
   }
 }
