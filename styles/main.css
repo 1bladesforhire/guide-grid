@@ -21,6 +21,12 @@ main > section {
 img {
   max-width: 100%;
 }
+.no-padding {
+  padding: 0!important;
+}
+.no-margin {
+  margin: 0!important;
+}
 #section-1 {
   background: #dadada;
 }
@@ -208,9 +214,6 @@ img {
   grid-column-end: 10;
   margin-bottom: 5px;
 }
-#section-1 picture {
-  padding: 35px 0 30px;
-}
 #section-1-1 h4 {
   margin-bottom: 55px;
 }
@@ -221,15 +224,23 @@ img {
   grid-column: span 7;
 }
 #section-1-2 h6 {
-  font-size: 32px;
+  font-size: 28px;
   font-weight: 500;
+  top: 1px;
+  position: relative;
 }
 #section-1-2 p {
   padding-bottom: 45px;
   grid-column: span 5!important;
 }
+#section-1 picture {
+  padding: 35px 0 30px;
+}
 #section-2-3 h4 {
   grid-column: span 7;
+}
+#section-2-3 .row-twelve {
+  grid-template-columns: repeat(10, 1fr);
 }
 .direction {
   grid-column: span 10;
