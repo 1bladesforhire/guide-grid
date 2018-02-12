@@ -10,8 +10,8 @@ h1{
 }
 
 main > section{
-    padding-top: 95px;
-    padding-bottom: 95px;
+    padding-top: 100px;
+    padding-bottom: 100px;
     display: grid;  
 }
 
@@ -38,7 +38,6 @@ img{
         }
     }
 }
-
 #section-2{
     background: @dk-gray;
     &-1{
@@ -163,7 +162,7 @@ img{
     font-size: 13px;
     line-height: 18px;
     height: 18px;
-    font-weight: 400;
+    font-weight: 600;
     outline-color: transparent;
     color: #000000;
     padding: 0 7px 1px 7px;
@@ -172,6 +171,7 @@ img{
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
+    margin-bottom: -10px;
     &.blue{
         background: @blue;
     }
@@ -199,13 +199,14 @@ img{
     padding-top: 55px;
     h1{
         grid-column: span 6;
+        margin-bottom: 10px;
     }
     h6 {
-        grid-column: span 8;
+        grid-column: span 7;
         color: #3b3b3b;
     }
     p {
-        grid-column: span 8;
+        grid-column: span 6;
     }
     &-1{
         h6,p{
@@ -215,12 +216,38 @@ img{
         }
     }
     picture {
-        padding: 35px 0px;
+        padding: 35px 0 30px;
     }
 }
+#section-1-1 {
+    h4 {
+        margin-bottom: 55px;
+    }
+    p {
+        padding-bottom: 20px;
+    }
+}
+#section-1-2 {
+    h5 {
+        grid-column: span 7;
+    }
+    h6 {
+        font-size: 32px;
+        font-weight: 500;
+    }
+    p {
+        padding-bottom: 45px;
+        grid-column: span 5!important;
+    }
 
+}
 //section 2-3
 //Audience
+#section-2-3 {
+    h4 {
+        grid-column: span 7;
+    }
+}
 .direction{
     grid-column: span 10;
     .users{
@@ -244,6 +271,11 @@ img{
     p {
         grid-column: span 5;
         margin-bottom: 20px;
+    }
+}
+#section-2-6 {
+    h6 {
+        padding-bottom: 20px;
     }
 }
 //section 2-7
@@ -588,29 +620,29 @@ img{
             color: #ffffff;
             font-size: 15px;
             line-height: 20px;
-            margin-bottom: 10px;
+            margin-bottom: 30px;
         }
     }
     .left{
         width: 250px;
-        margin-left: 50px;
+        margin-left: 30px;
+        margin-top: 30px;
         grid-column-end: 2;
         grid-row-start: 1;
         z-index: 10;
-        margin-top: 15px;
         margin-bottom: 50px;
         text-align: left;
     }
     .right{
+        margin-right: 30px;
+        margin-top: 30px;
         width: 250px;
-        grid-column-end: 7;
+        grid-column-end: 8;
         grid-column-start: auto;
         grid-row-start: 1;
         z-index: 10;
-        margin-top: 15px;
         margin-bottom: 50px;
-        margin-right: 140px;
-        
+
     }
     
     .img-wrapper{

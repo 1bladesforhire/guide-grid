@@ -107,23 +107,26 @@ h3 {
 
 h4{
     font-size: 3.25em;// 60px
-    line-height: 1.1em;
+    line-height: 1em;
     color: @body-text-black;
     font-family: 'SegoeUISemiBold';
     font-weight: 600;
+    margin-bottom: 5px;
 }
 h5{
     font-weight: 400;
     font-size: 24px;
     line-height: 30px;
-    color: @text-lt-gray; 
+    margin-bottom: 30px;
+    color: @text-lt-gray;
     font-family: 'SegoeUISemiLight';
-
 }
+
 h6{
-    font-weight: 400;
-    font-size: 2em;
+    font-weight: 600;
+    font-size: 1.7em;
     line-height: 1.2em;
+    padding-bottom: 5px;
     &.small{
         font-size: 28px;
     }
@@ -166,26 +169,34 @@ p {
 }
 .thirds {
     .title{
-    font-size: 20px;
-    line-height:30px; 
-    font-family: 'SegoeUISemiBold';
-    font-weight: 600;
-    &.large{
-        font-size: 22px;
-        line-height: 28px;
-    }
+        font-size: 20px;
+        line-height:28px;
+        font-family: 'SegoeUISemiLight';
+        font-weight: 300;
+        &.large{
+            font-size: 22px;
+            line-height: 28px;
+        }
     }
     .desc{
         font-size: 22px;
         line-height: 28px;
         letter-spacing: .025em;
-        
+        font-family: 'SegoeUISemiBold';
+        font-weight: 600;
+        margin-bottom: 15px;
+
     }
     .drawer {
         display: block;
-        padding-top: 10px;
+        padding-top: 25px;
         padding-bottom: 10px;
+        text-transform: uppercase;
+        font-size: 13px;
+        text-decoration: none;
+
         &:after{
+            padding-left: 10px;
             content: "\E70D";
             font-family: "MWF-MDL2";
         }
@@ -198,7 +209,7 @@ nav a{
 }
 .cross-through{
     font-size: 32px;
-    font-weight: 100;
+    font-weight: 300;
     background-image: url(../assets/arrow.svg);
     background-size: contain;
     background-position: -20px 60%;
@@ -257,24 +268,35 @@ a{
     padding: 30px 0;
     grid-column: span 3;
     grid-template-columns: fit-content(300px);
-    a{
-        color: white;
+    a {
+        font-size: 13px;
+        line-height: 16px;
+        padding: 10px 22px 7px 24px;
+        display: inline-block;
+        max-width: 100%;
+        overflow: hidden;
+        border: 2px solid transparent;
+        color: #fff;
         background: @body-text-black;
-        padding: 15px 10px;
-        text-decoration: none !important;
+        text-decoration: none;
+        text-align: center;
+        letter-spacing: .075em;
+        white-space: nowrap;
+        transition: scale .2s ease-in-out;
         text-transform: uppercase;
         &:after{
-            content: "\E76C";	
+            content: "\E76C";
             margin-left: 5px;
-            margin-top: 3px;
+            margin-top: 0px;
             font-family: "MWF-MDL2";
             display: inline-block;
-            vertical-align: top;
-        }    
+            vertical-align: middle;
+        }
         &:hover{
-            text-decoration: underline !important;
+            text-decoration: none;
+            background: @body-text-lt-black;
             &:after{
-                text-decoration: none !important;
+                text-decoration: none;
             }
         }
     }
