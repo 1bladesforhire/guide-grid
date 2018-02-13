@@ -108,6 +108,28 @@
     }
   
   }
+
+  #section-5-4{
+    .thirds{
+      grid-template-rows: 100px 1fr;
+    }
+  }
+
+  #section-5-5{
+    .thirds .title{
+      font-size: 1.5em;
+    }
+  }
+
+  #section-5-7{
+    .row-twelve     {
+      grid-row-gap: 20px;
+      .fourths{
+        display: grid;
+        grid-template-rows: minmax(50px, min-content) 1fr min-content;
+      }
+    }
+  }
   .overlay{
     .img-wrapper{
       grid-column-end: 11;

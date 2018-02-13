@@ -457,6 +457,17 @@ img {
 #section-5-3 p {
   margin-bottom: 10px;
 }
+#section-5-4 .thirds {
+  grid-template-rows: 60px 1fr;
+}
+#section-5-4 .thirds .title {
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+}
+#section-5-4 .thirds p {
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+}
 #section-5-5 .thirds .title {
   font-family: 'SegoeUISemiLight';
   font-size: 2em;
@@ -1553,6 +1564,20 @@ a {
   #section-5-3 .half,
   #section-5-3 .subs {
     grid-column: span 5;
+  }
+  #section-5-4 .thirds {
+    grid-template-rows: 100px 1fr;
+  }
+  #section-5-5 .thirds .title {
+    font-size: 1.5em;
+  }
+  #section-5-7 .row-twelve {
+    grid-row-gap: 20px;
+  }
+  #section-5-7 .row-twelve .fourths {
+    display: grid;
+    grid-template-rows: minmax(50px, -webkit-min-content) 1fr -webkit-min-content;
+    grid-template-rows: minmax(50px, min-content) 1fr min-content;
   }
   .overlay {
     margin-right: 10px;
