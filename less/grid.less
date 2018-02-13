@@ -121,24 +121,28 @@ hr{
 
 
 
-.left, .middle, .right{
-    grid-column: span 2;
-    color: @nav-lt;
-    font-size: 24px;
+
+.word-art{
+    .left, .middle, .right{
+        grid-column: span 2;
+        color: @nav-lt;
+        font-size: 24px;
+    }
+    .left{
+        text-align: right;
+        margin-right: -4em;
+    }
+    .right{
+        text-align: left;
+        margin-left: -4em;
+    }
+    .middle{
+        font-weight: 600;
+        font-family: 'SegoeUISemiBold';
+        text-align: center;
+    }
 }
-.left{
-    text-align: right;
-    margin-right: -4em;
-}
-.right{
-    text-align: left;
-    margin-left: -4em;
-}
-.middle{
-    font-weight: 600;
-    font-family: 'SegoeUISemiBold';
-    text-align: center;
-}
+
 
 
 //base grid styles

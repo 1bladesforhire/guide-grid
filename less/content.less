@@ -487,14 +487,17 @@ img{
 #section-4-8{
     .row-seven{
         grid-column-gap: 40px;
+        display: grid;
     }
     .half{
-        grid-template-columns: 1fr;
-        p{  
-            margin-top: 0;
+        display: flex;
+        flex-direction: column;
+        p, img{  
+            margin-top: 20px;
         }
         .title{
             padding-right: 0;
+            min-height: 40px;
         }
     }
 }
@@ -712,4 +715,50 @@ img{
     background-position: 0 80%;
     background-size: contain;
     background-image: url('../assets/arrow-2.svg');
+}
+//fixes for random issues
+
+.drawer-content{
+    display: none;
+}
+
+.head-info{
+    
+    min-height: 170px;
+    grid-column: span 2;
+    grid-template-rows: 60px 100px;
+    grid-template-columns: 1fr;
+    display: grid;
+    .title{
+        padding-bottom: 20px;
+    }
+    img{
+        align-self: center;
+    }
+    grid-row-gap: 10px;
+}
+
+.headers{
+    .thirds{
+        grid-template-rows: repeat(10, min-content);
+    }
+}
+
+.header{
+    .thirds{
+        grid-template-rows: 50px 120px 200px;
+    }
+    
+    img{
+        grid-column: span 3;
+        align-self: center;
+    }
+}
+
+.row-fluid{
+    grid-column: span 9;
+    display: block;
+    .middle{
+        margin-left: 25%;
+    }
 }

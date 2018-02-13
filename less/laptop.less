@@ -9,6 +9,7 @@
   //typography
   h4{
     font-size: 2.25em;
+    grid-column: span 9;
   }
   h5{
     font-size: 1.125em;
@@ -27,18 +28,90 @@
     grid-template-columns: repeat(5, 1fr);
   }
 
-  #section-2-6, #section-3-1, #section-3-2 {
+  .row-top-five{
+    grid-template-columns: 1fr;
+  }
+
+  .row-full{
+    grid-column: span 9;
+    margin-right: 10px;
+  }
+
+  .row-five.empty-cell{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  //content specific
+
+  #section-2-6, #section-3-1, #section-3-2, #section-3-3 {
     .thirds{
       grid-column: span 7;
     }
   }
+  #section-3-1 .thirds{
+    margin-bottom: 30px;
+  }
+
+  #section-3-3 .donts{
+    grid-column: span 3;
+  }
+  .mag h2{
+    margin-bottom: 30px;
+  }
 
 
+  #section-4-1{
+    .thirds, .half{
+      grid-column: span 7;
+      margin-bottom: 10px;
+    }
+  }
 
 
+  #section-4-3{
+    .half p{
+      padding-right: 0;
+    }
+  }
 
+  #section-4-4{
+    .fat-thirds{
+      grid-column: span 3;
+    }
+  }
+
+  #section-4-5 .fat-thirds img {
+      width: auto;
+      height: auto;
+  }
+
+  #section-4-6{
+    .row-five.empty-cell{
+      .thirds{
+        grid-template-rows: 50px 100px;
+      }
+    }
+  }
+
+  #section-4-8 .half {
+    .title{
+      min-height: 60px;
+    }
+    p{
+      padding-right: 0;
+    }
+  }
+
+  #section-5-3{
+    .half, .subs{
+      grid-column: span 5;
+    }
+  
+  }
   .overlay{
-    grid-column: span 9;
+    .img-wrapper{
+      grid-column-end: 11;
+    }
     margin-right: 10px;
     grid-template-rows: repeat(2, min-content);
     .left, .right{
@@ -48,7 +121,7 @@
       background: #000;
       grid-row-start: 2;
       grid-column-start: 1;
-      grid-column-end: 8;
+      grid-column-end: 11;
       p{
         font-size: .5em;
         margin-bottom: 10px;
@@ -59,4 +132,5 @@
   .cta{
     grid-column: span 9;
   }
+
 }
