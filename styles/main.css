@@ -1495,6 +1495,9 @@ a {
 *
 */
 @media all and (max-width: 1084px) {
+  h3 {
+    font-size: 3.5em;
+  }
   h4 {
     font-size: 2.25em;
     grid-column: span 9;
@@ -1578,6 +1581,31 @@ a {
     display: grid;
     grid-template-rows: minmax(50px, -webkit-min-content) 1fr -webkit-min-content;
     grid-template-rows: minmax(50px, min-content) 1fr min-content;
+  }
+  #section-5-9 .half p,
+  #section-5-12 .half p,
+  #section-5-13 .half p {
+    padding-right: 20px;
+  }
+  #section-5-11 .fourths .title {
+    padding-bottom: 20px;
+  }
+  #section-6-1 .half,
+  #section-6-3 .half {
+    grid-column: span 5;
+  }
+  #section-6-1 .half .title,
+  #section-6-3 .half .title {
+    padding-right: 0;
+    grid-column: span 2;
+    padding-bottom: 10px;
+  }
+  #section-6-1 .row-twelve .thirds,
+  #section-6-3 .row-twelve .thirds {
+    grid-column: span 8;
+  }
+  #section-6-3 {
+    grid-row-gap: 10px;
   }
   .overlay {
     margin-right: 10px;
