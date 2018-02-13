@@ -505,7 +505,7 @@ img {
 .overlay {
   display: grid;
   grid-column: span 8;
-  grid-template-columns: repeat(7, 1fr);
+  grid-template-columns: repeat(10, 1fr);
 }
 .overlay .left,
 .overlay .right {
@@ -536,15 +536,21 @@ img {
   margin-right: 30px;
   margin-top: 30px;
   width: 250px;
-  grid-column-end: 8;
+  grid-column-end: 10;
   grid-column-start: auto;
   grid-row-start: 1;
   z-index: 10;
   margin-bottom: 50px;
 }
+@media all and (min-width: 1750px) {
+  .overlay .right {
+    grid-column-end: 9;
+    margin-left: 0;
+  }
+}
 .overlay .img-wrapper {
   grid-column-start: 1;
-  grid-column-end: 8;
+  grid-column-end: 10;
   grid-row-start: 1;
 }
 .dos .title,
