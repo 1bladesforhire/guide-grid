@@ -302,6 +302,7 @@ img {
 .table-three .role {
   grid-column: span 2;
   margin-bottom: 20px;
+  padding-right: 20px;
 }
 .table-three .message {
   grid-column: span 2;
@@ -387,6 +388,9 @@ img {
 #section-3-4 .explanation .title {
   font-family: 'SegoeUISemiBold';
   text-decoration: none;
+}
+#section-3-4 .explanation {
+  padding-right: 20px;
 }
 #section-3-4 .explanation .title {
   font-size: 15px;
@@ -637,7 +641,7 @@ img {
 }
 nav {
   background: #252525;
-  overflow-y: scroll;
+  overflow-y: auto;
   height: 100%;
   position: fixed;
   top: 0;
@@ -1163,7 +1167,7 @@ nav a {
   text-decoration: none;
 }
 .cross-through {
-  font-size: 32px;
+  font-size: 28px;
   font-weight: 300;
   background-image: url(../assets/arrow.svg);
   background-size: contain;
@@ -1216,7 +1220,6 @@ a {
   color: #076dcc;
 }
 .cta {
-  margin-top: 30px;
   padding: 30px 0;
   grid-column: span 3;
   grid-template-columns: fit-content(300px);
