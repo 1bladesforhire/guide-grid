@@ -12,11 +12,21 @@ $(document).ready(function() {
       });
       
 
-    //set the current element to active
+      //close the mobile nav
+      if($(this).hasClass('active')){
+        $('.close').fadeOut('slow', 'swing');
+        $('#menu-list').slideToggle();
+        $('.open').fadeIn('slow', 'swing');
+      }
       $('nav .active').removeClass('active');
+     
       
+      //set the current element to active
       $(this).addClass('active');
       if($(this).parent().hasClass('sub-nav__item')){
+        $('.close').fadeOut('slow', 'swing');
+        $('#menu-list').slideToggle();
+        $('.open').fadeIn('slow', 'swing');
         $(this).parent().parent().parent().addClass('active');
       }else{
         $(this).parent().addClass('active');
@@ -48,13 +58,7 @@ $(window).scroll(function() {
           //attach the hash (#jumptarget) to the pageurl
           // location.hash = target; 
         } 
-        // else{
-        //   console.log('else');
-        //   $('nav .active').removeClass('active');
-        //   $('nav li:first').addClass('active');
-        //   $('nav a:first').addClass('active');
-        // }
-        
+      
         return target;
     });
 
@@ -104,4 +108,5 @@ $('.close').on('click', function(){
   $('#menu-list').slideToggle();
   $('.open').fadeIn('slow', 'swing');
 });
+
 
