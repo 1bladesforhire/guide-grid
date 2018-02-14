@@ -1,3 +1,52 @@
 @media all and (max-width: 767px){
-  
+  .navbar{
+    display: block;
+    position: fixed;
+    top: 0 ;
+    width: 100%;
+    height: 50px;
+    z-index: 10;
+    background: lighten(@nav-dk, 10% );
+    img{
+      display: block;
+      height: 40px;
+      margin: 5px auto;
+    }
+    .open{
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      height: 30px;
+      width: 30px;
+      display: block;
+    }
+    .close{
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      height: 30px;
+      width: 30px;
+    }
+  }
+  nav{
+    overflow-y: auto;
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  body{
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 1fr;
+  }
+  #menu-list{
+    display: none;
+    width: 100%;
+    z-index: 10;
+    height: 100vh;
+  }
+  #mainArea{
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-column-end: -1;
+  }
 }

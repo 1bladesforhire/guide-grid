@@ -65,28 +65,6 @@ $(window).scroll(function() {
 
 
 
-//original active classes
-// $(document).ready(function(){
-//   $('nav a').on('click', function(event){
-//     var activeLink = $(this);
-//     event.preventDefault();
-//     $('nav a').removeClass('active');
-//     activeLink.addClass('active');
-//     //check which level and add active to the top li
-//     if(activeLink.parent().hasClass('sub-nav__item')){
-//       var topLi = activeLink.parent().parent().parent();
-      
-//     } else {
-//       var topLi = activeLink.parent();
-
-//     }
-//     $('nav li').removeClass('active');
-//       topLi.addClass('active');
-//   });
-// });
-
-
-
 $(window).on('load', function(){
 
   //check for alternate link location
@@ -114,32 +92,16 @@ $(window).on('load', function(){
   }
 });
 
+//mobile nav
+$('.open').on('click', function(){
+  $('.open').fadeOut('slow', 'swing');
+  $('#menu-list').slideToggle();
+  $('.close').fadeIn('slow', 'swing');
+});
 
-//scroll navigation tie in 
-// $(window).scroll(function() {
-//   var windscroll = $(window).scrollTop();
-//   if (windscroll >= 200) {
-//       $('nav').addClass('fixed');
-//       $('section').each(function(i) {
-//           //check each section, for what is in view        
-//           if ($(this).position().top <= windscroll - 20) {
-            
-//               $('nav a.active').removeClass('active');
-//               $('nav li.active').removeClass('active');
-//               $('nav a').eq(i).addClass('active');
-//               if($('nav a').eq(i).parent().hasClass('sub-nav__item')){
-//                 $('nav a').eq(i).parent().parent().parent().addClass('active');
-//               }else{
-//                 $('nav a').eq(i).parent().addClass('active');
-//               }
-//           } else if($(this).position().top <20){
-//             $('nav a.active').removeClass('active');
-//             $('nav a:first').addClass('active');
-//           }
-//       });
-
-//   } 
-
-// }).scroll();
-
+$('.close').on('click', function(){
+  $('.close').fadeOut('slow', 'swing');
+  $('#menu-list').slideToggle();
+  $('.open').fadeIn('slow', 'swing');
+});
 
