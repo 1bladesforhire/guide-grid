@@ -676,9 +676,6 @@ img {
 .row-fluid .middle {
   margin-left: 25%;
 }
-.navbar {
-  display: none;
-}
 #menu-list {
   display: block;
 }
@@ -784,7 +781,7 @@ nav button {
 }
 .hamburger span {
   display: block;
-  height: 4px;
+  height: 3px;
   width: 100%;
   background: #1d1d1d;
   left: 0;
@@ -794,13 +791,13 @@ nav button {
   opacity: 1;
 }
 .hamburger span:nth-child(1) {
-  top: 2px;
+  top: 3px;
 }
 .hamburger span:nth-child(2) {
   top: 11px;
 }
 .hamburger span:nth-child(3) {
-  top: 20px;
+  top: 19px;
 }
 .hamburger span.hamburger__label {
   display: none;
@@ -817,6 +814,9 @@ nav button {
   top: 12px;
   -webkit-transform: rotate(-135deg);
   transform: rotate(-135deg);
+}
+.navbar {
+  display: none;
 }
 html {
   -webkit-box-sizing: border-box;

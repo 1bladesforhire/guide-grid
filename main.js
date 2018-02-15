@@ -4,20 +4,14 @@ $(document).ready(function() {
 
       var target = $(this).attr("href"); // Set the target as variable
 
-      // perform animated scrolling by getting top-position of target-element and set it as scroll target
+      // perform animated scrolling using animatescroll
       $(target).animatescroll({scrollSpeed:2000,easing:'easeInOutQuart'});
-      // $('html, body').stop().animate({
-      //     scrollTop: $(target).offset().top
-      // }, 600, function() {
-      //     
-      // });
       location.hash = target; //attach the hash (#jumptarget) to the pageurl
 
       //close the mobile nav
-      if($(this).hasClass('active')){
-         //mobile nav close after click on the link
+      if($(this).hasClass('active') && !$(this).parent().hasClass('sub-nav__item') ){
+        //mobile nav close after click on the link
         if($(window).width() < 769){
-         
           $('.hamburger').toggleClass('open');
           $('#menu-list').slideToggle();
         }
@@ -32,7 +26,6 @@ $(document).ready(function() {
 
       //check for nav menu level
       if($(this).parent().hasClass('sub-nav__item')){
-
 
         //mobile nav close after click on the link
         if( $(window).width() <769){
@@ -53,11 +46,11 @@ $(window).scroll(function() {
   var scrollDistance = $(window).scrollTop();
 
   //if we have started scrolling, check where we are
-  if (scrollDistance > 20){
+  if (scrollDistance > 50){
     
   // Assign active class to nav links while scrolling
     $('section').each(function(i) {
-        if ($(this).position().top <= scrollDistance - 20) {
+        if ($(this).position().top <= scrollDistance - 50) {
           
           $('nav .active').removeClass('active');
           var target =  $('nav a').eq(i).attr('href');
