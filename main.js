@@ -5,12 +5,13 @@ $(document).ready(function() {
       var target = $(this).attr("href"); // Set the target as variable
 
       // perform animated scrolling by getting top-position of target-element and set it as scroll target
-      $('html, body').stop().animate({
-          scrollTop: $(target).offset().top
-      }, 600, function() {
-          location.hash = target; //attach the hash (#jumptarget) to the pageurl
-      });
-      
+      $(target).animatescroll({scrollSpeed:2000,easing:'easeInOutQuart'});
+      // $('html, body').stop().animate({
+      //     scrollTop: $(target).offset().top
+      // }, 600, function() {
+      //     
+      // });
+      location.hash = target; //attach the hash (#jumptarget) to the pageurl
 
       //close the mobile nav
       if($(this).hasClass('active')){
@@ -132,8 +133,3 @@ $('.drawer').on('click', function(event){
 $('.drawer-close').on('click', function(){
   $(this).parent().slideToggle('slow');
 });
-// $(document).on('change', function(){
-//   if($(window).width() > 768){
-    
-//   }
-// })
