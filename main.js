@@ -17,6 +17,7 @@ $(document).ready(function() {
       if($(this).hasClass('active')){
          //mobile nav close after click on the link
         if($(window).width() < 769){
+         
           $('.close').fadeOut('slow', 'swing');
           $('#menu-list').slideToggle();
           $('.open').fadeIn('slow', 'swing');
@@ -38,7 +39,7 @@ $(document).ready(function() {
         if( $(window).width() <769){
           $('.close').fadeOut('slow', 'swing');
           $('#menu-list').slideToggle();
-          $('.open').fadeIn('slow', 'swing');
+          $('.hamb').fadeIn('slow', 'swing');
         }
         
         $(this).parent().parent().parent().addClass('active');
@@ -111,17 +112,16 @@ $(window).on('load', function(){
 });
 
 //mobile nav
-$('.open').on('click', function(){
-  $('.open').fadeOut('slow', 'swing');
+$('.hamburger').on('click', function(){
+  $('.hamburger').toggleClass('open');
   $('#menu-list').slideToggle();
-  $('.close').fadeIn('slow', 'swing');
 });
 
-$('.close').on('click', function(){
-  $('.close').fadeOut('slow', 'swing');
-  $('#menu-list').slideToggle();
-  $('.open').fadeIn('slow', 'swing');
-});
+// $('.close').on('click', function(){
+//   $('.close').fadeOut('fast', 'swing');
+//   $('#menu-list').slideToggle();
+//   $('.open').fadeIn('slow', 'swing');
+// });
 
 $('.drawer').on('click', function(event){
   event.preventDefault();

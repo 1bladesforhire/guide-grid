@@ -384,13 +384,41 @@ img {
   grid-column-start: 1;
   padding-bottom: 10px;
 }
+#section-4-5 .row-five {
+  grid-template-columns: repeat(4, 1fr);
+}
 #section-4-5 .fat-thirds {
-  padding-right: 30px;
   grid-column: span 1;
 }
 #section-4-5 .fat-thirds img {
   width: 250px;
-  height: 250px;
+}
+#section-4-6 .row-five {
+  grid-template-columns: repeat(4, 1fr);
+}
+#section-4-6 .one-half {
+  grid-column: span 3;
+}
+#section-4-8 .row-seven {
+  grid-column-gap: 40px;
+  display: grid;
+}
+#section-4-8 .half {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+#section-4-8 .half p,
+#section-4-8 .half img {
+  margin-top: 20px;
+}
+#section-4-8 .half .title {
+  padding-right: 0;
+  min-height: 60px;
 }
 #section-4-9 .half,
 #section-4-9 img {
@@ -412,27 +440,6 @@ img {
 #section-4-9 .half .half .swatch,
 #section-4-9 img .half .swatch {
   grid-column: span 8;
-}
-#section-4-8 .row-seven {
-  grid-column-gap: 40px;
-  display: grid;
-}
-#section-4-8 .half {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-#section-4-8 .half p,
-#section-4-8 .half img {
-  margin-top: 20px;
-}
-#section-4-8 .half .title {
-  padding-right: 0;
-  min-height: 40px;
 }
 #section-5-3 .half {
   grid-column: span 4;
@@ -466,8 +473,13 @@ img {
   font-family: 'SegoeUISemiLight';
   font-size: 2em;
 }
-#section-5-6 .title,
-#section-5-6 img {
+#section-5-6 .row-twelve .fourths {
+  display: grid;
+  grid-template-rows: minmax(60px, -webkit-min-content) -webkit-max-content 1fr;
+  grid-template-rows: minmax(60px, min-content) max-content 1fr;
+  grid-row-gap: 20px;
+}
+#section-5-7 .title {
   margin-bottom: 20px;
 }
 #section-5-9 .half {
@@ -669,6 +681,51 @@ img {
 }
 #menu-list {
   display: block;
+}
+.hamburger {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  display: block;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+.hamburger span {
+  display: block;
+  height: 4px;
+  width: 100%;
+  background: #1d1d1d;
+  left: 0;
+  position: absolute;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  opacity: 1;
+}
+.hamburger span:nth-child(1) {
+  top: 2px;
+}
+.hamburger span:nth-child(2) {
+  top: 11px;
+}
+.hamburger span:nth-child(3) {
+  top: 20px;
+}
+.hamburger span.hamburger__label {
+  display: none;
+}
+.hamburger.open span:nth-child(1) {
+  top: 12px;
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.open span:nth-child(3) {
+  top: 12px;
+  -webkit-transform: rotate(-135deg);
+  transform: rotate(-135deg);
 }
 nav {
   background: #252525;
@@ -1376,7 +1433,7 @@ a {
   }
   .overlay .left,
   .overlay .right {
-    margin-top: 10px;
+    margin-top: 30px;
     margin-bottom: 20px;
     padding: 15px 10px;
   }
@@ -1387,11 +1444,11 @@ a {
   }
   .overlay .left {
     grid-column-start: 1;
-    margin-left: 10px;
+    margin-left: 30px;
   }
   .overlay .right {
-    grid-column-end: 9;
-    margin-right: 10px;
+    grid-column-end: 10;
+    margin-right: 30px;
   }
   #mainArea {
     padding-top: 0;
@@ -1417,9 +1474,6 @@ a {
     grid-column: span 8;
   }
   #section-1-2 div > p {
-    grid-column: span 7;
-  }
-  #section-2-4 p {
     grid-column: span 7;
   }
   #section-3-1 .thirds .content {
@@ -1449,11 +1503,17 @@ a {
   #section-4-2 .right {
     margin-left: 0;
   }
+  #section-4-5 .row-five {
+    grid-template-columns: repeat(3, 1fr);
+  }
   #section-4-5 .fat-thirds {
     padding-right: 10px;
   }
   #section-4-8 .row-seven {
     grid-column-gap: 10px;
+  }
+  #section-4-8 .half .title {
+    min-height: 40px;
   }
   #section-4-9 .row-twelve {
     grid-template-columns: repeat(10, 1fr);
@@ -1470,6 +1530,10 @@ a {
   #section-5-3 .half {
     grid-column: span 3;
   }
+  #section-5-6 .row-twelve .fourths {
+    grid-template-rows: minmax(40px, -webkit-min-content) -webkit-max-content 1fr;
+    grid-template-rows: minmax(40px, min-content) max-content 1fr;
+  }
   #section-5-8 p {
     margin-right: 20px;
   }
@@ -1483,6 +1547,9 @@ a {
   #section-5-11 p.title,
   #section-5-13 p.title {
     margin-bottom: 0;
+  }
+  #section-5-11 p.title {
+    margin-bottom: 20px;
   }
   #section-5-13 .full-row {
     grid-column: span 9;
@@ -1537,6 +1604,9 @@ a {
   .row-five.empty-cell {
     grid-template-columns: repeat(2, 1fr);
   }
+  #mainArea main section {
+    grid-template-columns: 40px repeat(7, 1fr) 40px;
+  }
   #section-2-6 .thirds,
   #section-3-1 .thirds,
   #section-3-2 .thirds,
@@ -1557,6 +1627,10 @@ a {
     grid-column: span 7;
     margin-bottom: 10px;
   }
+  #section-4-1 .thirds .title,
+  #section-4-1 .half .title {
+    padding-bottom: 0;
+  }
   #section-4-3 .half p {
     padding-right: 0;
   }
@@ -1567,14 +1641,21 @@ a {
     width: auto;
     height: auto;
   }
+  #section-4-6 .row-five {
+    grid-template-columns: repeat(3, 1fr);
+  }
   #section-4-6 .row-five.empty-cell .thirds {
-    grid-template-rows: 50px 100px;
+    grid-template-rows: 50px minmax(-webkit-min-content, 100px);
+    grid-template-rows: 50px minmax(min-content, 100px);
   }
   #section-4-8 .half .title {
     min-height: 60px;
   }
   #section-4-8 .half p {
     padding-right: 0;
+  }
+  #section-5-3 .row {
+    grid-row-gap: 30px;
   }
   #section-5-3 .half,
   #section-5-3 .subs {
@@ -1647,6 +1728,14 @@ a {
   }
   .drawer-content {
     width: calc(94% - 300px);
+  }
+  .header .thirds {
+    grid-template-rows: repeat(3, -webkit-min-content);
+    grid-template-rows: repeat(3, min-content);
+    grid-row-gap: 20px;
+  }
+  .header .thirds .title {
+    padding-bottom: 0;
   }
 }
 /* 
