@@ -36,12 +36,18 @@ img{
     }
     &-2{
         h5{
-            grid-column: span 6;
+            grid-column: span 7;
         }
         background: @lt-gray;
         div > p{
 
-            grid-column: span 4;
+            grid-column: span 5;
+            padding-bottom: 45px;
+        }
+        
+        h6 {
+            font-size: 34px;
+            font-weight: 500;
         }
     }
 }
@@ -247,6 +253,7 @@ img{
         padding: 35px 0 30px;
     }
 }
+
 //section 2-3
 //Audience
 #section-2-3 {
@@ -792,6 +799,18 @@ img{
 
 .drawer-content{
     display: none;
+    width: calc(~"97%/4");
+    position: absolute;
+    background: @ltlt-gray;
+    padding: 20px;
+    transform: translateY(42%);
+}
+
+.drawer-close{
+    background: @nav-dk;
+    color: @dk-white;
+    padding: 5px 10px;
+    margin-bottom: 20px;
 }
 
 .head-info{
@@ -833,4 +852,11 @@ img{
     .middle{
         margin-left: 25%;
     }
+}
+
+.navbar{
+    display: none;
+}
+#menu-list{
+    display: block;
 }

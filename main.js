@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  $('a[href*="#').bind('click', function(e) {
+  $('nav a[href*="#').bind('click', function(e) {
       e.preventDefault(); // prevent hard jump, the default behavior
 
       var target = $(this).attr("href"); // Set the target as variable
@@ -12,11 +12,34 @@ $(document).ready(function() {
       });
       
 
-    //set the current element to active
+      //close the mobile nav
+      if($(this).hasClass('active')){
+         //mobile nav close after click on the link
+        if($(window).width() < 769){
+          $('.close').fadeOut('slow', 'swing');
+          $('#menu-list').slideToggle();
+          $('.open').fadeIn('slow', 'swing');
+        }
+      }
+
+      //remove all current active classes
       $('nav .active').removeClass('active');
+     
       
+      //set the current element to active
       $(this).addClass('active');
+
+      //check for nav menu level
       if($(this).parent().hasClass('sub-nav__item')){
+
+
+        //mobile nav close after click on the link
+        if( $(window).width() <769){
+          $('.close').fadeOut('slow', 'swing');
+          $('#menu-list').slideToggle();
+          $('.open').fadeIn('slow', 'swing');
+        }
+        
         $(this).parent().parent().parent().addClass('active');
       }else{
         $(this).parent().addClass('active');
@@ -48,13 +71,7 @@ $(window).scroll(function() {
           //attach the hash (#jumptarget) to the pageurl
           // location.hash = target; 
         } 
-        // else{
-        //   console.log('else');
-        //   $('nav .active').removeClass('active');
-        //   $('nav li:first').addClass('active');
-        //   $('nav a:first').addClass('active');
-        // }
-        
+      
         return target;
     });
 
@@ -62,28 +79,6 @@ $(window).scroll(function() {
 
 }).scroll();
 
-
-
-
-//original active classes
-// $(document).ready(function(){
-//   $('nav a').on('click', function(event){
-//     var activeLink = $(this);
-//     event.preventDefault();
-//     $('nav a').removeClass('active');
-//     activeLink.addClass('active');
-//     //check which level and add active to the top li
-//     if(activeLink.parent().hasClass('sub-nav__item')){
-//       var topLi = activeLink.parent().parent().parent();
-      
-//     } else {
-//       var topLi = activeLink.parent();
-
-//     }
-//     $('nav li').removeClass('active');
-//       topLi.addClass('active');
-//   });
-// });
 
 
 
@@ -114,32 +109,31 @@ $(window).on('load', function(){
   }
 });
 
+//mobile nav
+$('.open').on('click', function(){
+  $('.open').fadeOut('slow', 'swing');
+  $('#menu-list').slideToggle();
+  $('.close').fadeIn('slow', 'swing');
+});
 
-//scroll navigation tie in 
-// $(window).scroll(function() {
-//   var windscroll = $(window).scrollTop();
-//   if (windscroll >= 200) {
-//       $('nav').addClass('fixed');
-//       $('section').each(function(i) {
-//           //check each section, for what is in view        
-//           if ($(this).position().top <= windscroll - 20) {
-            
-//               $('nav a.active').removeClass('active');
-//               $('nav li.active').removeClass('active');
-//               $('nav a').eq(i).addClass('active');
-//               if($('nav a').eq(i).parent().hasClass('sub-nav__item')){
-//                 $('nav a').eq(i).parent().parent().parent().addClass('active');
-//               }else{
-//                 $('nav a').eq(i).parent().addClass('active');
-//               }
-//           } else if($(this).position().top <20){
-//             $('nav a.active').removeClass('active');
-//             $('nav a:first').addClass('active');
-//           }
-//       });
+$('.close').on('click', function(){
+  $('.close').fadeOut('slow', 'swing');
+  $('#menu-list').slideToggle();
+  $('.open').fadeIn('slow', 'swing');
+});
 
-//   } 
+$('.drawer').on('click', function(event){
+  event.preventDefault();
+  var content = $(this).attr('href');
+  $(content).slideToggle('fast');
+  return false;
+});
 
-// }).scroll();
-
-
+$('.drawer-close').on('click', function(){
+  $(this).parent().slideToggle('slow');
+});
+// $(document).on('change', function(){
+//   if($(window).width() > 768){
+    
+//   }
+// })
