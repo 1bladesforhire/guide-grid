@@ -1,4 +1,11 @@
-@media all and (max-width: 767px){
+/* 
+*
+*  Tablets 540px-767px
+*
+*
+*/
+
+@media all and (max-width: 768px){
   header{
     z-index: 20;
   }
@@ -51,5 +58,12 @@
     grid-row-start: 2;
     grid-column-start: 1;
     grid-column-end: -1;
+    main section{
+      grid-template-columns: 20px repeat(7, 1fr) 20px;
+    }
+  }
+
+  .drawer-content{
+    width: 94%;
   }
 }

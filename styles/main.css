@@ -31,10 +31,15 @@ img {
   background: #dadada;
 }
 #section-1-2 h5 {
-  grid-column: span 6;
+  grid-column: span 7;
 }
 #section-1-2 div > p {
-  grid-column: span 4;
+  grid-column: span 5;
+  padding-bottom: 45px;
+}
+#section-1-2 h6 {
+  font-size: 34px;
+  font-weight: 500;
 }
 #section-2 {
   background: #cacaca;
@@ -208,25 +213,14 @@ img {
   grid-column-end: 10;
   margin-bottom: 5px;
 }
-#section-1 picture {
-  padding: 35px 0 30px;
-}
 #section-1-1 h4 {
   margin-bottom: 55px;
 }
 #section-1-1 p {
   padding-bottom: 20px;
 }
-#section-1-2 h5 {
-  grid-column: span 7;
-}
-#section-1-2 h6 {
-  font-size: 32px;
-  font-weight: 500;
-}
-#section-1-2 p {
-  padding-bottom: 45px;
-  grid-column: span 5!important;
+#section-1 picture {
+  padding: 35px 0 30px;
 }
 #section-2-3 h4 {
   grid-column: span 7;
@@ -623,6 +617,18 @@ img {
 }
 .drawer-content {
   display: none;
+  width: calc(97%/4);
+  position: absolute;
+  background: #eaeaea;
+  padding: 20px;
+  -webkit-transform: translateY(42%);
+  transform: translateY(42%);
+}
+.drawer-close {
+  background: #1d1d1d;
+  color: #f3f3f3;
+  padding: 5px 10px;
+  margin-bottom: 20px;
 }
 .head-info {
   min-height: 170px;
@@ -660,6 +666,9 @@ img {
 }
 .navbar {
   display: none;
+}
+#menu-list {
+  display: block;
 }
 nav {
   background: #252525;
@@ -1373,7 +1382,7 @@ a {
   }
   .overlay .left p,
   .overlay .right p {
-    font-size: .5em;
+    font-size: 1em;
     margin-bottom: 10px;
   }
   .overlay .left {
@@ -1381,7 +1390,7 @@ a {
     margin-left: 10px;
   }
   .overlay .right {
-    grid-column-end: 8;
+    grid-column-end: 9;
     margin-right: 10px;
   }
   #mainArea {
@@ -1494,7 +1503,7 @@ a {
 /*
 *
 *
-*  laptops from 768 to 1084px
+*  Laptops from 768 to 1084px
 *
 */
 @media all and (max-width: 1084px) {
@@ -1630,14 +1639,23 @@ a {
   }
   .overlay .left p,
   .overlay .right p {
-    font-size: .5em;
+    font-size: 1em;
     margin-bottom: 10px;
   }
   .cta {
     grid-column: span 9;
   }
+  .drawer-content {
+    width: calc(94% - 300px);
+  }
 }
-@media all and (max-width: 767px) {
+/* 
+*
+*  Tablets 540px-767px
+*
+*
+*/
+@media all and (max-width: 768px) {
   header {
     z-index: 20;
   }
@@ -1690,5 +1708,11 @@ a {
     grid-row-start: 2;
     grid-column-start: 1;
     grid-column-end: -1;
+  }
+  #mainArea main section {
+    grid-template-columns: 20px repeat(7, 1fr) 20px;
+  }
+  .drawer-content {
+    width: 94%;
   }
 }

@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  $('a[href*="#').bind('click', function(e) {
+  $('nav a[href*="#').bind('click', function(e) {
       e.preventDefault(); // prevent hard jump, the default behavior
 
       var target = $(this).attr("href"); // Set the target as variable
@@ -14,19 +14,32 @@ $(document).ready(function() {
 
       //close the mobile nav
       if($(this).hasClass('active')){
-        $('.close').fadeOut('slow', 'swing');
-        $('#menu-list').slideToggle();
-        $('.open').fadeIn('slow', 'swing');
+         //mobile nav close after click on the link
+        if($(window).width() < 769){
+          $('.close').fadeOut('slow', 'swing');
+          $('#menu-list').slideToggle();
+          $('.open').fadeIn('slow', 'swing');
+        }
       }
+
+      //remove all current active classes
       $('nav .active').removeClass('active');
      
       
       //set the current element to active
       $(this).addClass('active');
+
+      //check for nav menu level
       if($(this).parent().hasClass('sub-nav__item')){
-        $('.close').fadeOut('slow', 'swing');
-        $('#menu-list').slideToggle();
-        $('.open').fadeIn('slow', 'swing');
+
+
+        //mobile nav close after click on the link
+        if( $(window).width() <769){
+          $('.close').fadeOut('slow', 'swing');
+          $('#menu-list').slideToggle();
+          $('.open').fadeIn('slow', 'swing');
+        }
+        
         $(this).parent().parent().parent().addClass('active');
       }else{
         $(this).parent().addClass('active');
@@ -109,4 +122,18 @@ $('.close').on('click', function(){
   $('.open').fadeIn('slow', 'swing');
 });
 
+$('.drawer').on('click', function(event){
+  event.preventDefault();
+  var content = $(this).attr('href');
+  $(content).slideToggle('fast');
+  return false;
+});
 
+$('.drawer-close').on('click', function(){
+  $(this).parent().slideToggle('slow');
+});
+// $(document).on('change', function(){
+//   if($(window).width() > 768){
+    
+//   }
+// })

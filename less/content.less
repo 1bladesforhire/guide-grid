@@ -29,12 +29,18 @@ img{
     }
     &-2{
         h5{
-            grid-column: span 6;
+            grid-column: span 7;
         }
         background: @lt-gray;
         div > p{
 
-            grid-column: span 4;
+            grid-column: span 5;
+            padding-bottom: 45px;
+        }
+        
+        h6 {
+            font-size: 34px;
+            font-weight: 500;
         }
     }
 }
@@ -214,33 +220,18 @@ img{
             grid-column-end: 10;
             margin-bottom: 5px;
         }
+        h4 {
+            margin-bottom: 55px;
+        }
+        p {
+            padding-bottom: 20px;
+        }
     }
     picture {
         padding: 35px 0 30px;
     }
 }
-#section-1-1 {
-    h4 {
-        margin-bottom: 55px;
-    }
-    p {
-        padding-bottom: 20px;
-    }
-}
-#section-1-2 {
-    h5 {
-        grid-column: span 7;
-    }
-    h6 {
-        font-size: 32px;
-        font-weight: 500;
-    }
-    p {
-        padding-bottom: 45px;
-        grid-column: span 5!important;
-    }
 
-}
 //section 2-3
 //Audience
 #section-2-3 {
@@ -733,6 +724,18 @@ img{
 
 .drawer-content{
     display: none;
+    width: calc(~"97%/4");
+    position: absolute;
+    background: @ltlt-gray;
+    padding: 20px;
+    transform: translateY(42%);
+}
+
+.drawer-close{
+    background: @nav-dk;
+    color: @dk-white;
+    padding: 5px 10px;
+    margin-bottom: 20px;
 }
 
 .head-info{
@@ -778,4 +781,7 @@ img{
 
 .navbar{
     display: none;
-  }
+}
+#menu-list{
+    display: block;
+}
