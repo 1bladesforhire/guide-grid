@@ -682,51 +682,6 @@ img {
 #menu-list {
   display: block;
 }
-.hamburger {
-  width: 30px;
-  height: 30px;
-  cursor: pointer;
-  display: block;
-  position: absolute;
-  left: 10px;
-  top: 10px;
-}
-.hamburger span {
-  display: block;
-  height: 4px;
-  width: 100%;
-  background: #1d1d1d;
-  left: 0;
-  position: absolute;
-  -webkit-transition: all 0.25s ease-in-out;
-  transition: all 0.25s ease-in-out;
-  opacity: 1;
-}
-.hamburger span:nth-child(1) {
-  top: 2px;
-}
-.hamburger span:nth-child(2) {
-  top: 11px;
-}
-.hamburger span:nth-child(3) {
-  top: 20px;
-}
-.hamburger span.hamburger__label {
-  display: none;
-}
-.hamburger.open span:nth-child(1) {
-  top: 12px;
-  -webkit-transform: rotate(135deg);
-  transform: rotate(135deg);
-}
-.hamburger.open span:nth-child(2) {
-  opacity: 0;
-}
-.hamburger.open span:nth-child(3) {
-  top: 12px;
-  -webkit-transform: rotate(-135deg);
-  transform: rotate(-135deg);
-}
 nav {
   background: #252525;
   overflow-y: scroll;
@@ -817,6 +772,51 @@ nav ul li a.pink:hover {
 }
 nav button {
   display: none;
+}
+.hamburger {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  display: block;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+.hamburger span {
+  display: block;
+  height: 4px;
+  width: 100%;
+  background: #1d1d1d;
+  left: 0;
+  position: absolute;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  opacity: 1;
+}
+.hamburger span:nth-child(1) {
+  top: 2px;
+}
+.hamburger span:nth-child(2) {
+  top: 11px;
+}
+.hamburger span:nth-child(3) {
+  top: 20px;
+}
+.hamburger span.hamburger__label {
+  display: none;
+}
+.hamburger.open span:nth-child(1) {
+  top: 12px;
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.open span:nth-child(3) {
+  top: 12px;
+  -webkit-transform: rotate(-135deg);
+  transform: rotate(-135deg);
 }
 html {
   -webkit-box-sizing: border-box;

@@ -18,9 +18,8 @@ $(document).ready(function() {
          //mobile nav close after click on the link
         if($(window).width() < 769){
          
-          $('.close').fadeOut('slow', 'swing');
+          $('.hamburger').toggleClass('open');
           $('#menu-list').slideToggle();
-          $('.open').fadeIn('slow', 'swing');
         }
       }
 
@@ -37,9 +36,8 @@ $(document).ready(function() {
 
         //mobile nav close after click on the link
         if( $(window).width() <769){
-          $('.close').fadeOut('slow', 'swing');
+          $('.hamburger').toggleClass('open');
           $('#menu-list').slideToggle();
-          $('.hamb').fadeIn('slow', 'swing');
         }
         
         $(this).parent().parent().parent().addClass('active');
@@ -117,11 +115,6 @@ $('.hamburger').on('click', function(){
   $('#menu-list').slideToggle();
 });
 
-// $('.close').on('click', function(){
-//   $('.close').fadeOut('fast', 'swing');
-//   $('#menu-list').slideToggle();
-//   $('.open').fadeIn('slow', 'swing');
-// });
 
 $('.drawer').on('click', function(event){
   event.preventDefault();
