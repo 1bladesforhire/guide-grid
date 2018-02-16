@@ -6,6 +6,72 @@
 */
 
 @media all and (max-width: 768px){
+
+  //typography
+  #section-1 h1 {
+    font-size: 3.5em;
+    line-height: 1em;
+  }
+  h2 {
+    font-size: 3em;
+    &.super.tall{
+      font-size: 3.5em;
+    }
+  }
+  h3 {
+    font-size: 2.8em;
+  }
+  h4 {
+    font-size: 2em;
+  }
+  h5 {
+    font-size: 1em;
+  }
+  h6, h6.small{
+    font-size: 1.4em;
+  }
+  p{
+    font-size: .8em;
+  }
+
+  #section-1-2 h6{
+    font-size: 1.75em;
+  }
+
+  .overlay {
+    .left, .right {
+      p {
+        font-size: .8em;
+      }
+    }
+  }
+
+  .word-art{
+    .left, .right, .middle{
+      font-size: 1.125rm;
+    }
+  }
+
+  .thirds {
+    .title {
+      font-size: 1.125em;
+      &.large{
+        font-size: 1.25em;
+      }
+    }
+    .desc {
+      font-size: 1.25em;
+    }
+  }
+  .cross-through{
+    font-size: 1.4em;
+    background-position: -20px 40%;
+  }
+  div.first{
+    font-size: .8em;
+    width: 100px;
+  }
+  //navigation
   header{
     z-index: 20;
   }
@@ -60,10 +126,68 @@
     grid-column-end: -1;
     main section{
       grid-template-columns: 20px repeat(7, 1fr) 20px;
+      padding-top: 45px;
+      padding-bottom: 45px;
     }
   }
 
   .drawer-content{
     width: 94%;
+  }
+
+  .overlay{
+    margin-right: 20px;
+  }
+
+  .row, .row-full, .row-five, .row-seven, .row-twelve{
+    margin-right: 20px;
+  }
+  .row.collapse{
+    grid-template-columns: 1fr;
+    .thirds{
+      grid-column: span 1;
+      h5{
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  .row.cs{
+    grid-template-columns: 75px repeat(5, 1fr);
+  }
+  #section-2-4{
+    p{
+      grid-column: span 6;
+    }
+  }
+
+  .tt-row{
+    .role, .message{
+      font-size: .8em;
+      &.titles{
+        font-size: 1em;
+      }
+    }
+  }
+  .row-lined:before{
+    width: 94%;
+  }
+
+  #section-4-6 .row-five.empty-cell{
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #section-4-9 .row-twelve .half{
+    grid-column: span 9;
+  }
+
+  #section-5-11 {
+    .row-twelve .fourths{
+      grid-template-rows: 70px max-content 1fr;
+      display: grid;
+      .title{
+        padding-bottom: 0;
+      }
+    }
   }
 }
