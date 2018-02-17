@@ -395,9 +395,24 @@ img {
 }
 #section-4-6 .row-five {
   grid-template-columns: repeat(4, 1fr);
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+}
+#section-4-6 .row-five .thirds img {
+  grid-column: span 2;
+}
+#section-4-6 .row-five .thirds p {
+  grid-column: span 1;
+  margin-top: 20px;
+  margin-right: 50px;
 }
 #section-4-6 .one-half {
   grid-column: span 3;
+}
+#section-4-7 img {
+  grid-column: span 2;
+  margin-bottom: 20px;
 }
 #section-4-8 .row-seven {
   grid-column-gap: 40px;
@@ -457,6 +472,16 @@ img {
 }
 #section-5-3 p {
   margin-bottom: 10px;
+}
+#section-5-1 .thirds {
+  grid-template-rows: -webkit-max-content -webkit-max-content;
+  grid-template-rows: max-content max-content;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+}
+#section-5-1 .thirds .title {
+  margin-bottom: 20px;
 }
 #section-5-4 .thirds {
   grid-template-rows: 60px 1fr;
@@ -1576,13 +1601,16 @@ a {
 @media all and (max-width: 1084px) {
   h3 {
     font-size: 3.5em;
+    line-height: 1em;
   }
   h4 {
     font-size: 2.25em;
     grid-column: span 9;
+    line-height: 1em;
   }
   h5 {
     font-size: 1.125em;
+    line-height: 1em;
   }
   .row-twelve {
     grid-template-columns: repeat(8, 1fr);
@@ -1754,9 +1782,11 @@ a {
   }
   h2.super.tall {
     font-size: 3.5em;
+    line-height: 1em;
   }
   h3 {
     font-size: 2.8em;
+    line-height: 1em;
   }
   h4 {
     font-size: 2em;
@@ -1771,6 +1801,9 @@ a {
   p {
     font-size: .8em;
   }
+  hr {
+    grid-column-end: 10;
+  }
   #section-1-2 h6 {
     font-size: 1.75em;
   }
@@ -1781,7 +1814,7 @@ a {
   .word-art .left,
   .word-art .right,
   .word-art .middle {
-    font-size: 1.125rm;
+    font-size: 1.125em;
   }
   .thirds .title {
     font-size: 1.125em;
@@ -1922,8 +1955,12 @@ a {
   #section-1 h1 {
     font-size: 3em;
   }
+  h2 {
+    font-size: 2.5em;
+  }
   h4 {
     font-size: 1.75em;
+    margin-right: 0;
   }
   .row-twelve .fourths {
     grid-column: span 8;
@@ -1931,5 +1968,89 @@ a {
   .cta a {
     padding: 10px 18px 7px 20px;
     font-size: 11px;
+  }
+  .long-bow {
+    width: 150px;
+  }
+  .row.headers {
+    grid-template-columns: 1fr;
+  }
+  .row.headers .thirds {
+    grid-template-columns: 1fr;
+  }
+  .row.headers .thirds .title {
+    line-height: 1em;
+    margin-top: 20px;
+  }
+  .collapse h5 {
+    margin-top: 30px;
+  }
+  #section-4-3 .row .half {
+    grid-column: span 6;
+  }
+  #section-4-3 .row .half p {
+    margin-top: 10px;
+  }
+  .row-fluid .middle {
+    width: 100%;
+  }
+  .donts {
+    grid-column: span 5;
+  }
+  #section-4-6 .one-half {
+    grid-column: span 6;
+  }
+  #section-4-6 .one-half img {
+    margin-bottom: 10px;
+  }
+  .badge {
+    font-size: .6em;
+  }
+  #section-4-5 .row-five,
+  #section-4-6 .row-five,
+  #section-4-7 .row-five,
+  #section-5-4 .row-five {
+    grid-template-columns: 1fr;
+  }
+  #section-4-6 .row-five.empty-cell {
+    grid-template-columns: 1fr;
+  }
+  #section-4-6 .row-five.empty-cell .thirds {
+    grid-template-rows: -webkit-max-content -webkit-max-content;
+    grid-template-rows: max-content max-content;
+  }
+  #section-4-6 .row-five.empty-cell p {
+    margin-right: 0;
+    margin-top: 0;
+  }
+  #section-4-8 .row-seven {
+    grid-template-columns: 1fr;
+  }
+  #section-4-8 .row-seven .half .title {
+    min-height: auto;
+    margin-top: 10px;
+  }
+  #section-5-1 .row {
+    grid-template-columns: 1fr;
+  }
+  #section-5-1 .row .thirds {
+    margin-bottom: 30px;
+  }
+  #section-5-3 .half {
+    grid-template-columns: 1fr;
+  }
+  #section-5-3 .subs {
+    grid-template-columns: 1fr;
+  }
+  #section-5-3 .row .thirds {
+    grid-column: span 9;
+  }
+  #section-5-4 .thirds {
+    grid-template-rows: -webkit-max-content 1fr;
+    grid-template-rows: max-content 1fr;
+  }
+  #section-5-4 .thirds .title {
+    margin-bottom: 15px;
+    margin-top: 10px;
   }
 }

@@ -457,9 +457,17 @@ img{
 #section-4-6{
     .row-five{
         grid-template-columns: repeat(4, 1fr);
+        align-items: baseline;
         .thirds{
+            img{
+                grid-column: span 2;
+            }
+            
             p{
-
+                grid-column: span 1;
+                margin-top: 20px;
+                margin-right: 50px;
+                
             }
         }
     }
@@ -468,7 +476,12 @@ img{
     }
 }
 
-
+#section-4-7{
+    img{
+        grid-column: span 2;
+        margin-bottom: 20px;
+    }
+}
 #section-4-8{
     .row-seven{
         grid-column-gap: 40px;
@@ -530,7 +543,15 @@ img{
         margin-bottom: 10px;
     }
 }
-
+#section-5-1{
+    .thirds{
+        grid-template-rows: max-content max-content;
+        align-items: baseline;
+        .title{
+            margin-bottom: 20px;
+        }
+    }
+}
 #section-5-4{
     .thirds{
         grid-template-rows: 60px 1fr;
