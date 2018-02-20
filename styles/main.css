@@ -704,6 +704,9 @@ img {
 #menu-list {
   display: block;
 }
+.row.visible-xs {
+  display: none;
+}
 nav {
   background: #252525;
   overflow-y: scroll;
@@ -1251,7 +1254,7 @@ p.upper {
 }
 .thirds .title {
   font-size: 20px;
-  line-height: 28px;
+  line-height: 1.1em;
   font-family: 'SegoeUISemiLight';
   font-weight: 300;
 }
@@ -1458,7 +1461,7 @@ a {
   }
   .row-fluid .middle {
     margin: 0 auto;
-    width: 200px;
+    width: 30%;
   }
   .overlay {
     grid-column: span 9;
@@ -1508,6 +1511,9 @@ a {
   #section-1-2 div > p {
     grid-column: span 7;
   }
+  .tt-row {
+    grid-template-columns: repeat(6, 1fr);
+  }
   #section-3-1 .thirds .content {
     margin-right: 10px;
   }
@@ -1541,6 +1547,9 @@ a {
   #section-4-5 .fat-thirds {
     padding-right: 10px;
   }
+  #section-4-6 .row-five.empty-cell {
+    grid-template-columns: repeat(3, 1fr);
+  }
   #section-4-8 .row-seven {
     grid-column-gap: 10px;
   }
@@ -1562,12 +1571,18 @@ a {
   #section-5-3 .half {
     grid-column: span 3;
   }
+  #section-5-5 .thirds .title {
+    font-size: 1.5em;
+  }
   #section-5-6 .row-twelve .fourths {
     grid-template-rows: minmax(40px, -webkit-min-content) -webkit-max-content 1fr;
     grid-template-rows: minmax(40px, min-content) max-content 1fr;
   }
   #section-5-8 p {
     margin-right: 20px;
+  }
+  #section-5-8 .title {
+    margin-right: -20px;
   }
   #section-5-9 .row-twelve,
   #section-5-11 .row-twelve,
@@ -1636,9 +1651,6 @@ a {
     grid-column: span 9;
     margin-right: 10px;
   }
-  .row-five.empty-cell {
-    grid-template-columns: repeat(2, 1fr);
-  }
   #mainArea main section {
     grid-template-columns: 40px repeat(7, 1fr) 40px;
   }
@@ -1679,6 +1691,9 @@ a {
   #section-4-6 .row-five {
     grid-template-columns: repeat(3, 1fr);
   }
+  #section-4-6 .row-five.empty-cell {
+    grid-template-columns: repeat(2, 1fr);
+  }
   #section-4-6 .row-five.empty-cell .thirds {
     grid-template-rows: 50px minmax(-webkit-min-content, 100px);
     grid-template-rows: 50px minmax(min-content, 100px);
@@ -1697,7 +1712,7 @@ a {
     grid-column: span 5;
   }
   #section-5-4 .thirds {
-    grid-template-rows: 100px 1fr;
+    grid-template-rows: 70px 1fr;
   }
   #section-5-5 .thirds .title {
     font-size: 1.5em;

@@ -83,7 +83,7 @@
 
   .row-fluid .middle{
     margin: 0 auto;
-    width: 200px; 
+    width: 30%; 
   }
 
 //content
@@ -141,6 +141,10 @@
       }
     }
   }
+
+  .tt-row{
+    grid-template-columns: repeat(6, 1fr);
+  }
   #section-3-1 .thirds .content{
     margin-right: 10px;
   }
@@ -185,6 +189,10 @@
     }
   }
 
+  #section-4-6 .row-five.empty-cell{
+    grid-template-columns: repeat(3, 1fr);
+  }
+
   #section-4-8{
     .row-seven{
       grid-column-gap: 10px;
@@ -215,6 +223,9 @@
     }
   }
 
+  #section-5-5 .thirds .title{
+    font-size: 1.5em;
+  }
   #section-5-6 .row-twelve .fourths{
     grid-template-rows: minmax(40px, min-content) max-content 1fr;
   }
@@ -222,6 +233,9 @@
   #section-5-8{
     p{
       margin-right: 20px;
+    }
+    .title{
+      margin-right: -20px;
     }
   }
 
