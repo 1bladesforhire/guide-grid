@@ -110,23 +110,30 @@ nav{
     position: absolute;
     left: 10px;
     top: 10px;
+    background: transparent;
+    border: none;
+    &:focus{
+        border: none;
+        background: transparent;
+        outline: 1px @ltlt-gray auto;
+    }
     span{
         display: block;
-        height: 3px;
+        height: 2px;
         width: 100%;
-        background: @nav-dk;
+        background: @dk-white;
         left: 0;
         position: absolute;
         transition: all .25s ease-in-out;
         opacity: 1;
         &:nth-child(1){
-            top: 3px;
+            top: 6px;
         }
         &:nth-child(2){
-            top: 11px;
+            top: 14px;
         }
         &:nth-child(3){
-            top: 19px;
+            top: 22px;
         }
         &.hamburger__label{
             display: none;
@@ -135,14 +142,14 @@ nav{
     &.open{
         span{
             &:nth-child(1){
-                top: 12px;
+                top: 14px;
                 transform: rotate(135deg);
             }
             &:nth-child(2){
                 opacity: 0;
             }
             &:nth-child(3){
-                top: 12px;
+                top: 14px;
                 transform: rotate(-135deg);
             }
         }

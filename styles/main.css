@@ -803,12 +803,19 @@ nav button {
   position: absolute;
   left: 10px;
   top: 10px;
+  background: transparent;
+  border: none;
+}
+.hamburger:focus {
+  border: none;
+  background: transparent;
+  outline: 1px #eaeaea auto;
 }
 .hamburger span {
   display: block;
-  height: 3px;
+  height: 2px;
   width: 100%;
-  background: #1d1d1d;
+  background: #f3f3f3;
   left: 0;
   position: absolute;
   -webkit-transition: all 0.25s ease-in-out;
@@ -816,19 +823,19 @@ nav button {
   opacity: 1;
 }
 .hamburger span:nth-child(1) {
-  top: 3px;
+  top: 6px;
 }
 .hamburger span:nth-child(2) {
-  top: 11px;
+  top: 14px;
 }
 .hamburger span:nth-child(3) {
-  top: 19px;
+  top: 22px;
 }
 .hamburger span.hamburger__label {
   display: none;
 }
 .hamburger.open span:nth-child(1) {
-  top: 12px;
+  top: 14px;
   -webkit-transform: rotate(135deg);
   transform: rotate(135deg);
 }
@@ -836,7 +843,7 @@ nav button {
   opacity: 0;
 }
 .hamburger.open span:nth-child(3) {
-  top: 12px;
+  top: 14px;
   -webkit-transform: rotate(-135deg);
   transform: rotate(-135deg);
 }
@@ -1930,6 +1937,12 @@ a {
   .row-lined:before {
     width: 94%;
   }
+  .direction .needs {
+    grid-column-end: 7;
+  }
+  #section-3-3 .thirds .desc {
+    padding-right: 0;
+  }
   #section-4-6 .row-five.empty-cell {
     grid-template-columns: 1fr 1fr;
   }
@@ -1961,6 +1974,12 @@ a {
   h4 {
     font-size: 1.75em;
     margin-right: 0;
+  }
+  #section-1-2 h6 {
+    font-size: 1.25em;
+  }
+  .cross-through {
+    background-position: -10px 60%;
   }
   .row-twelve .fourths {
     grid-column: span 8;
@@ -2036,14 +2055,17 @@ a {
   #section-5-1 .row .thirds {
     margin-bottom: 30px;
   }
-  #section-5-3 .half {
+  #section-5-3 .half,
+  #section-5-2 .half {
     grid-template-columns: 1fr;
   }
-  #section-5-3 .subs {
+  #section-5-3 .subs,
+  #section-5-2 .subs {
     grid-template-columns: 1fr;
   }
-  #section-5-3 .row .thirds {
-    grid-column: span 9;
+  #section-5-3 .row .thirds,
+  #section-5-2 .row .thirds {
+    grid-column: span 6;
   }
   #section-5-4 .thirds {
     grid-template-rows: -webkit-max-content 1fr;
@@ -2052,5 +2074,42 @@ a {
   #section-5-4 .thirds .title {
     margin-bottom: 15px;
     margin-top: 10px;
+  }
+  #section-5-8 .fat-thirds,
+  #section-5-10 .fat-thirds {
+    grid-column: span 6;
+  }
+  #section-5-8 p {
+    margin-right: 0;
+  }
+  #section-5-12 .row-seven {
+    grid-template-columns: 1fr;
+  }
+  #section-5-13 .full-row {
+    grid-column-gap: 5px;
+  }
+  #section-5-13 .row .fourths {
+    grid-column: span 6;
+    margin-bottom: 20px;
+  }
+  #section-5-13 .half p {
+    margin-bottom: 20px;
+  }
+  #section-6-1 .half img {
+    min-height: auto;
+  }
+  .hidden-xs {
+    display: none;
+  }
+  .visible-xs {
+    display: grid;
+  }
+  #section-3-4 .donts,
+  #section-3-4 .dos,
+  #section-3-4 .explanation {
+    grid-column: span 9;
+  }
+  #section-3-4 .explanation .title {
+    font-size: 1.125em;
   }
 }

@@ -16,6 +16,12 @@
     font-size: 1.75em;
     margin-right: 0;
   }
+  #section-1-2 h6{
+    font-size: 1.25em;
+  }
+  .cross-through{
+    background-position: -10px 60%;
+  }
 
   .row-twelve{
   
@@ -110,7 +116,7 @@
     }
   }
 
-  #section-5-3{
+  #section-5-3, #section-5-2{
     .half{
       grid-template-columns: 1fr;
     }
@@ -119,7 +125,7 @@
     }
     .row{
       .thirds{
-        grid-column: span 9;
+        grid-column: span 6;
       }
     }
   }
@@ -132,5 +138,56 @@
         margin-top: 10px;
       }
     }
+  }
+
+  #section-5-5{
+
+  }
+
+
+  #section-5-8, #section-5-10 {
+    .fat-thirds{
+      grid-column: span 6;
+    }
+  }
+
+  #section-5-8 p{
+    margin-right: 0;
+  }
+  #section-5-12{
+    .row-seven{
+      grid-template-columns: 1fr;
+    }
+  }
+
+  #section-5-13{
+    .full-row{
+      grid-column-gap: 5px;
+    }
+    .row .fourths{
+      grid-column: span 6;
+      margin-bottom: 20px;
+    }
+    .half p{
+      margin-bottom: 20px;
+    }
+  }
+  #section-6-1 .half img{
+    min-height: auto;
+  }
+  .hidden-xs{
+    display: none;
+  }
+  .visible-xs{
+    display: grid;
+  }
+
+  #section-3-4{
+     .donts, .dos, .explanation {
+    grid-column: span 9;
+     }
+     .explanation .title{
+       font-size: 1.125em;
+     }
   }
 }
