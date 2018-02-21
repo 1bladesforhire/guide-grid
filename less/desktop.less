@@ -6,281 +6,273 @@
 */
 
 @media all and (max-width: 1400px) {
-//typography
-  #section-1 h1{
-    font-size: 4.5em;
-  }
-
-  
-  h3{
-  font-size: 70px;
-
-  }
-  h4{
-    font-size: 2.5em;
-    line-height: 1.1em;
-    grid-column: span 9;
-    margin-right: 20px;
-  }
-  h5{
-    grid-column: span 8;
-    margin-right: 20px;
-    font-size: 1.25em;
-  }
-  h6{
-    grid-column: span 9;
-    margin-right: 20px;
-    font-size: 1.8em;
-  }
-
-  p.title{
-    font-size: 18px;
-    line-height: 20px;
-  }
-
-//grid
-  section{
-    padding-top: 70px;
-  }
-  .row, .row-lined{
-    grid-column: span 9;
-    grid-template-columns: repeat(6, 1fr);
-    margin-right: 10px;
-    .one-half{
-      grid-column: span 3;
-      margin-right: 10px;
+    //typography
+    #section-1 h1 {
+        font-size: 4.5em;
     }
-    .thirds{
-
-        margin-right: 10px;
-
+    h3 {
+        font-size: 70px;
     }
-  }
-  
-  .row-full{
-    grid-column: span 8;
-  }
-  .row-five{
-    grid-column: span 9;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
-    .thirds{
-      margin-right: 10px;
-    }
-  }
-  .row-seven{
-    grid-column: span 9;
-    grid-template-columns: repeat(4, 1fr);
-    margin-right: 10px;
-  }
-  .row-twelve{
-    grid-template-columns: repeat(9,1fr);
-    margin-right: 10px;
-  }
-  .table-row{
-    grid-column: span 9;
-  }
-
-  .row-fluid .middle{
-    margin: 0 auto;
-    width: 30%; 
-  }
-
-//content
-
-  .overlay{
-    grid-column: span 9;
-    .left, .right{
-      margin-top: 30px;
-      margin-bottom: 20px;
-      padding: 15px 10px;
-      p{
-        font-size: .75em;
-        margin-bottom: 10px;
-      }
-    }
-    .left{
-      grid-column-start: 1;
-      margin-left: 30px;
-    }
-    .right{
-      grid-column-end: 10;
-      margin-right: 30px;                           
-    }
-  }
-
-  #mainArea{
-    padding-top: 0;
-    main section{
-      grid-template-columns: 65px repeat(7, 1fr) 65px;
-      padding-top: 65px;
-      padding-bottom: 65px;
-
-    }
-  }
-
-  #section-1{
-    h1, h6, p{
-      grid-column: span 9;
-      margin-right: 20px;
-    }
-    &-1{
-      p{
-        padding-right: 50px;
-      }
-    }
-    &-2{
-      h5{
+    h4 {
+        font-size: 2.5em;
+        line-height: 1.1em;
         grid-column: span 9;
-      }
-      .row-twelve .half{
+        margin-right: 20px;
+    }
+    h5 {
         grid-column: span 8;
-      }
-      div>p{
-        grid-column: span 7;
-      }
+        margin-right: 20px;
+        font-size: 1.25em;
     }
-  }
-
-  #section-2-3{
-    .row-twelve{
-      grid-template-columns: repeat(12, 1fr);
-      .fourths{
-        grid-column: span 3;
-      }
+    h6 {
+        grid-column: span 9;
+        margin-right: 20px;
+        font-size: 1.8em;
     }
-  }
-  .tt-row{
-    grid-template-columns: repeat(6, 1fr);
-  }
-  #section-3-1 .thirds .content{
-    margin-right: 10px;
-  }
-
-  .mag .thirds{
-    grid-column: span 2;
-  }
-  #section-3-3{
-    .dos{
-      grid-column-end: 4;
+    p.title {
+        font-size: 18px;
+        line-height: 20px;
     }
-  }
-
-  
-  #section-3-4 .thirds{
-    padding-right: 20px;
-  }
-
-  #section-4-2{
-    .thirds p{
-      padding-right: 10px;
+    //grid
+    section {
+        padding-top: 70px;
     }
-    p.large{
-      grid-column: span 8;
-    }
-    .left{
-      margin-right: 0;
-    }
-    .right{
-      margin-left: 0;
-    }
-  }
-
-  #section-4-5 {
-    .row-five{
-      grid-template-columns: repeat(3, 1fr);
-    }
-    .fat-thirds{
-      padding-right: 10px;
-    }
-  }
-
-  #section-4-6 .row-five.empty-cell{
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  #section-4-8{
-    .row-seven{
-      grid-column-gap: 10px;
-    }
-    .half .title{
-      min-height: 40px;
-    }
-  }
-
-  #section-4-9{
-    .row-twelve{
-      grid-template-columns: repeat(10, 1fr);
-      .half{
-        grid-column: span 5;
-        p{
-          padding-right: 10px;
-          &.half{
-            grid-column: span 1;
-          }
+    .row,
+    .row-lined {
+        grid-column: span 9;
+        grid-template-columns: repeat(6, 1fr);
+        margin-right: 10px;
+        .one-half {
+            grid-column: span 3;
+            margin-right: 10px;
         }
+        .thirds {
+            margin-right: 10px;
+        }
+    }
+    .row-full {
+        grid-column: span 8;
+    }
+    .row-five {
+        grid-column: span 9;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px;
+        .thirds {
+            margin-right: 10px;
+        }
+    }
+    .row-seven {
+        grid-column: span 9;
+        grid-template-columns: repeat(4, 1fr);
+        margin-right: 10px;
+    }
+    .row-twelve {
+        grid-template-columns: repeat(9, 1fr);
+        margin-right: 10px;
+    }
+    .table-row {
+        grid-column: span 9;
+    }
+    .row-fluid .middle {
+        margin: 0 auto;
+        width: 30%;
+    }
+    //content
+    .overlay {
+        grid-column: span 9;
+        .left,
+        .right {
+            margin-top: 30px;
+            margin-bottom: 20px;
+            padding: 15px 10px;
+            p {
+                font-size: .75em;
+                margin-bottom: 10px;
+            }
+        }
+        .left {
+            grid-column-start: 1;
+            margin-left: 30px;
+        }
+        .right {
+            grid-column-end: 10;
+            margin-right: 30px;
+        }
+    }
+    #mainArea {
+        padding-top: 0;
+        main section {
+            grid-template-columns: 65px repeat(7, 1fr) 65px;
+            padding-top: 65px;
+            padding-bottom: 65px;
+        }
+    }
+    #section-1 {
+        h1,
+        h6,
+        p {
+            grid-column: span 9;
+            margin-right: 20px;
+        }
+        &-1 {
+            p {
+                padding-right: 50px;
+            }
+        }
+        &-2 {
+            h5 {
+                grid-column: span 9;
+            }
+            .row-twelve .half {
+                grid-column: span 8;
+            }
+            div>p {
+                grid-column: span 7;
+            }
+        }
+    }
+    #section-2-3 {
+        .row-twelve {
+            grid-template-columns: repeat(12, 1fr);
+            .fourths {
+                grid-column: span 3;
+            }
+        }
+    }
+    .tt-row {
+        grid-template-columns: repeat(6, 1fr);
+    }
+    #section-3-1 .thirds .content {
+        margin-right: 10px;
+    }
+    .mag .thirds {
+        grid-column: span 2;
+    }
+    #section-3-3 {
+        .dos {
+            grid-column-end: 4;
+        }
+        .row-lined.dark:before {
+            width: 65%;
+        }
+    }
+    #section-3-4 {
+        .thirds {
+            padding-right: 20px;
+        }
+        .row-lined:before {
+            width: 65%;
+        }
+    }
+    #section-4-2 {
+        .thirds p {
+            padding-right: 10px;
+        }
+        p.large {
+            grid-column: span 8;
+        }
+        .left {
+            margin-right: 0;
+        }
+        .right {
+            margin-left: 0;
+        }
+    }
+    #section-4-5 {
+        .row-five {
+            grid-template-columns: repeat(3, 1fr);
+        }
+        .fat-thirds {
+            padding-right: 10px;
+        }
+    }
+    #section-4-6 .row-five {
+        grid-template-columns: repeat(3, 1fr);
+        .thirds p{
+          margin-right: 10px;
+          grid-column: span 2;
+        }
+    }
+    #section-4-8 {
+        .row-seven {
+            grid-column-gap: 10px;
+       
+          .half{
+              grid-column: span 2;
+              .title {
+                min-height: 40px;
+                padding-right: 10px;
+            }
+          }
+       }
+    }
+    #section-4-9 {
+        .row-twelve {
+            grid-template-columns: repeat(10, 1fr);
+            .half {
+                grid-column: span 5;
+                p {
+                    padding-right: 10px;
+                    &.half {
+                        grid-column: span 1;
+                    }
+                }
+            }
+        }
+    }
+    #section-5-3 {
+        .half {
+            grid-column: span 3;
+        }
+    }
+    #section-5-5 .thirds .title {
+        font-size: 1.5em;
+    }
+    #section-5-6 .row-twelve .fourths {
+        grid-template-rows: minmax(40px, min-content) max-content 1fr;
+    }
+    #section-5-8 {
+        p {
+            margin-right: 20px;
+        }
+        .title {
+            margin-right: -20px;
+        }
+    }
+    #section-5-9,
+    #section-5-11,
+    #section-5-13 {
+        .row-twelve {
+            grid-template-columns: repeat(8, 1fr);
+            margin-right: 10px;
+        }
+        p.title {
+            margin-bottom: 0;
+        }
+    }
+    #section-5-11 {
+      .row-twelve .fourths{
+        display: grid;
+        grid-template-rows: 60px 1fr max-content;
       }
     }
-  }
-
-  #section-5-3{
-    .half{
-      grid-column: span 3;
+    #section-5-13 {
+        .full-row {
+            grid-column: span 9;
+        }
+        .row .fourths {
+            grid-column: span 2;
+        }
     }
-  }
-
-  #section-5-5 .thirds .title{
-    font-size: 1.5em;
-  }
-  #section-5-6 .row-twelve .fourths{
-    grid-template-rows: minmax(40px, min-content) max-content 1fr;
-  }
-
-  #section-5-8{
-    p{
-      margin-right: 20px;
+    #section-6-3 {
+        .thirds {
+            grid-column: span 3;
+        }
     }
-    .title{
-      margin-right: -20px;
+    .cross-through {
+        font-size: 28px;
     }
-  }
-
-  #section-5-9, #section-5-11, #section-5-13{
-    .row-twelve{
-      grid-template-columns: repeat(8, 1fr);
-      margin-right: 10px;
+    .cta {
+        grid-column: span 5;
     }
-    p.title{
-      margin-bottom: 0;
-    }
-  }
-
-#section-5-11{
-  p.title{
-    margin-bottom: 20px;
-  }
-}
-
-  #section-5-13{
-    .full-row{
-      grid-column: span 9;
-    }
-    .row .fourths{
-      grid-column: span 2;
-    }
-  }
-
-  #section-6-3{
-    .thirds{
-      grid-column: span 3;
-    }
-  }
-  .cross-through{
-    font-size: 28px;
-  }
-  .cta{
-    grid-column: span 5;
-  }
-
-
 }

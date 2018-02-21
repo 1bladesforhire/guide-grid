@@ -496,7 +496,6 @@ img {
   grid-template-columns: repeat(4, 1fr);
 }
 #section-4-5 .fat-thirds {
-  min-width: 251px;
   grid-column: span 1;
 }
 #section-4-5 .fat-thirds img {
@@ -1653,8 +1652,14 @@ a {
   #section-3-3 .dos {
     grid-column-end: 4;
   }
+  #section-3-3 .row-lined.dark:before {
+    width: 65%;
+  }
   #section-3-4 .thirds {
     padding-right: 20px;
+  }
+  #section-3-4 .row-lined:before {
+    width: 65%;
   }
   #section-4-2 .thirds p {
     padding-right: 10px;
@@ -1674,14 +1679,22 @@ a {
   #section-4-5 .fat-thirds {
     padding-right: 10px;
   }
-  #section-4-6 .row-five.empty-cell {
+  #section-4-6 .row-five {
     grid-template-columns: repeat(3, 1fr);
+  }
+  #section-4-6 .row-five .thirds p {
+    margin-right: 10px;
+    grid-column: span 2;
   }
   #section-4-8 .row-seven {
     grid-column-gap: 10px;
   }
-  #section-4-8 .half .title {
+  #section-4-8 .row-seven .half {
+    grid-column: span 2;
+  }
+  #section-4-8 .row-seven .half .title {
     min-height: 40px;
+    padding-right: 10px;
   }
   #section-4-9 .row-twelve {
     grid-template-columns: repeat(10, 1fr);
@@ -1722,8 +1735,10 @@ a {
   #section-5-13 p.title {
     margin-bottom: 0;
   }
-  #section-5-11 p.title {
-    margin-bottom: 20px;
+  #section-5-11 .row-twelve .fourths {
+    display: grid;
+    grid-template-rows: 60px 1fr -webkit-max-content;
+    grid-template-rows: 60px 1fr max-content;
   }
   #section-5-13 .full-row {
     grid-column: span 9;
@@ -1805,6 +1820,12 @@ a {
   #section-4-1 .half .title {
     padding-bottom: 0;
   }
+  .row.word-art {
+    grid-template-columns: 100px repeat(4, 1fr);
+  }
+  .row.headers {
+    grid-template-columns: 1fr;
+  }
   #section-4-3 .half p {
     padding-right: 0;
   }
@@ -1855,6 +1876,9 @@ a {
     grid-template-rows: minmax(50px, -webkit-min-content) 1fr -webkit-min-content;
     grid-template-rows: minmax(50px, min-content) 1fr min-content;
   }
+  #section-5-8 .title.extra {
+    margin-right: -40px;
+  }
   #section-5-9 .half p,
   #section-5-12 .half p,
   #section-5-13 .half p {
@@ -1862,6 +1886,9 @@ a {
   }
   #section-5-11 .fourths .title {
     padding-bottom: 20px;
+  }
+  #section-5-11 .fourths p {
+    max-width: 250px;
   }
   #section-6-1 .half,
   #section-6-3 .half {
