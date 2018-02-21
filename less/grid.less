@@ -126,19 +126,21 @@ hr{
 
 
 
-.word-art{
-    .left, .middle, .right{
+.row.word-art{
+    grid-template-columns: 150px repeat(8, 1fr); 
+     .middle, .right{
         grid-column: span 2;
         color: @nav-lt;
         font-size: 24px;
     }
     .left{
+        grid-column: span 1;
         text-align: right;
-        //margin-right: -4em;
+        color: @nav-lt;
+        font-size: 24px;
     }
     .right{
         text-align: left;
-        //margin-left: -4em;
     }
     .middle{
         font-weight: 600;
