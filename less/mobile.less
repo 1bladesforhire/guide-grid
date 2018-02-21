@@ -1,3 +1,231 @@
+/*
+*
+*
+*  mobile from 320 to 540px
+*
+*/
 @media all and (max-width: 540px){
+  //typography
+ #section-1 h1{
+  font-size: 3em;
+  }
+  h2{
+    font-size: 2.5em;
+  }
+  h4{
+    font-size: 1.75em;
+    margin-right: 0;
+  }
+  #section-1-2 h6{
+    font-size: 1.25em;
+  }
+  .cross-through{
+    background-position: -10px 60%;
+  }
+
+  .row-twelve{
   
+    .fourths{
+      grid-column: span 8;
+    }
+  }
+  .cta a{
+    padding: 10px 18px 7px 20px;
+    font-size: 11px;
+  }
+  .long-bow{
+    width: 150px;
+  }
+  .row.headers{
+    grid-template-columns: 1fr;
+    .thirds{
+      grid-template-columns: 1fr;
+      .title{
+        line-height: 1em;
+        margin-top: 20px;
+      }
+    }
+  }
+  .collapse
+  {
+    h5{
+      margin-top: 30px;
+    }
+  }
+  
+  #section-4-3{
+    .row .half{
+      grid-column: span 6;
+      p{
+        margin-top: 10px;
+      }
+    }
+  }
+  .row-fluid .middle{
+    width: 100%;
+  }
+
+  .donts {
+    grid-column: span 5;
+  }
+
+  #section-4-6 .one-half{
+    grid-column: span 6;
+    img{
+      margin-bottom: 10px;
+    }
+  }
+  .badge{
+    font-size: .6em;
+  }
+
+  #section-4-5, #section-4-6, #section-4-7, #section-5-4 { 
+    .row-five{
+      grid-template-columns: 1fr;
+    }
+  }
+
+  #section-4-6 .fat-thirds img{
+    width: 100%;
+
+  }
+  #section-4-6 {
+    .row-five.empty-cell{
+      grid-template-columns: 1fr;
+    }
+    .row-five{
+      grid-template-columns: 1fr;
+        .thirds{
+          grid-template-rows: max-content max-content;
+          grid-template-columns: 1fr;
+          img{
+            width: 100%;
+          }
+        }
+      }
+      p{
+        margin-right: 0;
+        margin-top: 0;
+      }
+    
+  }
+  #section-4-8{
+    .row-seven{
+      grid-template-columns: 1fr;
+      .half .title{
+        min-height: auto;
+        margin-top: 10px;
+      }
+    }
+  }
+
+  #section-4-9{
+    .row.v-center{
+      grid-template-columns: 1fr;
+      .fourths, .thirds{
+        margin-bottom: 20px;
+      }
+    }
+  }
+  #section-5-1{
+    .row{
+      grid-template-columns: 1fr;
+      .thirds{
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  #section-5-3, #section-5-2{
+    .half{
+      grid-template-columns: 1fr;
+    }
+    .subs{
+      grid-template-columns: 1fr;
+    }
+    .row{
+      .thirds{
+        grid-column: span 6;
+      }
+    }
+  }
+
+  #section-5-2 {
+    .row{
+      grid-row-gap: 10px;
+    }
+    
+    .thirds{
+      margin-bottom: 20px;
+    }
+  }
+
+  #section-5-4{
+    .thirds{
+      grid-template-rows: max-content 1fr;
+      .title{
+        margin-bottom: 15px;
+        margin-top: 10px;
+      }
+    }
+  }
+
+  #section-5-5{
+
+  }
+  #section-5-7 p{
+    padding-right: 0;
+  }
+
+  #section-5-8, #section-5-10 {
+    .fat-thirds{
+      grid-column: span 6;
+    }
+  }
+
+  #section-5-8 {
+    p{
+      margin-right: 0;
+    }
+    .title{
+      margin-right: -32px;
+    }
+  }
+
+  #section-5-12{
+    .row-seven{
+      grid-template-columns: 1fr;
+    }
+  }
+
+  #section-5-13{
+    .full-row{
+      grid-column-gap: 5px;
+    }
+    .row .fourths{
+      grid-column: span 6;
+      margin-bottom: 20px;
+    }
+    .half p{
+      margin-bottom: 20px;
+    }
+  }
+  #section-6-1 .half img{
+    min-height: auto;
+  }
+  .hidden-xs{
+    display: none;
+  }
+  .row.visible-xs{
+    display: grid;
+  }
+
+  #section-3-4{
+     .donts, .dos, .explanation {
+    grid-column: span 9;
+     }
+     .explanation .title{
+       font-size: 1.125em;
+     }
+  }
 }

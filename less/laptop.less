@@ -9,14 +9,17 @@
   //typography
   h3{
    font-size: 3.5em; 
+   line-height: 1em;
   }
 
   h4{
     font-size: 2.25em;
     grid-column: span 9;
+    line-height: 1em;
   }
   h5{
     font-size: 1.125em;
+    line-height: 1em;
   }
 
   //grid
@@ -40,11 +43,11 @@
     grid-column: span 9;
     margin-right: 10px;
   }
+ 
 
-  .row-five.empty-cell{
-    grid-template-columns: repeat(2, 1fr);
+  #mainArea main section{
+    grid-template-columns: 40px repeat(7, 1fr) 40px;
   }
-
   //content specific
 
   #section-2-6, #section-3-1, #section-3-2, #section-3-3 {
@@ -68,6 +71,9 @@
     .thirds, .half{
       grid-column: span 7;
       margin-bottom: 10px;
+      .title{
+        padding-bottom: 0;
+      }
     }
   }
 
@@ -84,15 +90,22 @@
     }
   }
 
-  #section-4-5 .fat-thirds img {
+  #section-4-5 { 
+   .fat-thirds{
+      img {
       width: auto;
-      height: auto;
+     height: auto;}
+   }  
   }
 
   #section-4-6{
-    .row-five.empty-cell{
-      .thirds{
-        grid-template-rows: 50px 100px;
+    .row-five{
+      grid-template-columns: repeat(3, 1fr);
+      &.empty-cell{
+       grid-template-columns: repeat(2, 1fr);
+        .thirds{
+          grid-template-rows: 50px minmax(min-content, 100px);
+        }
       }
     }
   }
@@ -107,21 +120,26 @@
   }
 
   #section-5-3{
+    .row{
+      grid-row-gap: 30px;
+    }
+    
     .half, .subs{
       grid-column: span 5;
     }
   
   }
 
-  #section-5-4{
-    .thirds{
-      grid-template-rows: 100px 1fr;
-    }
+  #section-5-4 .thirds{
+      grid-template-rows: 70px 1fr;
   }
 
-  #section-5-5{
+  #section-5-5 {
     .thirds .title{
       font-size: 1.5em;
+    }
+    .row.v-center .thirds {
+      grid-template-rows: 65px 1fr;
     }
   }
 
@@ -198,5 +216,17 @@
   .drawer-content{
     width: calc(~"94% - 300px");
   }
+
+  //responsive adjustments
+  .header{
+    .thirds{
+      grid-template-rows: repeat(3, min-content);
+      grid-row-gap: 20px;
+      .title{
+        padding-bottom: 0;
+      }
+    }
+  }
+
 
 }

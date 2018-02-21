@@ -4,21 +4,16 @@ $(document).ready(function() {
 
       var target = $(this).attr("href"); // Set the target as variable
 
-      // perform animated scrolling by getting top-position of target-element and set it as scroll target
-      $('html, body').stop().animate({
-          scrollTop: $(target).offset().top
-      }, 600, function() {
-          location.hash = target; //attach the hash (#jumptarget) to the pageurl
-      });
-      
+      // perform animated scrolling using animatescroll
+      $(target).animatescroll({scrollSpeed:2000,easing:'easeInOutQuart'});
+      location.hash = target; //attach the hash (#jumptarget) to the pageurl
 
       //close the mobile nav
-      if($(this).hasClass('active')){
-         //mobile nav close after click on the link
+      if($(this).hasClass('active') && !$(this).parent().hasClass('sub-nav__item') ){
+        //mobile nav close after click on the link
         if($(window).width() < 769){
-          $('.close').fadeOut('slow', 'swing');
+          $('.hamburger').toggleClass('open');
           $('#menu-list').slideToggle();
-          $('.open').fadeIn('slow', 'swing');
         }
       }
 
@@ -32,12 +27,10 @@ $(document).ready(function() {
       //check for nav menu level
       if($(this).parent().hasClass('sub-nav__item')){
 
-
         //mobile nav close after click on the link
         if( $(window).width() <769){
-          $('.close').fadeOut('slow', 'swing');
+          $('.hamburger').toggleClass('open');
           $('#menu-list').slideToggle();
-          $('.open').fadeIn('slow', 'swing');
         }
         
         $(this).parent().parent().parent().addClass('active');
@@ -53,11 +46,11 @@ $(window).scroll(function() {
   var scrollDistance = $(window).scrollTop();
 
   //if we have started scrolling, check where we are
-  if (scrollDistance > 20){
+  if (scrollDistance > 50){
     
   // Assign active class to nav links while scrolling
     $('section').each(function(i) {
-        if ($(this).position().top <= scrollDistance - 20) {
+        if ($(this).position().top <= scrollDistance - 50) {
           
           $('nav .active').removeClass('active');
           var target =  $('nav a').eq(i).attr('href');
@@ -110,17 +103,11 @@ $(window).on('load', function(){
 });
 
 //mobile nav
-$('.open').on('click', function(){
-  $('.open').fadeOut('slow', 'swing');
+$('.hamburger').on('click', function(){
+  $('.hamburger').toggleClass('open');
   $('#menu-list').slideToggle();
-  $('.close').fadeIn('slow', 'swing');
 });
 
-$('.close').on('click', function(){
-  $('.close').fadeOut('slow', 'swing');
-  $('#menu-list').slideToggle();
-  $('.open').fadeIn('slow', 'swing');
-});
 
 $('.drawer').on('click', function(event){
   event.preventDefault();
@@ -132,8 +119,3 @@ $('.drawer').on('click', function(event){
 $('.drawer-close').on('click', function(){
   $(this).parent().slideToggle('slow');
 });
-// $(document).on('change', function(){
-//   if($(window).width() > 768){
-    
-//   }
-// })

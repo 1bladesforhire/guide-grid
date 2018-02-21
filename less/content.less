@@ -576,7 +576,9 @@ img{
 }
 
 #section-4-5{
-    
+    .row-five{
+        grid-template-columns: repeat(4, 1fr);
+    }
     .fat-thirds{
         min-width: 251px;
         grid-column: span 1;
@@ -589,7 +591,51 @@ img{
 }
 
 
+#section-4-6{
+    .row-five{
+        grid-template-columns: repeat(4, 1fr);
+        align-items: baseline;
+        .thirds{
+            img{
+                grid-column: span 2;
+            }
+            
+            p{
+                grid-column: span 1;
+                margin-top: 20px;
+                margin-right: 50px;
+                
+            }
+        }
+    }
+    .one-half{
+        grid-column: span 3;
+    }
+}
 
+#section-4-7{
+    img{
+        grid-column: span 2;
+        margin-bottom: 20px;
+    }
+}
+#section-4-8{
+    .row-seven{
+        grid-column-gap: 40px;
+        display: grid;
+    }
+    .half{
+        display: flex;
+        flex-direction: column;
+        p, img{  
+            margin-top: 20px;
+        }
+        .title{
+            padding-right: 0;
+            min-height: 60px;
+        }
+    }
+}
 
 
 #section-4-9{
@@ -612,23 +658,6 @@ img{
     }
 }
 
-#section-4-8{
-    .row-seven{
-        grid-column-gap: 40px;
-        display: grid;
-    }
-    .half{
-        display: flex;
-        flex-direction: column;
-        p, img{  
-            margin-top: 20px;
-        }
-        .title{
-            padding-right: 0;
-            min-height: 40px;
-        }
-    }
-}
 
 
 #section-5-3{
@@ -651,7 +680,15 @@ img{
         margin-bottom: 10px;
     }
 }
-
+#section-5-1{
+    .thirds{
+        grid-template-rows: max-content max-content;
+        align-items: baseline;
+        .title{
+            margin-bottom: 20px;
+        }
+    }
+}
 #section-5-4{
     .thirds{
         grid-template-rows: 60px 1fr;
@@ -665,17 +702,31 @@ img{
     
 }
 
+<<<<<<< HEAD
 #section-5-5 {
+=======
+#section-5-5{
+    .row.v-center .thirds{
+        grid-template-rows: 85px 1fr;
+    }
+>>>>>>> 7fd4bbaaad461631a24bbe032f2faf8003ca5749
     .thirds .title{
         font-size: 2em;
     }
 }
 #section-5-6{
-    .title, img{
-        margin-bottom: 20px;
+    .row-twelve .fourths{
+        display: grid;
+        grid-template-rows: minmax(60px, min-content) max-content 1fr;
+        grid-row-gap: 20px;
     }
 }
 
+#section-5-7{
+    .title{
+        margin-bottom: 20px;
+    }
+}
 
 #section-5-9{
     .half{
@@ -915,9 +966,10 @@ img{
     }
 }
 
-.navbar{
-    display: none;
-}
 #menu-list{
     display: block;
+}
+
+.row.visible-xs{
+    display: none;
 }

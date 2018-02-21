@@ -83,7 +83,7 @@
 
   .row-fluid .middle{
     margin: 0 auto;
-    width: 200px; 
+    width: 30%; 
   }
 
 //content
@@ -91,7 +91,7 @@
   .overlay{
     grid-column: span 9;
     .left, .right{
-      margin-top: 10px;
+      margin-top: 30px;
       margin-bottom: 20px;
       padding: 15px 10px;
       p{
@@ -101,11 +101,11 @@
     }
     .left{
       grid-column-start: 1;
-      margin-left: 10px;
+      margin-left: 30px;
     }
     .right{
-      grid-column-end: 9;
-      margin-right: 10px;                           
+      grid-column-end: 10;
+      margin-right: 30px;                           
     }
   }
 
@@ -141,11 +141,10 @@
       }
     }
   }
-  #section-2-4{
-      p{
-        grid-column: span 7;
-      }
-    }
+
+  .tt-row{
+    grid-template-columns: repeat(6, 1fr);
+  }
   #section-3-1 .thirds .content{
     margin-right: 10px;
   }
@@ -159,9 +158,7 @@
     }
   }
 
-  .dos p{
-    padding-right: 0;
-  }
+  
   #section-3-4 .thirds{
     padding-right: 20px;
   }
@@ -181,13 +178,25 @@
     }
   }
 
-  #section-4-5 .fat-thirds{
-    padding-right: 10px;
+  #section-4-5 {
+    .row-five{
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .fat-thirds{
+      padding-right: 10px;
+    }
+  }
+
+  #section-4-6 .row-five.empty-cell{
+    grid-template-columns: repeat(3, 1fr);
   }
 
   #section-4-8{
     .row-seven{
       grid-column-gap: 10px;
+    }
+    .half .title{
+      min-height: 40px;
     }
   }
 
@@ -212,10 +221,19 @@
     }
   }
 
+  #section-5-5 .thirds .title{
+    font-size: 1.5em;
+  }
+  #section-5-6 .row-twelve .fourths{
+    grid-template-rows: minmax(40px, min-content) max-content 1fr;
+  }
 
   #section-5-8{
     p{
       margin-right: 20px;
+    }
+    .title{
+      margin-right: -20px;
     }
   }
 
@@ -228,6 +246,13 @@
       margin-bottom: 0;
     }
   }
+
+#section-5-11{
+  p.title{
+    margin-bottom: 20px;
+  }
+}
+
   #section-5-13{
     .full-row{
       grid-column: span 9;
