@@ -440,6 +440,11 @@ img{
     .donts{
         grid-column: span 2;
     }
+    .row-lined.dark {
+        &:before {
+            width: 40%;
+        }
+    }
 
 }
 
@@ -470,22 +475,35 @@ img{
     h5{
         grid-column: span 5;
     }
+    .row.master-brand {
+        margin-top: 40px;
+    }
     .half{
         grid-column: span 3;
     }
     .title{
-        padding-bottom: 30px;
     }
     .thirds{
         padding-right: 20px;
+        p:not(.title) {
+            padding-top: 25px;
+        }
+    }
+    hr {
+        border-bottom: none;
+        border-top: 1px solid #c9c9c9;
+        margin: 50px 0 30px 0;
     }
 }
 
 
 #section-4-2{
     .thirds{
-        h5,p{
-            padding-bottom: 10px;
+        h5 {
+            padding-bottom: 0px;
+        }
+        p {
+            padding-bottom: 13px;
         }
     }
     .donts{
@@ -496,31 +514,75 @@ img{
     }
     .dos, .donts {
         .title, p{
-        font-size: 15px;
+            font-size: 18px;
+            padding-bottom: 8px;
         }
     }
+    .donts {
+        font-weight: 300;
+    }
+    hr {
+        border-bottom: none;
+        margin: 40px 0;
+        border-top: 1px solid #bfbfbf;
+    }
+    .this-is-our-name {
+        margin:0;
+        padding: 0;
+        position:relative;
+        top: 35px;
+
+    }
+    h2 {
+        padding-bottom: 45px;
+    }
+    .super.tall {
+        font-family: "SegoeUIBold";
+    }
+
 }
 
 #section-4-3{
     .half{
         grid-column: span 3;
         grid-template-columns: 1fr;
-        p{
+        p {
             grid-column-start: 1;
-            padding-bottom: 10px;
+            padding-bottom: 20px;
         }
     }
+    .donts {
+        width: 200px;
+        padding-bottom: 15px;
+
+    }
+    .primary-logo {
+        padding: 40px 0 80px 0;
+    }
+    .row.padding {
+        padding-bottom: 40px;
+    }
+    hr {
+        border-top: 1px solid #e0e0e0;
+    }
+    .first hr {
+        margin-top: 110px;
+    }
+    .second hr {
+        margin-bottom: 40px;
+    }
+
+
 }
 
 #section-4-5{
     
     .fat-thirds{
-        padding-right: 30px;
+        min-width: 251px;
         grid-column: span 1;
         img{
             width: 250px;
-            height: 250px;
-        } 
+        }
     }
             
 
@@ -603,9 +665,8 @@ img{
     
 }
 
-#section-5-5{
+#section-5-5 {
     .thirds .title{
-        font-family: 'SegoeUISemiLight';
         font-size: 2em;
     }
 }
@@ -837,7 +898,7 @@ img{
 
 .header{
     .thirds{
-        grid-template-rows: 50px 120px 200px;
+        grid-template-rows: 40px 120px 200px;
     }
     
     img{
