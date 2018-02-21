@@ -993,6 +993,10 @@ header {
   display: grid;
   grid-template-rows: minmax(50px, 1fr);
 }
+#mainArea:focus {
+  outline: none;
+  border: none;
+}
 #mainArea main {
   display: grid;
 }
