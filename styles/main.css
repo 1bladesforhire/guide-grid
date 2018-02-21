@@ -1072,7 +1072,6 @@ hr {
 .table-row > div {
   display: grid;
 }
-.word-art .left,
 .word-art .middle,
 .word-art .right {
   grid-column: span 2;
@@ -1080,7 +1079,10 @@ hr {
   font-size: 24px;
 }
 .word-art .left {
+  grid-column: span 1;
   text-align: right;
+  color: #252525;
+  font-size: 24px;
 }
 .word-art .right {
   text-align: left;
