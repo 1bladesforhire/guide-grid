@@ -199,9 +199,16 @@
   #section-4-9 .row-twelve .half {
       grid-column: span 9;
   }
-  #section-5-5 .thirds .title {
-      font-size: 1.25em;
-  }
+  #section-5-5 {
+      .thirds .title {
+        font-size: 1.25em;
+        }
+        .row.v-center .thirds{
+            grid-column: span 6;
+            grid-template-rows: max-content 1fr;
+            margin-bottom: 30px;
+        }
+    }
   #section-5-7 p {
       padding-right: 50px;
   }

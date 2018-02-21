@@ -85,18 +85,29 @@
     }
   }
 
+  #section-4-6 .fat-thirds img{
+    width: 100%;
+
+  }
   #section-4-6 {
     .row-five.empty-cell{
       grid-template-columns: 1fr;
-      .thirds{
-        grid-template-rows: max-content max-content;
+    }
+    .row-five{
+      grid-template-columns: 1fr;
+        .thirds{
+          grid-template-rows: max-content max-content;
+          grid-template-columns: 1fr;
+          img{
+            width: 100%;
+          }
+        }
       }
-      
       p{
         margin-right: 0;
         margin-top: 0;
       }
-    }
+    
   }
   #section-4-8{
     .row-seven{
@@ -136,6 +147,16 @@
       .thirds{
         grid-column: span 6;
       }
+    }
+  }
+
+  #section-5-2 {
+    .row{
+      grid-row-gap: 10px;
+    }
+    
+    .thirds{
+      margin-bottom: 20px;
     }
   }
 

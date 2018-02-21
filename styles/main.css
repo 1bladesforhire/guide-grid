@@ -494,6 +494,9 @@ img {
   -ms-flex-item-align: start;
   align-self: flex-start;
 }
+#section-5-5 .row.v-center .thirds {
+  grid-template-rows: 85px 1fr;
+}
 #section-5-5 .thirds .title {
   font-family: 'SegoeUISemiLight';
   font-size: 2em;
@@ -770,6 +773,8 @@ nav ul li.active .pink {
 }
 nav ul li a {
   color: white;
+  line-height: 35px;
+  padding: 10px 0;
 }
 nav ul li a.purple.active,
 nav ul li a.purple:hover {
@@ -1523,9 +1528,6 @@ a {
   #section-3-3 .dos {
     grid-column-end: 4;
   }
-  .dos p {
-    padding-right: 0;
-  }
   #section-3-4 .thirds {
     padding-right: 20px;
   }
@@ -1716,6 +1718,9 @@ a {
   }
   #section-5-5 .thirds .title {
     font-size: 1.5em;
+  }
+  #section-5-5 .row.v-center .thirds {
+    grid-template-rows: 65px 1fr;
   }
   #section-5-7 .row-twelve {
     grid-row-gap: 20px;
@@ -1975,6 +1980,12 @@ a {
   #section-5-5 .thirds .title {
     font-size: 1.25em;
   }
+  #section-5-5 .row.v-center .thirds {
+    grid-column: span 6;
+    grid-template-rows: -webkit-max-content 1fr;
+    grid-template-rows: max-content 1fr;
+    margin-bottom: 30px;
+  }
   #section-5-7 p {
     padding-right: 50px;
   }
@@ -2072,14 +2083,24 @@ a {
   #section-5-4 .row-five {
     grid-template-columns: 1fr;
   }
+  #section-4-6 .fat-thirds img {
+    width: 100%;
+  }
   #section-4-6 .row-five.empty-cell {
     grid-template-columns: 1fr;
   }
-  #section-4-6 .row-five.empty-cell .thirds {
+  #section-4-6 .row-five {
+    grid-template-columns: 1fr;
+  }
+  #section-4-6 .row-five .thirds {
     grid-template-rows: -webkit-max-content -webkit-max-content;
     grid-template-rows: max-content max-content;
+    grid-template-columns: 1fr;
   }
-  #section-4-6 .row-five.empty-cell p {
+  #section-4-6 .row-five .thirds img {
+    width: 100%;
+  }
+  #section-4-6 p {
     margin-right: 0;
     margin-top: 0;
   }
@@ -2114,6 +2135,12 @@ a {
   #section-5-3 .row .thirds,
   #section-5-2 .row .thirds {
     grid-column: span 6;
+  }
+  #section-5-2 .row {
+    grid-row-gap: 10px;
+  }
+  #section-5-2 .thirds {
+    margin-bottom: 20px;
   }
   #section-5-4 .thirds {
     grid-template-rows: -webkit-max-content 1fr;
