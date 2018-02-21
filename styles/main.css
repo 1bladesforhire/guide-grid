@@ -1072,22 +1072,25 @@ hr {
 .table-row > div {
   display: grid;
 }
-.word-art .middle,
-.word-art .right {
+.row.word-art {
+  grid-template-columns: 150px repeat(8, 1fr);
+}
+.row.word-art .middle,
+.row.word-art .right {
   grid-column: span 2;
   color: #252525;
   font-size: 24px;
 }
-.word-art .left {
+.row.word-art .left {
   grid-column: span 1;
   text-align: right;
   color: #252525;
   font-size: 24px;
 }
-.word-art .right {
+.row.word-art .right {
   text-align: left;
 }
-.word-art .middle {
+.row.word-art .middle {
   font-weight: 600;
   font-family: 'SegoeUISemiBold';
   text-align: center;
