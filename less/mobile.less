@@ -107,6 +107,15 @@
       }
     }
   }
+
+  #section-4-9{
+    .row.v-center{
+      grid-template-columns: 1fr;
+      .fourths, .thirds{
+        margin-bottom: 20px;
+      }
+    }
+  }
   #section-5-1{
     .row{
       grid-template-columns: 1fr;
@@ -143,7 +152,9 @@
   #section-5-5{
 
   }
-
+  #section-5-7 p{
+    padding-right: 0;
+  }
 
   #section-5-8, #section-5-10 {
     .fat-thirds{
@@ -151,9 +162,15 @@
     }
   }
 
-  #section-5-8 p{
-    margin-right: 0;
+  #section-5-8 {
+    p{
+      margin-right: 0;
+    }
+    .title{
+      margin-right: -32px;
+    }
   }
+
   #section-5-12{
     .row-seven{
       grid-template-columns: 1fr;
@@ -178,7 +195,7 @@
   .hidden-xs{
     display: none;
   }
-  .visible-xs{
+  .row.visible-xs{
     display: grid;
   }
 

@@ -1861,7 +1861,7 @@ a {
   .navbar {
     display: block;
     position: fixed;
-    top: 0 ;
+    top: 0;
     width: 100%;
     height: 50px;
     z-index: 10;
@@ -1869,8 +1869,8 @@ a {
   }
   .navbar img {
     display: block;
-    height: 40px;
-    margin: 5px auto;
+    height: 30px;
+    margin: 10px auto;
   }
   .navbar .open {
     position: absolute;
@@ -1926,6 +1926,10 @@ a {
   .row-twelve {
     margin-right: 20px;
   }
+  .row-fluid .middle {
+    width: 50%;
+    min-width: 250px;
+  }
   .row.collapse {
     grid-template-columns: 1fr;
   }
@@ -1958,11 +1962,27 @@ a {
   #section-3-3 .thirds .desc {
     padding-right: 0;
   }
-  #section-4-6 .row-five.empty-cell {
-    grid-template-columns: 1fr 1fr;
+  #section-4-2 .thirds {
+    margin-top: 20px;
+  }
+  #section-4-6 .row-five .thirds p {
+    margin-right: 10px;
+    grid-column: span 2;
   }
   #section-4-9 .row-twelve .half {
     grid-column: span 9;
+  }
+  #section-5-5 .thirds .title {
+    font-size: 1.25em;
+  }
+  #section-5-7 p {
+    padding-right: 50px;
+  }
+  #section-5-8 .title {
+    margin-right: 0;
+  }
+  #section-5-8 .title.extra {
+    margin-right: -32px;
   }
   #section-5-11 .row-twelve .fourths {
     grid-template-rows: 70px -webkit-max-content 1fr;
@@ -1971,6 +1991,12 @@ a {
   }
   #section-5-11 .row-twelve .fourths .title {
     padding-bottom: 0;
+  }
+  #section-6-3 .row-twelve {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  #section-6-3 .row-twelve .thirds {
+    grid-column: span 2;
   }
 }
 /*
@@ -2064,6 +2090,13 @@ a {
     min-height: auto;
     margin-top: 10px;
   }
+  #section-4-9 .row.v-center {
+    grid-template-columns: 1fr;
+  }
+  #section-4-9 .row.v-center .fourths,
+  #section-4-9 .row.v-center .thirds {
+    margin-bottom: 20px;
+  }
   #section-5-1 .row {
     grid-template-columns: 1fr;
   }
@@ -2090,12 +2123,18 @@ a {
     margin-bottom: 15px;
     margin-top: 10px;
   }
+  #section-5-7 p {
+    padding-right: 0;
+  }
   #section-5-8 .fat-thirds,
   #section-5-10 .fat-thirds {
     grid-column: span 6;
   }
   #section-5-8 p {
     margin-right: 0;
+  }
+  #section-5-8 .title {
+    margin-right: -32px;
   }
   #section-5-12 .row-seven {
     grid-template-columns: 1fr;
@@ -2116,7 +2155,7 @@ a {
   .hidden-xs {
     display: none;
   }
-  .visible-xs {
+  .row.visible-xs {
     display: grid;
   }
   #section-3-4 .donts,
