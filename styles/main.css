@@ -820,7 +820,7 @@ img {
 }
 nav {
   background: #252525;
-  overflow-y: auto;
+  overflow-y: scroll;
   height: 100%;
   position: fixed;
   top: 0;
@@ -2117,6 +2117,9 @@ a {
   }
   #section-6-3 .row-twelve .thirds {
     grid-column: span 2;
+  }
+  nav {
+    overflow-y: auto;
   }
 }
 /*
