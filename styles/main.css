@@ -858,8 +858,8 @@ nav ul li.active .sub-nav {
   max-height: 800px;
   -webkit-transition: max-height 1s ease-in-out;
   transition: max-height 1s ease-in-out;
-  -webkit-transition-delay: 500ms;
-  transition-delay: 500ms;
+  -webkit-transition-delay: 25ms;
+  transition-delay: 25ms;
 }
 nav ul li.active .purple {
   color: #b4a0ff;
