@@ -95,7 +95,7 @@
       margin-bottom: 20px;
       padding: 15px 10px;
       p{
-        font-size: 1em;
+        font-size: .75em;
         margin-bottom: 10px;
       }
     }
@@ -142,6 +142,14 @@
     }
   }
 
+  #section-2-3{
+    .row-twelve{
+      grid-template-columns: repeat(12, 1fr);
+      .fourths{
+        grid-column: span 3;
+      }
+    }
+  }
   .tt-row{
     grid-template-columns: repeat(6, 1fr);
   }

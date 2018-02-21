@@ -660,9 +660,15 @@ img {
 #section-6-2 img {
   grid-column: span 7;
 }
+#section-6-3 .half {
+  grid-template-rows: 60px 1fr;
+}
 #section-6-3 .half title,
 #section-6-3 .half img {
   grid-column: span 2;
+}
+#section-6-3 .row-twelve .thirds {
+  grid-column: span 3;
 }
 .overlay {
   display: grid;
@@ -1220,7 +1226,7 @@ picture {
   display: grid;
 }
 .row-seven .half {
-  grid-column: span 2;
+  grid-column: span 3;
   grid-template-columns: 1fr 1fr;
 }
 .row-top-five {
@@ -1592,7 +1598,7 @@ a {
   }
   .overlay .left p,
   .overlay .right p {
-    font-size: 1em;
+    font-size: .75em;
     margin-bottom: 10px;
   }
   .overlay .left {
@@ -1628,6 +1634,12 @@ a {
   }
   #section-1-2 div > p {
     grid-column: span 7;
+  }
+  #section-2-3 .row-twelve {
+    grid-template-columns: repeat(12, 1fr);
+  }
+  #section-2-3 .row-twelve .fourths {
+    grid-column: span 3;
   }
   .tt-row {
     grid-template-columns: repeat(6, 1fr);
