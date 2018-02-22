@@ -49,7 +49,7 @@
           }
       }
   }
-  .word-art {
+  .row.word-art {
       .left,
       .right,
       .middle {
@@ -184,6 +184,15 @@
   }
   #section-3-3 .thirds .desc {
       padding-right: 0;
+  }
+  #section-3{
+    &-3, &-4{
+      .row-lined, .row-lined.dark{
+        &:before{
+          width: 93%;
+        }
+      }
+    }
   }
   #section-4-2 .thirds {
       margin-top: 20px;

@@ -20,7 +20,7 @@
     font-size: 1.25em;
   }
   .cross-through{
-    background-position: -10px 60%;
+    background-position: -20px 60%;
   }
 
   .row-twelve{
@@ -52,7 +52,24 @@
       margin-top: 30px;
     }
   }
-  
+
+  #mainArea main section{
+    overflow-x: hidden;
+  }
+  #section-2-3 .row-twelve .fourths{
+    grid-column: span 12;
+  }
+
+
+  #section-3-4{
+    .donts, .dos, .explanation {
+   grid-column: span 9;
+    }
+    .explanation .title{
+      font-size: 1.125em;
+    }
+  }
+
   #section-4-3{
     .row .half{
       grid-column: span 6;
@@ -69,12 +86,6 @@
     grid-column: span 5;
   }
 
-  #section-4-6 .one-half{
-    grid-column: span 6;
-    img{
-      margin-bottom: 10px;
-    }
-  }
   .badge{
     font-size: .6em;
   }
@@ -85,10 +96,7 @@
     }
   }
 
-  #section-4-6 .fat-thirds img{
-    width: 100%;
 
-  }
   #section-4-6 {
     .row-five.empty-cell{
       grid-template-columns: 1fr;
@@ -107,7 +115,16 @@
         margin-right: 0;
         margin-top: 0;
       }
+      .fat-thirds img{
+        width: 100%;
+      }
     
+      .one-half{
+        grid-column: span 6;
+        img{
+          margin-bottom: 10px;
+        }
+      }
   }
   #section-4-8{
     .row-seven{
@@ -136,6 +153,17 @@
     }
   }
 
+  #section-5-2 {
+    .row{
+      grid-row-gap: 10px;
+    }
+    
+    .thirds{
+      margin-bottom: 20px;
+      grid-template-rows: min-content 1fr;
+    }
+  }
+
   #section-5-3, #section-5-2{
     .half{
       grid-template-columns: 1fr;
@@ -147,16 +175,6 @@
       .thirds{
         grid-column: span 6;
       }
-    }
-  }
-
-  #section-5-2 {
-    .row{
-      grid-row-gap: 10px;
-    }
-    
-    .thirds{
-      margin-bottom: 20px;
     }
   }
 
@@ -213,6 +231,10 @@
   #section-6-1 .half img{
     min-height: auto;
   }
+
+  #section-6-3 .row-twelve .thirds{
+    grid-column: span 6;
+  }
   .hidden-xs{
     display: none;
   }
@@ -220,12 +242,5 @@
     display: grid;
   }
 
-  #section-3-4{
-     .donts, .dos, .explanation {
-    grid-column: span 9;
-     }
-     .explanation .title{
-       font-size: 1.125em;
-     }
-  }
+
 }
