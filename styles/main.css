@@ -2310,6 +2310,10 @@ a {
   #section-4-9 .row.v-center .thirds {
     margin-bottom: 20px;
   }
+  #section-4-9 .row-twelve .half p.half {
+    grid-column: span 2;
+    padding-right: 0;
+  }
   #section-5-1 .row {
     grid-template-columns: 1fr;
   }
@@ -2344,6 +2348,36 @@ a {
     margin-bottom: 15px;
     margin-top: 10px;
   }
+  div.first {
+    width: 70px;
+    font-size: 10px;
+    line-height: 12px;
+  }
+  .second,
+  .third,
+  .fourth {
+    font-size: 10px;
+    line-height: 12px;
+  }
+  .f-big {
+    font-size: 10px;
+    line-height: 112pxem;
+  }
+  .f-bigger {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .f-biggerer {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .f-super {
+    font-size: 16px;
+    line-height: 18px;
+  }
+  #section-5-5 .thirds .title {
+    font-size: 1em;
+  }
   #section-5-7 p {
     padding-right: 0;
   }
@@ -2375,6 +2409,15 @@ a {
   }
   #section-6-3 .row-twelve .thirds {
     grid-column: span 6;
+  }
+  #section-6-3 .row-seven {
+    grid-template-columns: 1fr;
+  }
+  #section-6-3 .row-seven .half {
+    grid-column: span 2;
+  }
+  #section-6-3 .row-seven .half p {
+    padding-right: 0;
   }
   .hidden-xs {
     display: none;
