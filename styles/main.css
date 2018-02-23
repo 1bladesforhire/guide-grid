@@ -20,6 +20,8 @@ main > section {
 }
 img {
   max-width: 100%;
+  -ms-flex-item-align: self-end;
+  align-self: self-end;
 }
 .no-padding {
   padding: 0!important;
@@ -853,7 +855,10 @@ nav ul.sub-nav {
   transition: all 500ms ease-out;
 }
 nav ul li {
-  padding-left: 20px;
+  padding: 7px 5px 7px 20px;
+}
+nav ul li:first-of-type {
+  padding-top: 14px;
 }
 nav ul li.active {
   background: #1d1d1d;
@@ -886,8 +891,8 @@ nav ul li.active .pink {
   color: #e54d4d;
 }
 nav ul li a {
-  color: white;
-  line-height: 35px;
+  color: #e7e7e7;
+  line-height: 22px;
   padding: 10px 0;
 }
 nav ul li a.purple.active,
