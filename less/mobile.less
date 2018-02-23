@@ -20,7 +20,7 @@
     font-size: 1.25em;
   }
   .cross-through{
-    background-position: -10px 60%;
+    background-position: -20px 60%;
   }
 
   .row-twelve{
@@ -52,7 +52,24 @@
       margin-top: 30px;
     }
   }
-  
+
+  #mainArea main section{
+    overflow-x: hidden;
+  }
+  #section-2-3 .row-twelve .fourths{
+    grid-column: span 12;
+  }
+
+
+  #section-3-4{
+    .donts, .dos, .explanation {
+   grid-column: span 9;
+    }
+    .explanation .title{
+      font-size: 1.125em;
+    }
+  }
+
   #section-4-3{
     .row .half{
       grid-column: span 6;
@@ -69,12 +86,6 @@
     grid-column: span 5;
   }
 
-  #section-4-6 .one-half{
-    grid-column: span 6;
-    img{
-      margin-bottom: 10px;
-    }
-  }
   .badge{
     font-size: .6em;
   }
@@ -85,10 +96,7 @@
     }
   }
 
-  #section-4-6 .fat-thirds img{
-    width: 100%;
 
-  }
   #section-4-6 {
     .row-five.empty-cell{
       grid-template-columns: 1fr;
@@ -107,7 +115,16 @@
         margin-right: 0;
         margin-top: 0;
       }
+      .fat-thirds img{
+        width: 100%;
+      }
     
+      .one-half{
+        grid-column: span 6;
+        img{
+          margin-bottom: 10px;
+        }
+      }
   }
   #section-4-8{
     .row-seven{
@@ -126,13 +143,29 @@
         margin-bottom: 20px;
       }
     }
+    .row-twelve .half p.half{
+      grid-column: span 2;
+      padding-right: 0;
+    }
   }
+ 
   #section-5-1{
     .row{
       grid-template-columns: 1fr;
       .thirds{
         margin-bottom: 30px;
       }
+    }
+  }
+
+  #section-5-2 {
+    .row{
+      grid-row-gap: 10px;
+    }
+    
+    .thirds{
+      margin-bottom: 20px;
+      grid-template-rows: min-content 1fr;
     }
   }
 
@@ -150,16 +183,6 @@
     }
   }
 
-  #section-5-2 {
-    .row{
-      grid-row-gap: 10px;
-    }
-    
-    .thirds{
-      margin-bottom: 20px;
-    }
-  }
-
   #section-5-4{
     .thirds{
       grid-template-rows: max-content 1fr;
@@ -169,10 +192,42 @@
       }
     }
   }
+  div.first{
+    width: 70px;
+    font-size: 10px;
+    line-height: 12px;
+  }
 
-  // #section-5-5{
+  .second, .third, .fourth{
+    font-size: 10px;
+    line-height: 12px;
+  }
+  .f{
+    &-big{
+      font-size: 10px;
+      line-height: 112pxem;
+    }
+    &-bigger{
+      font-size: 12px;
+      line-height: 14px;
+    }
+    &-biggerer{
+      font-size: 14px;
+      line-height: 16px;
+    }
+    &-super{
+      font-size: 16px;
+      line-height: 18px;
+    }
+  }
 
-  // }
+  #section-5-5{
+    .thirds{
+      .title{
+        font-size: 1em;
+      }
+    }
+  }
   #section-5-7 p{
     padding-right: 0;
   }
@@ -213,6 +268,21 @@
   #section-6-1 .half img{
     min-height: auto;
   }
+
+  #section-6-3 {
+    .row-twelve .thirds{
+      grid-column: span 6;
+    }
+    .row-seven{
+      grid-template-columns: 1fr;
+      .half{
+        grid-column: span 2;
+        p{
+          padding-right: 0;
+        }
+      }
+    }
+  }
   .hidden-xs{
     display: none;
   }
@@ -220,12 +290,5 @@
     display: grid;
   }
 
-  #section-3-4{
-     .donts, .dos, .explanation {
-    grid-column: span 9;
-     }
-     .explanation .title{
-       font-size: 1.125em;
-     }
-  }
+
 }

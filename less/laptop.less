@@ -44,11 +44,25 @@
     margin-right: 10px;
   }
  
+  #section-3{
+    &-3, &-4{
+      .row-lined, .row-lined.dark{
+        &:before{
+          width: 65%;
+        }
+      }
+    }
+  }
+  
 
   #mainArea main section{
     grid-template-columns: 40px repeat(7, 1fr) 40px;
   }
   //content specific
+
+  #section-2-3 .row-twelve .fourths{
+    grid-column: span 6;
+  }
 
   #section-2-6, #section-3-1, #section-3-2, #section-3-3 {
     .thirds{
@@ -77,8 +91,14 @@
     }
   }
 
+  .row.word-art{
+    grid-template-columns: 100px repeat(4, 1fr);
+  }
 
-
+  .row.headers{
+    grid-template-columns: 1fr;
+  }
+  
   #section-4-3{
     .half p{
       padding-right: 0;
@@ -111,7 +131,7 @@
     }
   }
 
-  #section-4-8 .half {
+  #section-4-8 .row-seven .half {
     .title{
       min-height: 60px;
     }
@@ -120,6 +140,13 @@
     }
   }
 
+
+  #section-5-2{
+    .thirds{
+      display: grid;
+      grid-template-rows: 100px 1fr;
+    }
+  }
   #section-5-3{
     .row{
       grid-row-gap: 30px;
@@ -143,17 +170,28 @@
       grid-template-rows: 65px 1fr;
     }
   }
+  
+  #section-5-6 .row-twelve .fourths{
+    grid-template-rows: minmax(20px, max-content);
+  }
 
   #section-5-7{
     .row-twelve     {
       grid-row-gap: 20px;
       .fourths{
         display: grid;
-        grid-template-rows: minmax(50px, min-content) 1fr min-content;
+        grid-template-rows: minmax(50px, min-content) min-content min-content;
+        grid-row-gap: 10px;
       }
     }
   }
 
+  #section-5-8{
+    .title{
+      margin-right: 0;
+    }
+    
+  }
 
   #section-5-9, #section-5-12, #section-5-13{
     .half p{
@@ -166,11 +204,14 @@
       .title{
         padding-bottom: 20px;
       }
+      p{
+        max-width: 250px;
+      }
     }
   }
 
 
-  #section-6-1, #section-6-3{
+  #section-6-1{
     .half{
       grid-column: span 5;
       .title{
@@ -188,6 +229,10 @@
 
   #section-6-3{
     grid-row-gap: 10px;
+    .row-twelve{
+      margin-bottom: -10px;
+      grid-template-columns: repeat(9, 1fr);
+    }
   }
   .overlay{
     .img-wrapper{
