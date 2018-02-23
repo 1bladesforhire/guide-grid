@@ -688,16 +688,55 @@ img{
     }
 }
 #section-5-4{
-    .thirds{
+    font-size: 15px;
+    line-height: 22px;
+    .thirds {
         grid-template-rows: 60px 1fr;
-        .title{
+        .title {
             align-self: flex-start;
-            }
-            p{
-                align-self: flex-start;
-            }
+        }
+        p {
+            align-self: flex-start;
+        }
     }
-    
+    .table-row.gray {
+        padding: 14px 2px;
+    }
+    .underline {
+        border-bottom: 1px solid #dadada;
+        padding-bottom: 20px;
+        padding-top: 2px;
+    }
+    .table-row:not(first) {
+        padding: 7px 0 27px 0;
+    }
+    .first {
+        padding-right: 20px;
+    }
+    .second,
+    .third,
+    .fourth {
+        display: block;
+
+        p {
+        }
+    }
+    .type-chart {
+        padding-top: 100px;
+        h4 {
+            font-size: 52px;
+            font-family: "SegoeUISemiLight";
+        }
+        .single:not(:first-of-type) {
+            position: relative;
+            top: 6px;
+            span {
+                font-family: "SegoeUISemiBold";
+            }
+        }
+
+    }
+
 }
 
 #section-5-5{
