@@ -660,12 +660,20 @@ img{
 #section-5-3{
     .half{
         grid-column: span 4;
-        grid-template-columns: repeat(2,1fr);
-        grid-column-gap: 20px;
+        grid-template-columns: repeat(4,1fr);
+        grid-column-gap: 10px;
+        align-content: baseline;
+        display: grid;
         p{
            margin: 10px 0;
-
+           padding-right: 10px;
        } 
+       .double{
+           grid-column: span 2;
+       }
+       .single{
+           grid-column: span 1;
+       }
     }
     .subs{
         grid-column: span 3;

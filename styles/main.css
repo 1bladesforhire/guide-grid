@@ -566,11 +566,21 @@ img {
 }
 #section-5-3 .half {
   grid-column: span 4;
-  grid-template-columns: repeat(2, 1fr);
-  grid-column-gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 10px;
+  -ms-flex-line-pack: baseline;
+  align-content: baseline;
+  display: grid;
 }
 #section-5-3 .half p {
   margin: 10px 0;
+  padding-right: 10px;
+}
+#section-5-3 .half .double {
+  grid-column: span 2;
+}
+#section-5-3 .half .single {
+  grid-column: span 1;
 }
 #section-5-3 .subs {
   grid-column: span 3;
