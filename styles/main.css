@@ -568,11 +568,21 @@ img {
 }
 #section-5-3 .half {
   grid-column: span 4;
-  grid-template-columns: repeat(2, 1fr);
-  grid-column-gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 10px;
+  -ms-flex-line-pack: baseline;
+  align-content: baseline;
+  display: grid;
 }
 #section-5-3 .half p {
   margin: 10px 0;
+  padding-right: 10px;
+}
+#section-5-3 .half .double {
+  grid-column: span 2;
+}
+#section-5-3 .half .single {
+  grid-column: span 1;
 }
 #section-5-3 .subs {
   grid-column: span 3;
@@ -582,6 +592,9 @@ img {
 }
 #section-5-3 p {
   margin-bottom: 10px;
+}
+.row.colors {
+  grid-column-gap: 40px;
 }
 #section-5-1 .thirds {
   grid-template-rows: -webkit-max-content -webkit-max-content;
@@ -798,9 +811,15 @@ img {
   padding-top: 20px;
   font-family: 'SegoeUISemiLight';
 }
+.bow-wrap {
+  grid-column: span 2;
+}
+.bow-wrap h5 {
+  margin-right: 0;
+}
 .long-bow {
   display: inline-block;
-  width: 180px;
+  width: calc(100% - 2.75em);
   height: 20px;
   background-repeat: no-repeat;
   background-position: 0 80%;
@@ -1755,6 +1774,10 @@ a {
   #section-5-3 .half {
     grid-column: span 3;
   }
+  .upper {
+    font-size: 11px;
+    line-height: 14px;
+  }
   #section-5-5 .thirds .title {
     font-size: 1.5em;
   }
@@ -1848,6 +1871,9 @@ a {
   }
   #section-2-3 .row-twelve .fourths {
     grid-column: span 6;
+  }
+  .long-bow {
+    height: 16px;
   }
   #section-2-6 .thirds,
   #section-3-1 .thirds,
@@ -2173,6 +2199,9 @@ a {
   .tt-row .message.titles {
     font-size: 1em;
   }
+  .long-bow {
+    height: 14px;
+  }
   .row-lined:before {
     width: 94%;
   }
@@ -2264,9 +2293,6 @@ a {
     padding: 10px 18px 7px 20px;
     font-size: 11px;
   }
-  .long-bow {
-    width: 150px;
-  }
   .row.headers {
     grid-template-columns: 1fr;
   }
@@ -2285,6 +2311,9 @@ a {
   }
   #section-2-3 .row-twelve .fourths {
     grid-column: span 12;
+  }
+  .bow-wrap {
+    grid-column: span 3;
   }
   #section-3-4 .donts,
   #section-3-4 .dos,
