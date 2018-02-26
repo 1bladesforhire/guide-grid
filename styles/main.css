@@ -591,6 +591,9 @@ img {
 #section-5-3 p {
   margin-bottom: 10px;
 }
+.row.colors {
+  grid-column-gap: 40px;
+}
 #section-5-1 .thirds {
   grid-template-rows: -webkit-max-content -webkit-max-content;
   grid-template-rows: max-content max-content;
@@ -1724,6 +1727,10 @@ a {
   }
   #section-5-3 .half {
     grid-column: span 3;
+  }
+  .upper {
+    font-size: 11px;
+    line-height: 14px;
   }
   #section-5-5 .thirds .title {
     font-size: 1.5em;
