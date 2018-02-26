@@ -2259,6 +2259,9 @@ a {
   #section-2-3 .row-twelve .fourths {
     grid-column: span 12;
   }
+  .bow-wrap {
+    grid-column: span 3;
+  }
   #section-3-4 .donts,
   #section-3-4 .dos,
   #section-3-4 .explanation {
