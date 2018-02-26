@@ -769,9 +769,15 @@ img {
   padding-top: 20px;
   font-family: 'SegoeUISemiLight';
 }
+.bow-wrap {
+  grid-column: span 2;
+}
+.bow-wrap h5 {
+  margin-right: 0;
+}
 .long-bow {
   display: inline-block;
-  width: 180px;
+  width: calc(100% - 2.75em);
   height: 20px;
   background-repeat: no-repeat;
   background-position: 0 80%;
@@ -1813,6 +1819,9 @@ a {
   #section-2-3 .row-twelve .fourths {
     grid-column: span 6;
   }
+  .long-bow {
+    height: 16px;
+  }
   #section-2-6 .thirds,
   #section-3-1 .thirds,
   #section-3-2 .thirds,
@@ -2137,6 +2146,9 @@ a {
   .tt-row .message.titles {
     font-size: 1em;
   }
+  .long-bow {
+    height: 14px;
+  }
   .row-lined:before {
     width: 94%;
   }
@@ -2227,9 +2239,6 @@ a {
   .cta a {
     padding: 10px 18px 7px 20px;
     font-size: 11px;
-  }
-  .long-bow {
-    width: 150px;
   }
   .row.headers {
     grid-template-columns: 1fr;
