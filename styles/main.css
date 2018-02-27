@@ -618,6 +618,9 @@ img {
 #section-5-5 .row.v-center .thirds {
   grid-template-rows: 85px 1fr;
 }
+#section-5-5 .row.v-center .thirds img {
+  grid-column: span 2;
+}
 #section-5-5 .thirds .title {
   font-size: 2em;
 }
