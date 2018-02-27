@@ -1894,7 +1894,10 @@ a {
   }
   #section-5-3 .half,
   #section-5-3 .subs {
-    grid-column: span 5;
+    grid-column: span 6;
+  }
+  #section-5-3 .double.hidden-xs {
+    display: none;
   }
   #section-5-4 .thirds {
     grid-template-rows: 70px 1fr;
@@ -2360,6 +2363,7 @@ a {
   #section-5-3 .half,
   #section-5-2 .half {
     grid-template-columns: 1fr;
+    grid-column: span 6;
   }
   #section-5-3 .subs,
   #section-5-2 .subs {
@@ -2368,6 +2372,10 @@ a {
   #section-5-3 .row .thirds,
   #section-5-2 .row .thirds {
     grid-column: span 6;
+  }
+  #section-5-3 .half .single,
+  #section-5-2 .half .single {
+    grid-column: span 2;
   }
   #section-5-4 .thirds {
     grid-template-rows: -webkit-max-content 1fr;
