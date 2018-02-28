@@ -180,24 +180,7 @@ img {
   white-space: nowrap;
   overflow: hidden;
   margin-bottom: -10px;
-}
-.badge.blue {
-  background: #00bcf2;
-}
-.badge.purple {
-  background: #b4a0ff;
-}
-.badge.yellow {
-  background: #bad80a;
-}
-.badge.orange {
-  background: #FF8C00;
-}
-.badge.green {
-  background: #00b294;
-}
-.badge.pink {
-  background: #e54d4d;
+  background: transparent;
 }
 #section-1 {
   padding-top: 55px;
@@ -890,22 +873,22 @@ nav ul li.active .sub-nav {
   transition-delay: 500ms;
 }
 nav ul li.active .purple {
-  color: #b4a0ff;
+  color: white;
 }
 nav ul li.active .blue {
-  color: #00bcf2;
+  color: white;
 }
 nav ul li.active .yellow {
-  color: #bad80a;
+  color: white;
 }
 nav ul li.active .orange {
-  color: #FF8C00;
+  color: white;
 }
 nav ul li.active .green {
-  color: #00b294;
+  color: white;
 }
 nav ul li.active .pink {
-  color: #e54d4d;
+  color: white;
 }
 nav ul li a {
   color: white;
@@ -914,27 +897,27 @@ nav ul li a {
 }
 nav ul li a.purple.active,
 nav ul li a.purple:hover {
-  color: #d8ceff;
+  color: #076dcc;
 }
 nav ul li a.blue.active,
 nav ul li a.blue:hover {
-  color: #71dfff;
+  color: #076dcc;
 }
 nav ul li a.yellow.active,
 nav ul li a.yellow:hover {
-  color: #d4f129;
+  color: #076dcc;
 }
 nav ul li a.orange.active,
 nav ul li a.orange:hover {
-  color: #ffab45;
+  color: #076dcc;
 }
 nav ul li a.green.active,
 nav ul li a.green:hover {
-  color: #00ffd4;
+  color: #076dcc;
 }
 nav ul li a.pink.active,
 nav ul li a.pink:hover {
-  color: #fb7373;
+  color: #076dcc;
 }
 nav button {
   display: none;
