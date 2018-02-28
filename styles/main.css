@@ -384,9 +384,6 @@ img {
 #section-3-3 .donts {
   grid-column: span 2;
 }
-#section-3-3 .row-lined.dark:before {
-  width: 40%;
-}
 #section-3-4 .dos,
 #section-3-4 .donts,
 #section-3-4 .explanation {
@@ -583,6 +580,10 @@ img {
 }
 #section-5-3 .half .single {
   grid-column: span 1;
+}
+#section-5-3 .upper {
+  font-size: 11px;
+  line-height: 14px;
 }
 #section-5-3 .subs {
   grid-column: span 3;
@@ -1773,10 +1774,6 @@ a {
   }
   #section-5-3 .half {
     grid-column: span 3;
-  }
-  .upper {
-    font-size: 11px;
-    line-height: 14px;
   }
   #section-5-5 .thirds .title {
     font-size: 1.5em;
