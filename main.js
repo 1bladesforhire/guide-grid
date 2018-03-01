@@ -113,9 +113,11 @@ $('.drawer').on('click', function(event){
   event.preventDefault();
   var content = $(this).attr('href');
   $(content).slideToggle('fast');
+  $(this).toggle();
   return false;
 });
 
 $('.drawer-close').on('click', function(){
-  $(this).parent().slideToggle('slow');
+  $(this).parent().slideToggle('fast');
+  $(this).parent().parent().find('a.drawer').toggle();
 });

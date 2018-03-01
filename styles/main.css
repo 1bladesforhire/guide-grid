@@ -190,7 +190,7 @@ img {
   margin-bottom: 10px;
 }
 #section-1 h6 {
-  grid-column: span 7;
+  grid-column: span 6;
   color: #3b3b3b;
 }
 #section-1 p {
@@ -224,11 +224,8 @@ img {
 #section-1 picture {
   padding: 35px 0 30px;
 }
-#section-2-3 h4 {
-  grid-column: span 7;
-}
 #section-2-3 .row-twelve {
-  grid-template-columns: repeat(10, 1fr);
+  grid-template-columns: repeat(12, 1fr);
 }
 .direction {
   grid-column: span 10;
@@ -672,13 +669,15 @@ img {
   display: grid;
   grid-column: span 8;
   grid-template-columns: repeat(10, 1fr);
+  position: relative;
 }
 .overlay .left,
 .overlay .right {
   background: rgba(0, 0, 0, 0.4);
   padding: 30px 20px;
-  -ms-flex-line-pack: start;
-  align-content: flex-start;
+  position: absolute;
+  bottom: 4px;
+  right: 3px;
   grid-row-gap: 20px;
 }
 .overlay .left p,
@@ -686,33 +685,13 @@ img {
   color: #ffffff;
   font-size: 15px;
   line-height: 20px;
-  margin-bottom: 30px;
 }
-.overlay .left {
-  width: 250px;
-  margin-left: 30px;
-  margin-top: 30px;
-  grid-column-end: 2;
-  grid-row-start: 1;
-  z-index: 10;
-  margin-bottom: 50px;
-  text-align: left;
-}
+.overlay .left,
 .overlay .right {
-  margin-right: 30px;
-  margin-top: 30px;
-  width: 250px;
-  grid-column-end: 10;
-  grid-column-start: auto;
+  grid-column-end: 9;
   grid-row-start: 1;
   z-index: 10;
-  margin-bottom: 50px;
-}
-@media all and (min-width: 1750px) {
-  .overlay .right {
-    grid-column-end: 9;
-    margin-left: 0;
-  }
+  text-align: left;
 }
 .overlay .img-wrapper {
   grid-column-start: 1;
@@ -775,18 +754,19 @@ img {
 }
 .drawer-content {
   display: none;
-  width: calc(97%/4);
-  position: absolute;
-  background: #eaeaea;
-  padding: 20px;
-  -webkit-transform: translateY(42%);
-  transform: translateY(42%);
 }
 .drawer-close {
-  background: #1d1d1d;
-  color: #f3f3f3;
-  padding: 5px 10px;
-  margin-bottom: 20px;
+  display: block;
+  padding-top: 25px;
+  padding-bottom: 10px;
+  font-size: 13px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.drawer-close:after {
+  padding-left: 10px;
+  content: "\E70E";
+  font-family: MWF-MDL2;
 }
 .head-info {
   min-height: 170px;
@@ -814,13 +794,6 @@ img {
   grid-column: span 3;
   -ms-flex-item-align: center;
   align-self: center;
-}
-.row-fluid {
-  grid-column: span 9;
-  display: block;
-}
-.row-fluid .middle {
-  margin-left: 25%;
 }
 #menu-list {
   display: block;
@@ -1247,6 +1220,23 @@ picture {
 .row-top-five .half {
   grid-column: span 5;
   grid-template-columns: 30px 1fr;
+}
+.row-floating {
+  display: block;
+  float: left;
+  grid-column: span 9;
+}
+.row-floating .thirds {
+  width: 33.33%;
+  float: left;
+  display: block;
+}
+.row-fluid {
+  grid-column: span 9;
+  display: block;
+}
+.row-fluid .middle {
+  margin-left: 25%;
 }
 @font-face {
   font-family: "MWF-MDL2";

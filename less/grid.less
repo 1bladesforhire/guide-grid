@@ -292,3 +292,21 @@ h6, h2, picture{
         grid-template-columns: 30px 1fr;
     }
 }
+
+.row-floating{
+    display: block;
+    float: left;
+    grid-column: span 9;
+    .thirds{
+        width: 33.33%;
+        float: left;
+        display: block;
+    }
+}
+.row-fluid{
+    grid-column: span 9;
+    display: block;
+    .middle{
+        margin-left: 25%;
+    }
+}
