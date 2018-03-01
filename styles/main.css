@@ -504,6 +504,12 @@ img {
 #section-4-8 .row-seven {
   grid-column-gap: 40px;
   display: grid;
+  grid-template-columns: repeat(10, 1fr);
+}
+@media all AND (max-width: 1600px) {
+  #section-4-8 .row-seven {
+    grid-template-columns: repeat(7, 1fr);
+  }
 }
 #section-4-8 .half {
   display: -webkit-box;
