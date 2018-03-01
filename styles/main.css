@@ -20,6 +20,8 @@ main > section {
 }
 img {
   max-width: 100%;
+  -ms-flex-item-align: self-end;
+  align-self: self-end;
 }
 .no-padding {
   padding: 0!important;
@@ -362,9 +364,6 @@ img {
 #section-3-3 .donts {
   grid-column: span 2;
 }
-#section-3-3 .row-lined.dark:before {
-  width: 40%;
-}
 #section-3-4 .dos,
 #section-3-4 .donts,
 #section-3-4 .explanation {
@@ -562,6 +561,10 @@ img {
 #section-5-3 .half .single {
   grid-column: span 1;
 }
+#section-5-3 .upper {
+  font-size: 11px;
+  line-height: 14px;
+}
 #section-5-3 .subs {
   grid-column: span 3;
   grid-template-columns: repeat(3, 1fr);
@@ -584,6 +587,10 @@ img {
 #section-5-1 .thirds .title {
   margin-bottom: 20px;
 }
+#section-5-4 {
+  font-size: 15px;
+  line-height: 22px;
+}
 #section-5-4 .thirds {
   grid-template-rows: 60px 1fr;
 }
@@ -594,6 +601,39 @@ img {
 #section-5-4 .thirds p {
   -ms-flex-item-align: start;
   align-self: flex-start;
+}
+#section-5-4 .table-row.gray {
+  padding: 14px 2px;
+}
+#section-5-4 .underline {
+  border-bottom: 1px solid #dadada;
+  padding-bottom: 20px;
+  padding-top: 2px;
+}
+#section-5-4 .table-row:not(first) {
+  padding: 7px 0 27px 0;
+}
+#section-5-4 .first {
+  padding-right: 20px;
+}
+#section-5-4 .second,
+#section-5-4 .third,
+#section-5-4 .fourth {
+  display: block;
+}
+#section-5-4 .type-chart {
+  padding-top: 60px;
+}
+#section-5-4 .type-chart h4 {
+  font-size: 52px;
+  font-family: "SegoeUISemiLight";
+}
+#section-5-4 .type-chart .single:not(:first-of-type) {
+  position: relative;
+  top: 6px;
+}
+#section-5-4 .type-chart .single:not(:first-of-type) span {
+  font-family: "SegoeUISemiBold";
 }
 #section-5-5 .row.v-center .thirds {
   grid-template-rows: 85px 1fr;
@@ -829,7 +869,10 @@ nav ul.sub-nav {
   transition: all 500ms ease-out;
 }
 nav ul li {
-  padding-left: 20px;
+  padding: 7px 5px 7px 20px;
+}
+nav ul li:first-of-type {
+  padding-top: 14px;
 }
 nav ul li.active {
   background: #1d1d1d;
@@ -838,10 +881,10 @@ nav ul li.active {
 nav ul li.active .sub-nav {
   display: block;
   max-height: 800px;
-  -webkit-transition: max-height 1s ease-in-out;
-  transition: max-height 1s ease-in-out;
-  -webkit-transition-delay: 500ms;
-  transition-delay: 500ms;
+  -webkit-transition: max-height 1.5s ease-in-out;
+  transition: max-height 1.5s ease-in-out;
+  -webkit-transition-delay: 15ms;
+  transition-delay: 15ms;
 }
 nav ul li.active .purple {
   color: white;
@@ -862,8 +905,8 @@ nav ul li.active .pink {
   color: white;
 }
 nav ul li a {
-  color: white;
-  line-height: 35px;
+  color: #e7e7e7;
+  line-height: 22px;
   padding: 10px 0;
 }
 nav ul li a.purple.active,
@@ -974,6 +1017,10 @@ header {
   grid-column-end: 3;
   display: grid;
   grid-template-rows: minmax(50px, 1fr);
+}
+#mainArea:focus {
+  outline: none;
+  border: none;
 }
 #mainArea main {
   display: grid;
@@ -1248,12 +1295,12 @@ picture {
 }
 @font-face {
   font-family: 'SegoeUILight';
-  src: local('Segoe UI'), url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/Light/latest.eot#iefix) format("embedded-opentype"), url('//c.s-microsoft.com/static/fonts/segoe-ui/west-european/Light/latest.woff2') format("woff2"), url('//c.s-microsoft.com/static/fonts/segoe-ui/west-european/Light/latest.woff') format("woff"), url('//c.s-microsoft.com/static/fonts/segoe-ui/west-european/Light/latest.ttf') format("ttf"), url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/Light/latest.svg#web) format("svg");
+  src: url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/Light/latest.eot#iefix) format("embedded-opentype"), url('//c.s-microsoft.com/static/fonts/segoe-ui/west-european/Light/latest.woff2') format("woff2"), url('//c.s-microsoft.com/static/fonts/segoe-ui/west-european/Light/latest.woff') format("woff"), url('//c.s-microsoft.com/static/fonts/segoe-ui/west-european/Light/latest.ttf') format("ttf"), url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/Light/latest.svg#web) format("svg");
   font-weight: 100;
 }
 @font-face {
   font-family: 'SegoeUISemiLight';
-  src: local('Segoe UI'), url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/Semilight/latest.eot#iefix) format("embedded-opentype"), url('//c.s-microsoft.com/static/fonts/segoe-ui/west-european/Semilight/latest.woff2') format("woff2"), url('//c.s-microsoft.com/static/fonts/segoe-ui/west-european/Semilight/latest.woff') format("woff"), url('//c.s-microsoft.com/static/fonts/segoe-ui/west-european/Semilight/latest.ttf') format("ttf"), url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/Semilight/latest.svg#web) format("svg");
+  src: url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/Semilight/latest.eot#iefix) format("embedded-opentype"), url('//c.s-microsoft.com/static/fonts/segoe-ui/west-european/Semilight/latest.woff2') format("woff2"), url('//c.s-microsoft.com/static/fonts/segoe-ui/west-european/Semilight/latest.woff') format("woff"), url('//c.s-microsoft.com/static/fonts/segoe-ui/west-european/Semilight/latest.ttf') format("ttf"), url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/Semilight/latest.svg#web) format("svg");
   font-weight: 200;
 }
 @font-face {
@@ -1701,10 +1748,6 @@ a {
   }
   #section-5-3 .half {
     grid-column: span 3;
-  }
-  .upper {
-    font-size: 11px;
-    line-height: 14px;
   }
   #section-5-5 .thirds .title {
     font-size: 1.5em;

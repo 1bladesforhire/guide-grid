@@ -28,15 +28,18 @@ nav{
             //opacity: 0;t
         }
         li {
-            padding-left: 20px;
+            padding: 7px 5px 7px 20px;
+            &:first-of-type {
+                padding-top: 14px;
+            }
             &.active{
                 background: @nav-dk;
                 width: 100%;
                 .sub-nav{
                     display: block;
                     max-height: 800px;
-                    transition: max-height 1s ease-in-out;  
-                    transition-delay: 500ms;
+                    transition: max-height 1.5s ease-in-out;
+                    transition-delay: 15ms;
                 }
 
                 .purple{
@@ -65,8 +68,8 @@ nav{
                 }
             }
             a{
-                color: white;
-                line-height: 35px;
+                color: #e7e7e7;
+                line-height: 22px;
                 padding: 10px 0;
                 &.purple {
                     &.active, &:hover{

@@ -19,6 +19,7 @@ main > section{
 //set items
 img{
     max-width: 100%;
+    align-self: self-end;
 }
 
 .no-padding {
@@ -440,7 +441,6 @@ img{
     }
     .row-lined.dark {
         &:before {
-            width: 40%;
         }
     }
 
@@ -673,6 +673,11 @@ img{
            grid-column: span 1;
        }
     }
+    .upper{
+        font-size: 11px;
+        line-height: 14px;
+
+    }
     .subs{
         grid-column: span 3;
         grid-template-columns: repeat(3, 1fr);
@@ -697,16 +702,50 @@ img{
     }
 }
 #section-5-4{
-    .thirds{
+    font-size: 15px;
+    line-height: 22px;
+    .thirds {
         grid-template-rows: 60px 1fr;
-        .title{
+        .title {
             align-self: flex-start;
-            }
-            p{
-                align-self: flex-start;
-            }
+        }
+        p {
+            align-self: flex-start;
+        }
     }
-    
+    .table-row.gray {
+        padding: 14px 2px;
+    }
+    .underline {
+        border-bottom: 1px solid #dadada;
+        padding-bottom: 20px;
+        padding-top: 2px;
+    }
+    .table-row:not(first) {
+        padding: 7px 0 27px 0;
+    }
+    .first {
+        padding-right: 20px;
+    }
+    .second,
+    .third,
+    .fourth {
+        display: block;
+    }
+    .type-chart {
+        padding-top: 60px;
+        h4 {
+            font-size: 52px;
+            font-family: "SegoeUISemiLight";
+        }
+        .single:not(:first-of-type) {
+            position: relative;
+            top: 6px;
+            span {
+                font-family: "SegoeUISemiBold";
+            }
+        }
+    }
 }
 
 #section-5-5{
@@ -742,6 +781,9 @@ img{
     p{
         line-height: 30px;
     }
+    //.fourths {
+    //    grid-column: span 3;
+    //}
 }
 
 #section-5-11{
