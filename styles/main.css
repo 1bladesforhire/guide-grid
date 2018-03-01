@@ -615,12 +615,10 @@ img {
 }
 #section-5-9 .half {
   grid-column: span 4;
+  grid-template-rows: 50px 1fr;
 }
-#section-5-9 .donts .title {
-  padding-bottom: 35px;
-}
-#section-5-9 .donts p {
-  margin-bottom: 10px;
+#section-5-9 p {
+  line-height: 30px;
 }
 #section-5-11 .title {
   margin-bottom: 20px;
