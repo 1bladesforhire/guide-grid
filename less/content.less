@@ -302,6 +302,7 @@ img{
             font-family: 'SegoeUISemiLight';
             font-weight: 300;
             margin-bottom: 0;
+            font-size: 18px;
         }
     }
 }
@@ -413,10 +414,11 @@ img{
     .thirds{
         
         .title{
-            font-size: 28px;
+            font-size: 20px;
             font-family: 'SegoeUISemiBold';
             letter-spacing: .025em;
-            padding-bottom: 10px;
+            padding-bottom: 0;
+            margin-bottom: 15px;
         }
         .desc{
             font-size: 15px;
@@ -426,7 +428,7 @@ img{
         }
     }
     .dos, .donts{
-        padding: 20px 0 10px;
+        padding: 20px 0 0;
         .title{
             font-family: 'SegoeUISemiBold';
             text-decoration: none;
@@ -454,6 +456,10 @@ img{
         .title{
             font-family: 'SegoeUISemiBold';
             text-decoration: none;
+            &.large {
+                margin-bottom: 0;
+                padding-bottom: 0;
+            }
         }
     }
     .explanation {
@@ -544,7 +550,7 @@ img{
         grid-template-columns: 1fr;
         p {
             grid-column-start: 1;
-            padding-bottom: 20px;
+            padding-bottom: 10px;
         }
     }
     .donts {
@@ -593,11 +599,11 @@ img{
         .thirds{
             img{
                 grid-column: span 2;
+                margin-bottom: 10px;
             }
             
             p{
                 grid-column: span 1;
-                margin-top: 20px;
                 margin-right: 50px;
                 
             }
@@ -660,6 +666,9 @@ img{
 
 
 #section-5-3{
+    h5 {
+        margin-bottom: 0;
+    }
     .half{
         grid-column: span 4;
         grid-template-columns: repeat(4,1fr);
@@ -695,13 +704,15 @@ img{
 
 .row.colors{
     grid-column-gap: 40px;
+    margin-top: 40px;
 }
 #section-5-1{
     .thirds{
         grid-template-rows: max-content max-content;
         align-items: baseline;
+        margin-bottom: 20px;
         .title{
-            margin-bottom: 20px;
+            margin-bottom: 15px;
         }
     }
 }
@@ -709,7 +720,7 @@ img{
     font-size: 15px;
     line-height: 22px;
     .thirds {
-        grid-template-rows: 60px 1fr;
+        grid-template-rows: 35px 1fr;
         .title {
             align-self: flex-start;
         }
@@ -767,23 +778,39 @@ img{
     .row-twelve .fourths{
         display: grid;
         grid-template-rows: minmax(60px, min-content) max-content 1fr;
-        grid-row-gap: 20px;
+        grid-row-gap: 0px;
+        img {
+            margin-bottom: 15px;
+        }
     }
 }
 
 #section-5-7{
-    .title{
-        margin-bottom: 20px;
+    .title {
+        margin-bottom: 15px;
+    }
+    img {
+        margin-bottom: 10px;
     }
 }
-
+#section-5-8 {
+    .title {
+        padding-bottom: 15px;
+    }
+}
 #section-5-9{
     .half{
         grid-column: span 4;
-        grid-template-rows: 50px 1fr;
+        grid-template-rows: 35px 1fr;
     }
     p{
         line-height: 30px;
+    }
+    .dos, .donts {
+        font-size: 20px;
+        line-height: 28px;
+        margin-bottom: 0;
+        font-weight: 600;
     }
     //.fourths {
     //    grid-column: span 3;
@@ -821,10 +848,17 @@ img{
     }
 }
 
-
+#section-5-13 {
+    .donts {
+        p {
+            padding-bottom: 10px;
+        }
+    }
+}
 //Building out a communication section 6
 #section-6-1{
     .half{
+        margin-bottom: 25px;
         .title{
             margin-bottom: 10px;
         }
@@ -845,10 +879,13 @@ img{
 #section-6-3{
 
     .half{
-        grid-template-rows: 60px 1fr;
+        grid-template-rows: 35px 1fr;
         title, img{
             grid-column: span 2;
         }
+    }
+    .row-seven {
+        margin-bottom: 30px;
     }
     .row-twelve .thirds{
         grid-column: span 3;

@@ -256,6 +256,7 @@ img {
   font-family: 'SegoeUISemiLight';
   font-weight: 300;
   margin-bottom: 0;
+  font-size: 18px;
 }
 #section-2-7 hr {
   border-top: 1px solid #e2e2e2;
@@ -337,10 +338,11 @@ img {
   margin-bottom: 0px;
 }
 #section-3-3 .thirds .title {
-  font-size: 28px;
+  font-size: 20px;
   font-family: 'SegoeUISemiBold';
   letter-spacing: .025em;
-  padding-bottom: 10px;
+  padding-bottom: 0;
+  margin-bottom: 15px;
 }
 #section-3-3 .thirds .desc {
   font-size: 15px;
@@ -350,7 +352,7 @@ img {
 }
 #section-3-3 .dos,
 #section-3-3 .donts {
-  padding: 20px 0 10px;
+  padding: 20px 0 0;
 }
 #section-3-3 .dos .title,
 #section-3-3 .donts .title {
@@ -375,6 +377,12 @@ img {
 #section-3-4 .explanation .title {
   font-family: 'SegoeUISemiBold';
   text-decoration: none;
+}
+#section-3-4 .dos .title.large,
+#section-3-4 .donts .title.large,
+#section-3-4 .explanation .title.large {
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 #section-3-4 .explanation {
   padding-right: 20px;
@@ -450,7 +458,7 @@ img {
 }
 #section-4-3 .half p {
   grid-column-start: 1;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 #section-4-3 .donts {
   width: 200px;
@@ -488,10 +496,10 @@ img {
 }
 #section-4-6 .row-five .thirds img {
   grid-column: span 2;
+  margin-bottom: 10px;
 }
 #section-4-6 .row-five .thirds p {
   grid-column: span 1;
-  margin-top: 20px;
   margin-right: 50px;
 }
 #section-4-6 .one-half {
@@ -549,6 +557,9 @@ img {
 #section-4-9 img .half .swatch {
   grid-column: span 8;
 }
+#section-5-3 h5 {
+  margin-bottom: 0;
+}
 #section-5-3 .half {
   grid-column: span 4;
   grid-template-columns: repeat(4, 1fr);
@@ -582,6 +593,7 @@ img {
 }
 .row.colors {
   grid-column-gap: 40px;
+  margin-top: 40px;
 }
 #section-5-1 .thirds {
   grid-template-rows: -webkit-max-content -webkit-max-content;
@@ -589,16 +601,17 @@ img {
   -webkit-box-align: baseline;
   -ms-flex-align: baseline;
   align-items: baseline;
+  margin-bottom: 20px;
 }
 #section-5-1 .thirds .title {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 #section-5-4 {
   font-size: 15px;
   line-height: 22px;
 }
 #section-5-4 .thirds {
-  grid-template-rows: 60px 1fr;
+  grid-template-rows: 35px 1fr;
 }
 #section-5-4 .thirds .title {
   -ms-flex-item-align: start;
@@ -654,17 +667,33 @@ img {
   display: grid;
   grid-template-rows: minmax(60px, -webkit-min-content) -webkit-max-content 1fr;
   grid-template-rows: minmax(60px, min-content) max-content 1fr;
-  grid-row-gap: 20px;
+  grid-row-gap: 0px;
+}
+#section-5-6 .row-twelve .fourths img {
+  margin-bottom: 15px;
 }
 #section-5-7 .title {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
+}
+#section-5-7 img {
+  margin-bottom: 10px;
+}
+#section-5-8 .title {
+  padding-bottom: 15px;
 }
 #section-5-9 .half {
   grid-column: span 4;
-  grid-template-rows: 50px 1fr;
+  grid-template-rows: 35px 1fr;
 }
 #section-5-9 p {
   line-height: 30px;
+}
+#section-5-9 .dos,
+#section-5-9 .donts {
+  font-size: 20px;
+  line-height: 28px;
+  margin-bottom: 0;
+  font-weight: 600;
 }
 #section-5-11 .title {
   margin-bottom: 20px;
@@ -689,6 +718,12 @@ img {
 #section-5-12 .dos p {
   padding-right: 100px;
 }
+#section-5-13 .donts p {
+  padding-bottom: 10px;
+}
+#section-6-1 .half {
+  margin-bottom: 25px;
+}
 #section-6-1 .half .title {
   margin-bottom: 10px;
 }
@@ -700,11 +735,14 @@ img {
   grid-column: span 7;
 }
 #section-6-3 .half {
-  grid-template-rows: 60px 1fr;
+  grid-template-rows: 35px 1fr;
 }
 #section-6-3 .half title,
 #section-6-3 .half img {
   grid-column: span 2;
+}
+#section-6-3 .row-seven {
+  margin-bottom: 30px;
 }
 #section-6-3 .row-twelve .thirds {
   grid-column: span 3;
@@ -876,6 +914,12 @@ nav ul.sub-nav {
 }
 nav ul li {
   padding: 7px 5px 7px 20px;
+  font-family: "SegoeUI";
+}
+nav ul li.title {
+  color: #fff;
+  margin-bottom: 40px;
+  font-family: "SegoeUISemiBold";
 }
 nav ul li:first-of-type {
   padding-top: 14px;
@@ -917,27 +961,27 @@ nav ul li a {
 }
 nav ul li a.purple.active,
 nav ul li a.purple:hover {
-  color: #076dcc;
+  color: #00bcf2;
 }
 nav ul li a.blue.active,
 nav ul li a.blue:hover {
-  color: #076dcc;
+  color: #00bcf2;
 }
 nav ul li a.yellow.active,
 nav ul li a.yellow:hover {
-  color: #076dcc;
+  color: #00bcf2;
 }
 nav ul li a.orange.active,
 nav ul li a.orange:hover {
-  color: #076dcc;
+  color: #00bcf2;
 }
 nav ul li a.green.active,
 nav ul li a.green:hover {
-  color: #076dcc;
+  color: #00bcf2;
 }
 nav ul li a.pink.active,
 nav ul li a.pink:hover {
-  color: #076dcc;
+  color: #00bcf2;
 }
 nav button {
   display: none;
@@ -1382,7 +1426,10 @@ h6 {
   padding-bottom: 5px;
 }
 h6.small {
-  font-size: 28px;
+  font-size: 20px;
+  line-height: 28px;
+  padding-bottom: 0;
+  margin-bottom: 15px;
 }
 p {
   font-size: 15px;
@@ -1391,7 +1438,7 @@ p {
   letter-spacing: .025em;
 }
 p.title {
-  font-size: 22px;
+  font-size: 20px;
   line-height: 28px;
   font-weight: 600;
   font-family: 'SegoeUISemiBold';
@@ -1428,11 +1475,11 @@ p.upper {
   margin-bottom: 15px;
 }
 .thirds .title.large {
-  font-size: 22px;
+  font-size: 20px;
   line-height: 28px;
 }
 .thirds .desc {
-  font-size: 22px;
+  font-size: 20px;
   line-height: 28px;
   letter-spacing: .025em;
   font-family: 'SegoeUISemiBold';
