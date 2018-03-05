@@ -768,7 +768,8 @@ img{
 
 #section-5-5{
     .row.v-center .thirds{
-        grid-template-rows: 85px 1fr;
+        grid-template-rows: 100px min-content;
+        align-self: baseline;
         img{
             grid-column: span 2;
         }
@@ -914,14 +915,15 @@ img{
 .overlay{
     display: grid;
     grid-column: span 8;
-    grid-template-columns: repeat(10, 1fr);
+    grid-template-columns: 1fr;
     position: relative;
     .left, .right{
         background: rgba(0, 0, 0, .7);
         padding: 30px 20px;
         position: absolute;
         bottom: 4px;
-        right: 3px;
+        right: 0;
+        left: 0;
         grid-row-gap: 20px;
         p {
             color: #ffffff;
@@ -931,6 +933,7 @@ img{
         }
     }
     .left, .right{
+
         grid-column-end: 9;
         grid-row-start: 1;
         z-index: 10;
@@ -940,6 +943,9 @@ img{
         grid-column-start: 1;
         grid-column-end: 10;
         grid-row-start: 1;
+    }
+    img{
+        width: 100%;
     }
 }
 
