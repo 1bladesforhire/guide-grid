@@ -335,6 +335,10 @@ img {
 #section-3-2 .mag .thirds .title {
   margin-bottom: 0px;
 }
+#section-3-3 .thirds {
+  grid-template-rows: -webkit-min-content -webkit-min-content;
+  grid-template-rows: min-content min-content;
+}
 #section-3-3 .thirds .title {
   font-size: 20px;
   font-family: 'SegoeUISemiBold';
@@ -1111,9 +1115,6 @@ header {
   grid-column-end: 10;
   display: grid;
   grid-gap: 20px;
-  grid-template-columns: repeat(9, 1fr);
-  grid-template-rows: repeat(autofill, -webkit-max-content);
-  grid-template-rows: repeat(autofill, max-content);
 }
 #mainArea main section h3 {
   grid-column: span 9;
