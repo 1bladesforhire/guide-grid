@@ -63,7 +63,7 @@
     }
     .row-seven {
         grid-column: span 9;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(7, 1fr);
         margin-right: 10px;
     }
     .row-twelve {
@@ -152,6 +152,9 @@
         .dos {
             grid-column-end: 4;
         }
+        .thirds .desc{
+            padding-right: 20px;
+        }
         
     }
     .row-lined.dark:before, .row-lined:before {
@@ -197,7 +200,7 @@
             grid-column-gap: 10px;
        
           .half{
-              grid-column: span 2;
+              grid-column: span 3;
               .title {
                 min-height: 40px;
                 padding-right: 10px;
@@ -253,7 +256,7 @@
     #section-5-11 {
       .row-twelve .fourths{
         display: grid;
-        grid-template-rows: 60px 1fr max-content;
+        grid-template-rows: 60px min-content max-content;
       }
     }
     #section-5-13 {

@@ -549,6 +549,10 @@ img {
 #section-4-9 img .half .swatch {
   grid-column: span 8;
 }
+#section-5-2 .row .thirds {
+  grid-template-rows: -webkit-min-content -webkit-min-content;
+  grid-template-rows: min-content min-content;
+}
 #section-5-3 .half {
   grid-column: span 4;
   grid-template-columns: repeat(4, 1fr);
@@ -659,6 +663,9 @@ img {
 #section-5-7 .title {
   margin-bottom: 20px;
 }
+#section-5-8 p {
+  grid-column: span 5;
+}
 #section-5-9 .half {
   grid-column: span 4;
   grid-template-rows: 50px 1fr;
@@ -680,14 +687,21 @@ img {
   grid-template-columns: 1fr;
 }
 #section-5-12 .half p {
-  padding-right: 0;
   margin-top: 10px;
 }
 #section-5-12 .half img {
   grid-column: span 2;
 }
+#section-5-12 .dos {
+  grid-template-rows: -webkit-min-content -webkit-min-content;
+  grid-template-rows: min-content min-content;
+}
 #section-5-12 .dos p {
   padding-right: 100px;
+}
+#section-5-13 .dos {
+  grid-template-rows: -webkit-min-content -webkit-min-content;
+  grid-template-rows: min-content min-content;
 }
 #section-6-1 .half .title {
   margin-bottom: 10px;
@@ -1276,6 +1290,7 @@ picture {
   display: block;
   float: left;
   grid-column: span 9;
+  max-width: 900px;
 }
 .row-floating .thirds {
   width: 33.33%;
@@ -1428,8 +1443,8 @@ p.upper {
   margin-bottom: 15px;
 }
 .thirds .title.large {
-  font-size: 22px;
-  line-height: 28px;
+  font-size: 18px;
+  line-height: 22px;
 }
 .thirds .desc {
   font-size: 22px;
@@ -1618,7 +1633,7 @@ a {
   }
   .row-seven {
     grid-column: span 9;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(7, 1fr);
     margin-right: 10px;
   }
   .row-twelve {
@@ -1698,6 +1713,9 @@ a {
   #section-3-3 .dos {
     grid-column-end: 4;
   }
+  #section-3-3 .thirds .desc {
+    padding-right: 20px;
+  }
   .row-lined.dark:before,
   .row-lined:before {
     width: 65%;
@@ -1734,7 +1752,7 @@ a {
     grid-column-gap: 10px;
   }
   #section-4-8 .row-seven .half {
-    grid-column: span 2;
+    grid-column: span 3;
   }
   #section-4-8 .row-seven .half .title {
     min-height: 40px;
@@ -1781,8 +1799,8 @@ a {
   }
   #section-5-11 .row-twelve .fourths {
     display: grid;
-    grid-template-rows: 60px 1fr -webkit-max-content;
-    grid-template-rows: 60px 1fr max-content;
+    grid-template-rows: 60px -webkit-min-content -webkit-max-content;
+    grid-template-rows: 60px min-content max-content;
   }
   #section-5-13 .full-row {
     grid-column: span 9;

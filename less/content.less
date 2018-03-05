@@ -657,6 +657,11 @@ img{
     }
 }
 
+#section-5-2{
+    .row .thirds{
+        grid-template-rows: min-content min-content;
+    }
+}
 
 
 #section-5-3{
@@ -777,6 +782,11 @@ img{
     }
 }
 
+#section-5-8{
+    p{
+        grid-column: span 5;
+    }
+}
 #section-5-9{
     .half{
         grid-column: span 4;
@@ -808,7 +818,6 @@ img{
         grid-template-columns: 1fr;
         
         p{
-            padding-right: 0;
             margin-top: 10px;
         }
         img{
@@ -816,8 +825,17 @@ img{
             }
         }
 
-    .dos p{
-        padding-right: 100px;
+    .dos {
+        grid-template-rows: min-content min-content;
+        p{
+            padding-right: 100px;
+        }
+    }
+}
+
+#section-5-13{
+    .dos{
+        grid-template-rows: min-content min-content;
     }
 }
 
