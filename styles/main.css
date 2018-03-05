@@ -2337,6 +2337,12 @@ a {
   #section-1-2 h6 {
     font-size: 1.25em;
   }
+  #section-5-4 .type-chart .single {
+    grid-column: span 2;
+  }
+  #section-5-4 .type-chart h4 {
+    font-size: 32px;
+  }
   .overlay .right,
   .overlay .left {
     position: relative;
@@ -2389,6 +2395,10 @@ a {
   }
   .row-fluid .middle {
     width: 100%;
+  }
+  .row-floating .thirds {
+    width: 100%;
+    margin-bottom: 15px;
   }
   .donts {
     grid-column: span 5;
