@@ -82,9 +82,8 @@
         grid-column: span 9;
         .left,
         .right {
-            margin-top: 30px;
-            margin-bottom: 20px;
             padding: 15px 10px;
+            
             p {
                 font-size: .75em;
                 margin-bottom: 10px;
@@ -92,11 +91,12 @@
         }
         .left {
             grid-column-start: 1;
-            margin-left: 30px;
+            grid-column-end: 10;    
+            right: 1px;
         }
         .right {
             grid-column-end: 10;
-            margin-right: 30px;
+            right: 0;
         }
     }
     #mainArea {

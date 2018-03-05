@@ -432,9 +432,6 @@ img {
   font-size: 18px;
   padding-bottom: 8px;
 }
-#section-4-2 .donts {
-  font-weight: 300;
-}
 #section-4-2 hr {
   border-bottom: none;
   margin: 40px 0;
@@ -1699,8 +1696,6 @@ a {
   }
   .overlay .left,
   .overlay .right {
-    margin-top: 30px;
-    margin-bottom: 20px;
     padding: 15px 10px;
   }
   .overlay .left p,
@@ -1710,11 +1705,12 @@ a {
   }
   .overlay .left {
     grid-column-start: 1;
-    margin-left: 30px;
+    grid-column-end: 10;
+    right: 1px;
   }
   .overlay .right {
     grid-column-end: 10;
-    margin-right: 30px;
+    right: 0;
   }
   #mainArea {
     padding-top: 0;
