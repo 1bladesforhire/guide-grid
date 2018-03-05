@@ -664,13 +664,17 @@ img {
 #section-5-5 .thirds .title {
   font-size: 2em;
 }
+#section-5-6 .row-twelve {
+  grid-template-columns: repeat(11, 1fr);
+}
 #section-5-6 .row-twelve .fourths {
   display: grid;
-  grid-template-rows: minmax(60px, -webkit-min-content) -webkit-max-content 1fr;
-  grid-template-rows: minmax(60px, min-content) max-content 1fr;
+  grid-template-rows: -webkit-min-content -webkit-max-content 1fr;
+  grid-template-rows: min-content max-content 1fr;
   grid-row-gap: 0px;
 }
-#section-5-6 .row-twelve .fourths img {
+#section-5-6 .row-twelve .fourths img,
+#section-5-6 .row-twelve .fourths .title {
   margin-bottom: 15px;
 }
 #section-5-7 .title {
@@ -1818,6 +1822,9 @@ a {
   }
   #section-5-5 .thirds .title {
     font-size: 1.5em;
+  }
+  #section-5-6 .row-twelve {
+    grid-template-columns: repeat(8, 1fr);
   }
   #section-5-6 .row-twelve .fourths {
     grid-template-rows: minmax(40px, -webkit-min-content) -webkit-max-content 1fr;
