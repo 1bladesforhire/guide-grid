@@ -769,7 +769,7 @@ img {
 }
 .overlay .left,
 .overlay .right {
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.7);
   padding: 30px 20px;
   position: absolute;
   bottom: 4px;
