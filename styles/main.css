@@ -717,6 +717,7 @@ img {
 }
 #section-5-7 .row-seven {
   grid-column-gap: 40px;
+  grid-template-columns: repeat(9, 1fr);
 }
 #section-5-7 .half {
   grid-column-gap: 10px;
