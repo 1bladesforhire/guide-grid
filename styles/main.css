@@ -20,8 +20,6 @@ main > section {
 }
 img {
   max-width: 100%;
-  -ms-flex-item-align: self-end;
-  align-self: self-end;
 }
 .no-padding {
   padding: 0!important;
@@ -534,6 +532,10 @@ img {
 #section-4-7 img {
   grid-column: span 2;
   margin-bottom: 20px;
+}
+#section-4-8 img {
+  -ms-flex-item-align: self-end;
+  align-self: self-end;
 }
 #section-4-8 .row-seven {
   grid-column-gap: 40px;
