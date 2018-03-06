@@ -2065,14 +2065,8 @@ a {
     grid-template-rows: minmax(20px, -webkit-max-content);
     grid-template-rows: minmax(20px, max-content);
   }
-  #section-5-7 .row-twelve {
-    grid-row-gap: 20px;
-  }
-  #section-5-7 .row-twelve .fourths {
-    display: grid;
-    grid-template-rows: minmax(50px, -webkit-min-content) -webkit-min-content -webkit-min-content;
-    grid-template-rows: minmax(50px, min-content) min-content min-content;
-    grid-row-gap: 10px;
+  #section-5-7 .row-seven {
+    grid-template-columns: repeat(6, 1fr);
   }
   #section-5-8 .title {
     margin-right: 0;
@@ -2349,6 +2343,9 @@ a {
   #section-5-7 p {
     padding-right: 50px;
   }
+  #section-5-7 .row-seven .half {
+    grid-column: span 6;
+  }
   #section-5-8 .title {
     margin-right: 0;
   }
@@ -2582,8 +2579,18 @@ a {
   #section-5-5 .thirds .title {
     font-size: 1em;
   }
+  #section-5-7 .row-seven {
+    grid-row-gap: 40px;
+  }
   #section-5-7 p {
     padding-right: 0;
+    margin-bottom: 20px;
+  }
+  #section-5-7 .half {
+    grid-column: span 6;
+  }
+  #section-5-7 .single {
+    grid-column: span 2;
   }
   #section-5-8 .fat-thirds,
   #section-5-10 .fat-thirds {
