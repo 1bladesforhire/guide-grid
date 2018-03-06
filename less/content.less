@@ -820,14 +820,13 @@ img{
     
     .half{
         grid-column-gap: 10px;
+        grid-template-rows: repeat(3, min-content)
     }
     .double{
         grid-column: span 2;
     }
     .single{
-        display: grid;
-        grid-template-rows: min-content min-content;
-        grid-template-columns: 1fr;
+       
         p{
             padding-right: 10px;
         }

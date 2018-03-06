@@ -724,15 +724,11 @@ img {
 }
 #section-5-7 .half {
   grid-column-gap: 10px;
+  grid-template-rows: repeat(3, -webkit-min-content);
+  grid-template-rows: repeat(3, min-content);
 }
 #section-5-7 .double {
   grid-column: span 2;
-}
-#section-5-7 .single {
-  display: grid;
-  grid-template-rows: -webkit-min-content -webkit-min-content;
-  grid-template-rows: min-content min-content;
-  grid-template-columns: 1fr;
 }
 #section-5-7 .single p {
   padding-right: 10px;
@@ -1892,6 +1888,9 @@ a {
   #section-5-6 .row-twelve .fourths {
     grid-template-rows: minmax(40px, -webkit-min-content) -webkit-max-content 1fr;
     grid-template-rows: minmax(40px, min-content) max-content 1fr;
+  }
+  #section-5-7 .row-seven {
+    grid-template-columns: repeat(7, 1fr);
   }
   #section-5-8 p {
     margin-right: 20px;
