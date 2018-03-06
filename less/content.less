@@ -19,7 +19,6 @@ main > section{
 //set items
 img{
     max-width: 100%;
-    //align-self: self-end;  only change for specific images
 }
 
 .no-padding {
@@ -168,6 +167,21 @@ img{
     }
     &-13{
         background: @other-dk-white;
+    }
+}
+#section-7,
+#section-7-1 {
+    background: #3B3B3B;
+    h3, h4, h5, p {
+        color: #fff;
+    }
+    a {
+        color: @blue-active;
+        padding-bottom: 5px;
+        display: inline-block;
+        &:hover {
+            color: #B5F3FF ;
+        }
     }
 }
 .badge{
@@ -416,7 +430,6 @@ img{
         .title{
             font-size: 20px;
             font-family: 'SegoeUISemiBold';
-            letter-spacing: .025em;
             padding-bottom: 0;
             margin-bottom: 15px;
         }
@@ -463,7 +476,6 @@ img{
             font-size: 15px;
             color: @text-gray;
             font-weight: 600;
-            letter-spacing: .025em;
         }
     }
 
@@ -514,6 +526,9 @@ img{
             font-size: 18px;
             padding-bottom: 8px;
         }
+    }
+    .donts {
+        font-weight: 400;
     }
     hr {
         border-bottom: none;
@@ -613,6 +628,9 @@ img{
     }
 }
 #section-4-8{
+    img {
+        align-self: self-end;
+    }
     .row-seven{
         grid-column-gap: 40px;
         display: grid;
@@ -651,6 +669,11 @@ img{
             .swatch{
                 grid-column: span 8;
             }
+        }
+    }
+    .thirds.centered {
+        img {
+            margin: 0 auto;
         }
     }
 }
@@ -788,6 +811,21 @@ img{
 }
 
 #section-5-7{
+    .row-seven{
+        grid-column-gap: 40px;
+    }
+    
+    .half{
+        grid-column-gap: 10px;
+    }
+    .double{
+        grid-column: span 2;
+    }
+    .single{
+        p{
+            padding-right: 30px;
+        }
+    }
     .title {
         margin-bottom: 15px;
     }
@@ -841,6 +879,7 @@ img{
     }
     .half{
         grid-template-columns: 1fr;
+        margin-bottom: 35px;
         
         p{
             margin-top: 10px;

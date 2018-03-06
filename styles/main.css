@@ -164,6 +164,30 @@ img {
 #section-5-13 {
   background: #e6e6e6;
 }
+#section-7,
+#section-7-1 {
+  background: #3B3B3B;
+}
+#section-7 h3,
+#section-7-1 h3,
+#section-7 h4,
+#section-7-1 h4,
+#section-7 h5,
+#section-7-1 h5,
+#section-7 p,
+#section-7-1 p {
+  color: #fff;
+}
+#section-7 a,
+#section-7-1 a {
+  color: #71dfff;
+  padding-bottom: 5px;
+  display: inline-block;
+}
+#section-7 a:hover,
+#section-7-1 a:hover {
+  color: #B5F3FF ;
+}
 .badge {
   justify-self: self-start;
   grid-column:  1 / -1 ;
@@ -342,7 +366,6 @@ img {
 #section-3-3 .thirds .title {
   font-size: 20px;
   font-family: 'SegoeUISemiBold';
-  letter-spacing: .025em;
   padding-bottom: 0;
   margin-bottom: 15px;
 }
@@ -393,7 +416,6 @@ img {
   font-size: 15px;
   color: #373737;
   font-weight: 600;
-  letter-spacing: .025em;
 }
 #section-4-1 h5 {
   grid-column: span 5;
@@ -433,6 +455,9 @@ img {
 #section-4-2 .donts p {
   font-size: 18px;
   padding-bottom: 8px;
+}
+#section-4-2 .donts {
+  font-weight: 400;
 }
 #section-4-2 hr {
   border-bottom: none;
@@ -508,6 +533,10 @@ img {
   grid-column: span 2;
   margin-bottom: 20px;
 }
+#section-4-8 img {
+  -ms-flex-item-align: self-end;
+  align-self: self-end;
+}
 #section-4-8 .row-seven {
   grid-column-gap: 40px;
   display: grid;
@@ -555,6 +584,9 @@ img {
 #section-4-9 .half .half .swatch,
 #section-4-9 img .half .swatch {
   grid-column: span 8;
+}
+#section-4-9 .thirds.centered img {
+  margin: 0 auto;
 }
 #section-5-2 .row .thirds {
   grid-template-rows: -webkit-min-content -webkit-min-content;
@@ -683,6 +715,18 @@ img {
 #section-5-6 .row-twelve .fourths .title {
   margin-bottom: 15px;
 }
+#section-5-7 .row-seven {
+  grid-column-gap: 40px;
+}
+#section-5-7 .half {
+  grid-column-gap: 10px;
+}
+#section-5-7 .double {
+  grid-column: span 2;
+}
+#section-5-7 .single p {
+  padding-right: 30px;
+}
 #section-5-7 .title {
   margin-bottom: 15px;
 }
@@ -721,6 +765,7 @@ img {
 }
 #section-5-12 .half {
   grid-template-columns: 1fr;
+  margin-bottom: 35px;
 }
 #section-5-12 .half p {
   margin-top: 10px;
@@ -945,6 +990,7 @@ nav ul li.title {
   color: #fff;
   margin-bottom: 40px;
   font-family: "SegoeUISemiBold";
+  font-size: 18px;
 }
 nav ul li:first-of-type {
   padding-top: 14px;
@@ -1263,7 +1309,7 @@ picture {
   grid-template-columns: 1fr;
 }
 .fat-thirds img {
-  width: 100%;
+  width: auto;
 }
 .fat-thirds p {
   padding-top: 10px;
