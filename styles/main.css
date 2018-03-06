@@ -372,7 +372,7 @@ img {
 #section-3-4 .donts,
 #section-3-4 .explanation {
   grid-column: span 2;
-  padding: 20px 0 10px;
+  padding: 20px 0 20px;
 }
 #section-3-4 .dos .title,
 #section-3-4 .donts .title,
@@ -2338,12 +2338,6 @@ a {
   #section-1-2 h6 {
     font-size: 1.25em;
   }
-  #section-5-4 .type-chart .single {
-    grid-column: span 2;
-  }
-  #section-5-4 .type-chart h4 {
-    font-size: 32px;
-  }
   .overlay .right,
   .overlay .left {
     position: relative;
@@ -2393,6 +2387,12 @@ a {
   }
   #section-4-3 .row .half p {
     margin-top: 10px;
+  }
+  #section-5-4 .type-chart .single {
+    grid-column: span 2;
+  }
+  #section-5-4 .type-chart h4 {
+    font-size: 32px;
   }
   .row-fluid .middle {
     width: 100%;
