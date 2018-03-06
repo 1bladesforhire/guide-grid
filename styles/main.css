@@ -735,6 +735,12 @@ img {
 #section-5-7 img {
   margin-bottom: 10px;
 }
+#section-5-7 .row-seven {
+  grid-column-gap: 110px;
+}
+#section-5-7 .half {
+  margin-bottom: 40px;
+}
 #section-5-8 .title {
   padding-bottom: 15px;
 }
