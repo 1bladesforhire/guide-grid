@@ -796,6 +796,7 @@ img {
   grid-template-rows: -webkit-min-content -webkit-min-content;
   grid-template-rows: min-content min-content;
 }
+#section-5-13 .dos p,
 #section-5-13 .donts p {
   padding-bottom: 10px;
 }
