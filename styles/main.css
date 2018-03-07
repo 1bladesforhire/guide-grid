@@ -827,7 +827,7 @@ img {
 }
 .overlay {
   display: grid;
-  grid-column: span 8;
+  grid-column: span 7;
   grid-template-columns: 1fr;
   position: relative;
 }
@@ -1173,6 +1173,7 @@ header {
   grid-column-end: 10;
   display: grid;
   grid-gap: 20px;
+  grid-template-columns: repeat(9, 1fr);
 }
 #mainArea main section h3 {
   grid-column: span 9;
@@ -1450,8 +1451,8 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 h1 {
-  font-size: 80px;
-  line-height: 80px;
+  font-size: 84px;
+  line-height: 84px;
   font-weight: 100;
   color: #333333;
   margin-bottom: 15px;
