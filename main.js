@@ -100,7 +100,17 @@ $(window).on('load', function(){
       scrollTop: $("#"+fileName).offset().top
     }, 2000);
   }
-});
+
+  $('.lazy').Lazy({
+
+    scrollDirection: 'vertical',
+    effect: 'fadeIn',
+    visibleOnly: true,
+    onError: function(element) {
+        console.log('error loading ' + element.data('src'));
+    }
+  });
+}); 
 
 //mobile nav
 $('.hamburger').on('click', function(){
