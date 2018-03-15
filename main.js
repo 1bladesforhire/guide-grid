@@ -105,7 +105,7 @@ $(window).on('load', function(){
 
     scrollDirection: 'vertical',
     effect: 'fadeIn',
-    visibleOnly: true,
+    visibleOnly: false,
     onError: function(element) {
         console.log('error loading ' + element.data('src'));
     }
