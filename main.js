@@ -101,15 +101,15 @@ $(window).on('load', function(){
     }, 2000);
   }
 
-  $('.lazy').Lazy({
+  // $('.lazy').Lazy({
 
-    scrollDirection: 'vertical',
-    effect: 'fadeIn',
-    visibleOnly: false,
-    onError: function(element) {
-        console.log('error loading ' + element.data('src'));
-    }
-  });
+  //   scrollDirection: 'vertical',
+  //   effect: 'fadeIn',
+  //   visibleOnly: false,
+  //   onError: function(element) {
+  //       console.log('error loading ' + element.data('src'));
+  //   }
+  // });
 }); 
 
 //mobile nav

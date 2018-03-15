@@ -283,6 +283,7 @@ img {
 #section-2-7 hr {
   border-top: 1px solid #e2e2e2;
   grid-column-end: 6;
+  border-left: transparent;
 }
 .tt-row {
   grid-column: span 10;
@@ -436,6 +437,7 @@ img {
   border-bottom: none;
   border-top: 1px solid #c9c9c9;
   margin: 50px 0 30px 0;
+  border-left: transparent;
 }
 #section-4-2 .thirds h5 {
   padding-bottom: 0px;
