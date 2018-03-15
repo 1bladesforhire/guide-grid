@@ -1,0 +1,9 @@
+Header set Cache-Control "max-age=2628000, public"
+
+# 10 Days = 60s x 60m x 24hrs x 10days =  864,000
+<filesMatch "\.(webm|ogg|mp4)$">
+Header set Cache-Control "max-age=3600"
+</filesMatch>
+<filesMatch "\.(css|js)$">
+ Header set Cache-Control "max-age=1"
+</filesMatch>
