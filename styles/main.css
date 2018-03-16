@@ -717,6 +717,9 @@ img {
 #section-5-6 .row-twelve .fourths .title {
   margin-bottom: 15px;
 }
+#section-5-6 .row-twelve .fourths .title {
+  padding-right: 0;
+}
 #section-5-7 {
   grid-row-gap: 40px;
 }
