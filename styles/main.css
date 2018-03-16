@@ -284,6 +284,7 @@ img {
   border-top: 1px solid #e2e2e2;
   grid-column-end: 6;
   border-left: transparent;
+  border-bottom: transparent;
 }
 .tt-row {
   grid-column: span 10;
@@ -297,7 +298,7 @@ img {
   border: none;
   background: #e2e2e2;
   height: 1px;
-  margin: 10px;
+  margin: 10px 10px 10px 0;
   -ms-flex-item-align: end;
   align-self: flex-end;
 }
@@ -498,6 +499,8 @@ img {
 }
 #section-4-3 hr {
   border-top: 1px solid #e0e0e0;
+  border-bottom: transparent;
+  border-left: transparent;
 }
 #section-4-3 .first hr {
   margin-top: 110px;
@@ -1187,6 +1190,8 @@ header {
 }
 hr {
   border-top: 1px solid #bfbfbf;
+  border-bottom: transparent;
+  border-left: transparent;
   margin-top: 20px;
   margin-bottom: 20px;
   grid-column-start: 1;
