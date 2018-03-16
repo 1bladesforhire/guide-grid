@@ -341,8 +341,9 @@ img {
   color: #373737;
 }
 .mag .thirds .desc {
-  font-size: 18px;
+  font-size: 15px;
   font-family: 'SegoeUISemiLight';
+  font-weight: normal;
 }
 #section-3-1 .thirds .title {
   font-family: SegoeUISemiBold;
@@ -376,6 +377,7 @@ img {
   line-height: 20px;
   padding-right: 100px;
   margin-bottom: 50px;
+  font-weight: normal;
 }
 #section-3-3 .dos,
 #section-3-3 .donts {
