@@ -199,7 +199,7 @@ img {
   color: #000000;
   padding: 0 7px 1px 7px;
   text-transform: uppercase;
-  letter-spacing: .075em;
+  letter-spacing: 0;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
@@ -378,6 +378,7 @@ img {
   padding-right: 100px;
   margin-bottom: 50px;
   font-weight: normal;
+  font-family: 'SegoeUI';
 }
 #section-3-3 .dos,
 #section-3-3 .donts {
@@ -1530,7 +1531,7 @@ p {
   font-size: 15px;
   line-height: 20px;
   color: #212121;
-  letter-spacing: .025em;
+  letter-spacing: 0;
 }
 p.title {
   font-size: 20px;
@@ -1576,7 +1577,7 @@ p.upper {
 .thirds .desc {
   font-size: 20px;
   line-height: 28px;
-  letter-spacing: .025em;
+  letter-spacing: 0;
   font-family: 'SegoeUISemiBold';
   font-weight: 600;
   margin-bottom: 15px;
@@ -1669,7 +1670,7 @@ a {
   background: #212121;
   text-decoration: none;
   text-align: center;
-  letter-spacing: .075em;
+  letter-spacing: 0;
   white-space: nowrap;
   -webkit-transition: scale 0.2s ease-in-out;
   transition: scale 0.2s ease-in-out;
