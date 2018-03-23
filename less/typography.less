@@ -1,18 +1,336 @@
+//@font-face {
+//    font-family: "MWF-MDL2";
+//    src: url("/fonts/MWFMDL2.woff") format("woff"), url("/fonts/MWFMDL2.ttf") format("truetype"), url("/fonts/MWFMDL2.svg") format("svg");
+//}
+//
+//@font-face {
+//    font-family: 'SegoeUI';
+//    src:url(/fonts/SegoeUI/latest.eot),
+//    url(/fonts/SegoeUI/latest.eot#iefix) format("embedded-opentype"),
+//    url(/fonts/SegoeUI/latest.woff2) format("woff2"),
+//    url(/fonts/SegoeUI/latest.woff) format("woff"),
+//    url(/fonts/SegoeUI/latest.ttf) format("truetype"),
+//    url(/fonts/SegoeUI/latest.svg#web) format("svg");
+//    font-weight: 400;
+//}
+
 @font-face {
     font-family: "MWF-MDL2";
-    src: url("/fonts/MWFMDL2.woff") format("woff"), url("/fonts/MWFMDL2.ttf") format("truetype"), url("/fonts/MWFMDL2.svg") format("svg");
+    src: url("https://assets.onestore.ms/cdnfiles/external/mwf/long/v1/v1.30.0/fonts/MWFMDL2.woff") format("woff"), url("https://assets.onestore.ms/cdnfiles/external/mwf/long/v1/v1.30.0/fonts/MWFMDL2.ttf") format("truetype"), url("https://assets.onestore.ms/cdnfiles/external/mwf/long/v1/v1.30.0/fonts/MWFMDL2.svg") format("svg")
 }
 
 @font-face {
     font-family: 'SegoeUI';
-    src:url(/fonts/SegoeUI/latest.eot),
-    url(/fonts/SegoeUI/latest.eot#iefix) format("embedded-opentype"),
-    url(/fonts/SegoeUI/latest.woff2) format("woff2"),
-    url(/fonts/SegoeUI/latest.woff) format("woff"),
-    url(/fonts/SegoeUI/latest.ttf) format("truetype"),
-    url(/fonts/SegoeUI/latest.svg#web) format("svg");
-    font-weight: 400; 
+    src:url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.eot);
+    src:local("Segoe UI"),local("Segoe"),local("Segoe WP"),
+    url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.eot#iefix) format("embedded-opentype"),
+    url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.woff2) format("woff2"),
+    url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.woff) format("woff"),
+    url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.ttf) format("truetype"),
+    url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.svg#web) format("svg");
+    font-weight: 400;
 }
+
+@font-face {
+    font-family: 'SegoeUILight';
+    src:url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/Light/latest.eot#iefix) format("embedded-opentype"),
+    url('//c.s-microsoft.com/static/fonts/segoe-ui/west-european/Light/latest.woff2') format("woff2"),
+    url('//c.s-microsoft.com/static/fonts/segoe-ui/west-european/Light/latest.woff') format("woff"),
+    url('//c.s-microsoft.com/static/fonts/segoe-ui/west-european/Light/latest.ttf') format("ttf"),
+    url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/Light/latest.svg#web) format("svg");
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: 'SegoeUISemiLight';
+    src:url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/Semilight/latest.eot#iefix) format("embedded-opentype"),
+    url('//c.s-microsoft.com/static/fonts/segoe-ui/west-european/Semilight/latest.woff2') format("woff2"),
+    url('//c.s-microsoft.com/static/fonts/segoe-ui/west-european/Semilight/latest.woff') format("woff"),
+    url('//c.s-microsoft.com/static/fonts/segoe-ui/west-european/Semilight/latest.ttf') format("ttf"),
+    url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/Semilight/latest.svg#web) format("svg");
+    font-weight: 200;
+}
+
+@font-face{
+    font-family:'SegoeUISemiBold';
+    src:url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/semibold/latest.eot);src:local("Segoe UI Semibold"),local("Segoe WP Semibold"),
+url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/semibold/latest.eot#iefix) format("embedded-opentype"),
+url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/semibold/latest.woff2) format("woff2"),
+url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/semibold/latest.woff) format("woff"),
+url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/semibold/latest.ttf) format("truetype"),
+url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/semibold/latest.svg#web) format("svg");
+
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'SegoeUIBold';
+    src:url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/bold/latest.eot);src:local("Segoe UI Bold"),
+local("Segoe WP Bold"),
+url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/bold/latest.eot#iefix) format("embedded-opentype"),
+url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/bold/latest.woff2) format("woff2"),
+url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/bold/latest.woff) format("woff"),
+url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/bold/latest.ttf) format("truetype"),
+url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/bold/latest.svg#web) format("svg");
+    font-weight: 700;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+h1 {
+    font-size: 84px;
+    line-height: 84px;
+    font-weight: 100;
+    color: @badge-gray;
+    margin-bottom: 15px;
+    font-family: "SegoeUILight";
+}
+
+h2 {
+    font-size: 52px;
+    line-height: 52px;
+    color: @text-lt-gray;
+    font-weight: 500;
+    &.super{
+        font-weight: 900;
+        color: @badge-gray;
+        &.tall{
+            font-size: 80px;
+            line-height: 80px;
+        }
+    }
+    &.light{
+
+        font-weight: 100;
+    }
+    &.heavy{
+        font-family: 'SegoeUISemiBold';
+        font-weight: 600;
+        color: @body-text-black;
+    }
+}
+
+h3 {
+    font-weight: 100;
+    font-size: 80px;
+    line-height: 80px;
+    color: black;
+    font-family: "SegoeUILight";
+}
+
+h4{
+    font-size: 3.25em;// 60px
+    line-height: 1em;
+    color: @body-text-black;
+    font-family: 'SegoeUISemiBold';
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+h5{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 30px;
+    color: @text-lt-gray;
+    font-family: 'SegoeUISemiLight';
+}
+
+h6{
+    font-weight: 600;
+    font-size: 1.7em;
+    line-height: 1.2em;
+    padding-bottom: 5px;
+    &.small{
+        font-size: 20px;
+        line-height: 28px;
+        padding-bottom: 0;
+        margin-bottom: 15px;
+    }
+}
+p {
+    font-size: 15px;
+    line-height: 20px;
+    color: @body-text-black;
+    letter-spacing: 0;
+    &.title{
+        font-size: 20px;
+        line-height: 28px;
+        font-weight: 600;
+        font-family: 'SegoeUISemiBold';
+    }
+    &.ms-store{
+        font-size: 24px;
+        line-height: 42px;
+        font-weight: 600;
+    }
+    &.large{
+        font-size: 18px;
+        line-height: 24px;
+    }
+    &.upper{
+        text-transform: uppercase;
+    }
+}
+.section_title{
+    font-size: 28px;
+    line-height: 28px;
+    color: @body-text-black;
+    font-weight: 400;
+}
+.section_text{
+    font-weight: 200;
+    font-size: 28px;
+    line-height: 28px;
+    color: @body-text-black;
+}
+.thirds {
+    .title{
+        font-size: 20px;
+        line-height:28px;
+        font-family: SegoeUISemiBold;
+        font-weight: 600;
+        margin-bottom: 15px;
+
+        &.large{
+            font-size: 18px;
+            line-height: 22px;
+
+        }
+    }
+    .desc{
+        font-size: 20px;
+        line-height: 28px;
+        letter-spacing: 0;
+        font-family: 'SegoeUISemiBold';
+        font-weight: 600;
+        margin-bottom: 15px;
+
+    }
+    .drawer {
+        display: block;
+        padding-top: 25px;
+        padding-bottom: 10px;
+        text-transform: uppercase;
+        font-size: 13px;
+        text-decoration: none;
+
+        &:after{
+            padding-left: 10px;
+            content: "\E70D";
+            font-family: "MWF-MDL2";
+        }
+    }
+}
+nav a{
+    font-size: 16px;
+    line-height: 42px;
+    text-decoration: none;
+}
+.cross-through{
+    font-size: 28px;
+    font-weight: 300;
+    background-image: url(../assets/arrow.svg);
+    background-size: contain;
+    background-position: -20px 60%;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 103%;
+    grid-column: min-max(min-content, span 1);
+}
+
+//type section
+.semibold{
+    font-family: 'SegoeUISemiBold';
+    font-weight: 600;
+}
+.bold{
+    font-family: 'SegoeUIBold';
+    font-weight: 700;
+}
+.semilight{
+    font-family: 'SegoeUISemiLight';
+    font-weight: 200;
+}
+.light{
+    font-family: 'SegoeUILight';
+    font-weight: 100;
+}
+.f-big{
+    font-size: 18px;
+    line-height: 20px;
+}
+.f-bigger{
+    font-size: 20px;
+    line-height: 22px;
+}
+.f-biggerer{
+    font-size: 22px;
+    line-height: 24px;
+}
+.f-bigger-still{
+    font-size: 28px;
+    line-height: 30px;
+}
+.f-super{
+    font-size: 36px;
+    line-height: 38px;
+}
+
+
+.m-skip-to-main{
+    display: none;
+}
+a{
+    color: @ms-blue;
+}
+.cta{
+    padding: 30px 0;
+    grid-column: span 3;
+    grid-template-columns: fit-content(300px);
+    a {
+        font-size: 13px;
+        line-height: 16px;
+        padding: 10px 22px 7px 24px;
+        display: inline-block;
+        max-width: 100%;
+        overflow: hidden;
+        border: 2px solid transparent;
+        color: #fff;
+        background: @body-text-black;
+        text-decoration: none;
+        text-align: center;
+        letter-spacing: 0;
+        white-space: nowrap;
+        transition: scale .2s ease-in-out;
+        text-transform: uppercase;
+        &:after{
+            content: "\E76C";
+            margin-left: 5px;
+            margin-top: 0px;
+            font-family: "MWF-MDL2";
+            display: inline-block;
+            vertical-align: middle;
+        }
+        &:hover{
+            text-decoration: none;
+            background: @body-text-lt-black;
+            &:after{
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.red{
+    color: @text-red;
+}
+.white{
+    color: white;
+}
+
 
 body {
     font-family: 'SegoeUI', Tahoma, Geneva, Verdana, sans-serif;
