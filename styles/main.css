@@ -977,6 +977,9 @@ img {
 .row.visible-xs {
   display: none;
 }
+p.small-title {
+  font-family: "SegoeUISemibold";
+}
 nav {
   background: #252525;
   overflow-y: auto;
