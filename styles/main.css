@@ -188,6 +188,9 @@ img {
 #section-7-1 a:hover {
   color: #B5F3FF ;
 }
+#section-7-1 {
+  padding-bottom: 25vh;
+}
 .badge {
   justify-self: self-start;
   grid-column:  1 / -1 ;
