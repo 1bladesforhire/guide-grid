@@ -200,7 +200,7 @@ img {
   font-weight: 600;
   outline-color: transparent;
   color: #000000;
-  padding: 0 7px 1px 7px;
+  padding: 0 2px 1px;
   text-transform: uppercase;
   letter-spacing: 0;
   text-overflow: ellipsis;
@@ -2428,14 +2428,16 @@ a {
     font-size: 2em;
   }
   h5 {
-    font-size: 1em;
+    font-size: 1.25em;
+    line-height: 1.25em;
+    font-family: "SegoeUI";
   }
   h6,
   h6.small {
     font-size: 1.4em;
   }
   p {
-    font-size: .8em;
+    font-size: .9em;
   }
   hr {
     grid-column-end: 10;
@@ -2587,6 +2589,10 @@ a {
   }
   #section-4-2 .thirds {
     margin-top: 20px;
+  }
+  #section-4-2 .thirds h5 {
+    margin-bottom: 20px;
+    font-family: SegoeUISemibold;
   }
   #section-4-6 .row-five .thirds p {
     margin-right: 10px;
