@@ -2909,4 +2909,9 @@ a {
   .row.visible-xs {
     display: grid;
   }
+  #menu-list {
+    display: block;
+    overflow: scroll;
+    height: 90vh;
+  }
 }
