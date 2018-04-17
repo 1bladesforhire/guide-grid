@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  $('nav a[href*="#').bind('click touch', function(e) {
+  $('nav a[href*="#').bind('click touchstart', function(e) {
       e.preventDefault(); // prevent hard jump, the default behavior
 
       var target = $(this).attr("href"); // Set the target as variable
@@ -31,8 +31,9 @@ $(document).ready(function() {
         if( $(window).width() <769){
           $('.hamburger').toggleClass('open');
           $('#menu-list').slideToggle();
+          console.log('slide');
         }
-        
+
         $(this).parent().parent().parent().addClass('active');
       }else{
         $(this).parent().addClass('active');
