@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  $('nav a[href*="#').bind('click', function(e) {
+  $('nav a[href*="#').bind('click touchstart', function(e) {
       e.preventDefault(); // prevent hard jump, the default behavior
 
       var target = $(this).attr("href"); // Set the target as variable

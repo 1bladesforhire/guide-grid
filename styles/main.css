@@ -2558,6 +2558,9 @@ a {
   .row.cs {
     grid-template-columns: 75px repeat(5, 1fr);
   }
+  #section-2-3 .fourths {
+    padding-bottom: 20px;
+  }
   #section-2-4 p {
     grid-column: span 6;
   }
