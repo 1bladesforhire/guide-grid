@@ -197,7 +197,8 @@ img {
   font-size: 13px;
   line-height: 18px;
   height: 18px;
-  font-weight: 600;
+  font-family: "SegoeUISemibold";
+  letter-spacing: .1em;
   outline-color: transparent;
   color: #000000;
   padding: 0 2px 1px;
@@ -1526,7 +1527,7 @@ h5 {
   font-family: 'SegoeUISemiLight';
 }
 h6 {
-  font-weight: 600;
+  font-weight: inherit;
   font-size: 1.7em;
   line-height: 1.2em;
   padding-bottom: 5px;
@@ -2411,6 +2412,23 @@ a {
 *
 *
 */
+@media all and (max-width: 1084px) {
+  h5 {
+    font-size: 1.25em;
+    line-height: 1.25em;
+  }
+  #section-4-1 .thirds {
+    padding-right: 20px;
+  }
+  #section-4-1 .thirds p:not(.title) {
+    padding-top: 15px;
+  }
+  #section-4-1 .thirds .title {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    margin-top: 35px;
+  }
+}
 @media all and (max-width: 768px) {
   #section-1 h1 {
     font-size: 3.5em;
@@ -2438,6 +2456,8 @@ a {
   h6,
   h6.small {
     font-size: 1.4em;
+    font-family: "SegoeUI";
+    font-weight: inherit;
   }
   p {
     font-size: .9em;
@@ -2734,12 +2754,17 @@ a {
   }
   .badge {
     font-size: .6em;
+    letter-spacing: .1em;
   }
   #section-4-5 .row-five,
   #section-4-6 .row-five,
   #section-4-7 .row-five,
   #section-5-4 .row-five {
     grid-template-columns: 1fr;
+  }
+  #section-4-5 .fat-thirds p {
+    padding-bottom: 30px;
+    padding-top: 5px;
   }
   #section-4-6 .row-five.empty-cell {
     grid-template-columns: 1fr;
