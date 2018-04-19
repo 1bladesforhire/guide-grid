@@ -834,6 +834,9 @@ img {
 #section-6-3 .half img {
   grid-column: span 2;
 }
+#section-6-3 .half p {
+  padding-right: 0;
+}
 #section-6-3 .row-seven {
   margin-bottom: 30px;
 }
