@@ -13,7 +13,7 @@ $(document).ready(function() {
         //mobile nav close after click on the link
         if($(window).width() < 769){
           $('.hamburger').toggleClass('open');
-          $('#menu-list').slideToggle();
+          $('#menu-list').slideToggle('fast');
         }
       }
 
@@ -30,7 +30,7 @@ $(document).ready(function() {
         //mobile nav close after click on the link
         if( $(window).width() <769){
           $('.hamburger').toggleClass('open');
-          $('#menu-list').slideToggle();
+          $('#menu-list').slideToggle('fast');
           console.log('slide');
         }
 
@@ -116,19 +116,19 @@ $(window).on('load', function(){
 //mobile nav
 $('.hamburger').on('click', function(){
   $('.hamburger').toggleClass('open');
-  $('#menu-list').slideToggle();
+  $('#menu-list').slideToggle('fast');
 });
 
 
 $('.drawer').on('click', function(event){
   event.preventDefault();
   var content = $(this).attr('href');
-  $(content).slideToggle('fast');
+  $(content).slideToggle();
   $(this).toggle();
   return false;
 });
 
 $('.drawer-close').on('click', function(){
-  $(this).parent().slideToggle('fast');
+  $(this).parent().slideToggle();
   $(this).parent().parent().find('a.drawer').toggle();
 });
