@@ -5,7 +5,7 @@ $(document).ready(function() {
       var target = $(this).attr("href"); // Set the target as variable
 
       // perform animated scrolling using animatescroll
-      $(target).animatescroll({scrollSpeed:2000,easing:'easeInOutQuart'});
+      $(target).animatescroll({scrollSpeed:1500,easing:'easeInOutQuart'});
       location.hash = target; //attach the hash (#jumptarget) to the pageurl
 
       //close the mobile nav
@@ -99,7 +99,7 @@ $(window).on('load', function(){
 
     $('html, body').animate({
       scrollTop: $("#"+fileName).offset().top
-    }, 2000);
+    }, 1500);
   }
 
   // $('.lazy').Lazy({
