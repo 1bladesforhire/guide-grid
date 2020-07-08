@@ -22,6 +22,6 @@
     "gulp-less": "^3.4.0",
     "gulp-plumber": "^1.2.0",
     "gulp-sourcemaps": "^1.12.1",
-    "npm": "^5.7.1"
+    "npm": "^6.14.6"
   }
 }
